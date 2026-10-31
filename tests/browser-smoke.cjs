@@ -8,6 +8,12 @@ const base=process.env.HISTORY_BASE_URL||'http://127.0.0.1:3105';
 const chromeBin=process.env.CHROME_BIN||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const delay=ms=>new Promise(r=>setTimeout(r,ms));
 (async()=>{
+ // Verify every route on the server under test, including a long-running dev server.
+ for(const route of ['/','/library','/records','/settings']){
+  const response=await fetch(base+route,{redirect:'manual'});
+  assert.equal(response.status,route==='/settings'?307:200,`HTTP response for ${route}`);
+  assert.ok(!(await response.text()).includes('Element type is invalid'),`Invalid React export on ${route}`);
+ }
  const profile=await fs.mkdtemp(path.join(os.tmpdir(),'oboeyo-headless-'));
  const chrome=spawn(chromeBin,['--headless','--no-first-run','--no-default-browser-check','--disable-background-networking','--disable-default-apps',`--user-data-dir=${profile}`,'--remote-debugging-port=0','about:blank'],{stdio:'ignore'});
  let socket;
@@ -33,6 +39,14 @@ const delay=ms=>new Promise(r=>setTimeout(r,ms));
   const history=()=>call('Page.getNavigationHistory');
   const traverse=async delta=>{const h=await history();await call('Page.navigateToHistoryEntry',{entryId:h.entries[h.currentIndex+delta].id});};
   await call('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
+  await navigate('/');
+  await until(`!!document.querySelector('.start-button:not(:disabled)')`,'home ready');
+  for(const [route,title] of [['/library','問題一覧'],['/records','学習記録']]){
+   await click(`.site-header nav a[href="${route}"]`);
+   await until(`location.pathname===${JSON.stringify(route)}&&document.querySelector('h1')?.textContent===${JSON.stringify(title)}`,'navigation to '+title);
+   await call('Page.reload');
+   await until(`document.querySelector('h1')?.textContent===${JSON.stringify(title)}`,'direct render of '+title);
+  }
   await navigate('/settings');
   await until(`location.pathname==='/'&&location.hash==='#settings'&&!!document.querySelector('.settings-modal[open] .modal-footer button:not(:disabled)')`,'legacy URL opens home modal');
   const modalGeometry=await evaluate(`(()=>{const dialog=document.querySelector('.settings-modal'),body=dialog.querySelector('.modal-body'),footer=dialog.querySelector('.modal-footer').getBoundingClientRect();return {width:document.documentElement.scrollWidth,viewport:innerWidth,footerBottom:footer.bottom,height:innerHeight,scrollable:body.scrollHeight>body.clientHeight,locked:document.body.style.overflow==='hidden'}})()`);
@@ -125,7 +139,7 @@ const delay=ms=>new Promise(r=>setTimeout(r,ms));
   await delay(1300);
   assert.equal(await evaluate('location.pathname'),'/');
   assert.equal(await evaluate(`JSON.parse(localStorage.getItem('history-dates:v2')).sessions.find(s=>s.id===${JSON.stringify(cancelId)}).index`),0);
-  console.log('Headless smoke passed: home modal, close/Escape/back/forward/reload, scope filters, answer persistence, shared review, result navigation, timer cleanup.');
+  console.log('Headless smoke passed: all route HTTP/SSR and client navigation, home modal, close/Escape/back/forward/reload, scope filters, answer persistence, shared review, result navigation, timer cleanup.');
   console.log('One screenshot: /private/tmp/oboeyo-scope-modal.png');
   await call('Browser.close');
  }finally{socket?.close();chrome.kill();await delay(200);await fs.rm(profile,{recursive:true,force:true,maxRetries:3,retryDelay:100});}

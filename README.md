@@ -19,6 +19,12 @@ npm start         # 本番サーバー
 
 追加依存なしのヘッドレスChrome検証も用意しています。別ターミナルで `npm start -- --hostname 127.0.0.1 --port 3105` を起動し、`npm run test:browser` を実行してください。macOSのChromeを標準パスから起動します。他環境では `CHROME_BIN`、別ポートでは `HISTORY_BASE_URL` を指定してください。一時プロファイルを使用し、ユーザーのChromeプロファイルは操作しません。
 
+実際に起動中の開発サーバーも、次のコマンドで検証できます。ホーム・問題一覧・学習記録のHTTP応答、直接表示、クライアント遷移も確認します。
+
+```sh
+HISTORY_BASE_URL=http://localhost:3000 HISTORY_SCREENSHOT=0 npm run test:browser
+```
+
 ## 画面とURL
 
 | 画面 | URL |
