@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 覚えよ
 
-## Getting Started
+日本史・世界史の年号暗記アプリ。Next.js 16 / React 19 / TypeScript。アカウントや外部APIは不要です。
 
-First, run the development server:
+## 起動と確認
 
-```bash
+```sh
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+http://localhost:3000 を開きます。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm test          # データ・抽出・判定・共有履歴・移行・セッションのテスト
+npm run build     # 型チェックと本番ビルド
+npm start         # 本番サーバー
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+追加依存なしのヘッドレスChrome検証も用意しています。別ターミナルで `npm start -- --hostname 127.0.0.1 --port 3105` を起動し、`npm run test:browser` を実行してください。macOSのChromeを標準パスから起動します。他環境では `CHROME_BIN`、別ポートでは `HISTORY_BASE_URL` を指定してください。一時プロファイルを使用し、ユーザーのChromeプロファイルは操作しません。
 
-## Learn More
+## 画面とURL
 
-To learn more about Next.js, take a look at the following resources:
+| 画面 | URL |
+| --- | --- |
+| 学習ホーム | `/` |
+| 出題範囲（ホーム内モーダル） | `/#settings` |
+| 学習 | `/study/<セッションID>` |
+| 結果 | `/results/<セッションID>` |
+| 学習記録 | `/records` |
+| 問題一覧 | `/library` |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+出題範囲は別ページにせず、ホーム内のモーダルで開きます。`#settings`はモーダルの開閉状態で、「戻る」で閉じ、「進む」や再読み込みで再表示できます。旧`/settings`は`/#settings`へ案内します。通常の画面移動はNext.jsのLink / Routerで行います。学習完了時は学習画面の履歴を結果画面に置き換え、戻る操作で不要な完了案内を挟まないようにしています。問題ごとの進行は同じURL内で更新し、ブラウザ履歴を増やしません。戻る・進むに対応し、設定・入力中の数字・紀元・進捗・解答結果は再読み込み後にも復元します。直近20セッションを保持するため、古いセッションや別ブラウザから開いた学習URLではデータなしの案内を表示します。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 出題範囲
 
-## Deploy on Vercel
+3つの方式は排他的です。非選択方式の値は復元用に保持し、抽出には適用しません。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **単元から選択**：世界史21・日本史13グループ。大分類の一括選択、部分選択表示、小単元の複数選択、単元名検索。選択単元の和集合をIDで重複排除します。
+- **地域×時代から選択**：11地域それぞれの時代区分を使用。地域タグと年号だけで判定し、単元所属には依存しません。「中国」は朝鮮・モンゴル・満洲などを含む東アジア史の学習範囲です。
+- **全範囲ランダム**：単元・地域・時代・保存済みの出題順・科目均等化を無視し、対象をFisher–Yates法で一様にシャッフルします。星を抽選の重みに使いません。
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+優先度（★1〜★5）と学習状況は全方式で絞り込めます。同じ分類内の複数選択はOR、分類間はANDです。デフォルトの星指定なしは全星を意味します。単元未選択や収録問題0件の場合は開始できません。
+
+年代順・苦手優先・未学習優先・科目の均等化は、単元／地域方式で利用できます。10・20・50・全問を選択し、対象数が足りないときは存在する分だけ出題します。お気に入り、条件プリセット、問題検索も利用できます。
+
+## 解答と履歴
+
+- 完全年号、上の桁（下一桁表示）、上の桁（下二桁表示）、世紀の4方式。
+- 上の桁の解答では、入力した数字と固定数字を同じ書体・サイズ・色・ベースラインで連続表示。1648年なら `164` + `8` / `16` + `48`。
+- 年号が短い場合も最低1桁は解答します。57年の下二桁表示では上1桁の `5` を入力し `7` を固定表示。1桁の年は全桁を入力します。
+- 「前／後」で紀元を指定。毎問「後」が初期値。紀元前221年の世紀は3、紀元前100年は1、西暦101年は2。紀元0年は扱いません。
+- 正解は約1秒後に自動進行し、Enter／次へで早めることも可能。不正解は手動で進めます。二重解答・二重進行はセッションIDと問題位置で防止し、画面を離れるとタイマーを停止します。
+- 履歴は問題IDごとに共通管理。解答方式を変えても総解答・正解・不正解・直近の結果・連続正解・復習対象が共有されます。
+- 苦手度は `max(0, 直近10回の誤答数 × 2 − 連続正解数)`。0を超える問題を復習対象にします。誤答で対象となり、連続正解で下がります。
+- 「最近間違えた問題」は直近10回に含まれる過去7日以内の誤答。最近の解答100件も別途保持し、記録画面で直近15件を表示します。
+
+## データの追加
+
+| ファイル | 内容 |
+| --- | --- |
+| `data/events.json` | 問題データ |
+| `data/units.ts` | 単元グループ・小単元のIDと名称 |
+| `data/regions.ts` | 地域・地域独自の時代ID、名称、開始年、終了年、順序 |
+| `data/priorities.ts` | 星の表示と評価の定義 |
+| `lib/types.ts` | 型定義 |
+| `lib/events.ts` | 問題属性の検証 |
+| `lib/study.ts` | 抽出・判定・履歴・セッション更新 |
+
+`data/events.json` に次の形式で追加します。
+
+```json
+{
+  "id": "wh-1648",
+  "subject": "world",
+  "name": "ウェストファリア条約",
+  "year": 1648,
+  "era": "CE",
+  "dateType": "single",
+  "unitId": "W13-02",
+  "regions": ["europe"],
+  "priority": 5,
+  "period": "近世ヨーロッパ",
+  "themes": ["外交史"],
+  "source": "https://avalon.law.yale.edu/17th_century/westphal.asp"
+}
+```
+
+- `id` は固定かつ一意。履歴とセッションがこのIDを参照します。
+- `subject` は `japan` / `world`、`era` は `CE` / `BCE`。`year` は常に1以上の整数です。紀元前221年は `year: 221, era: "BCE"`。
+- 主所属は `unitId` 1つ。必要なら `relatedUnitIds` を追加できます。同じ問題は1件として出題します。
+- `regions` は地域IDの配列。複数地域を設定できます。日本史は `japan`。東アジア周辺諸国は学習上の関連に応じ `china` を含めます。
+- `priority` は1〜5。初期33問の星は依頼の目安と基本的な学習事項をもとに個別に設定した編集上の評価で、入試頻度の実測値ではありません。追加問題にも資料を確認して評価してください。
+- `note` は任意で、解答後と詳細画面にだけ表示します。`source` には年号を確認した資料を設定します。
+- `dateType: "single"` だけを出題します。年代に幅がある場合は `range`（任意の `endYear` / `endEra`）、概算は `approximate` にして単一年号問題にしないでください。
+- 単元IDは保存キーです。既存のグループ・小単元を並べ替えてIDを変更しないでください。
+- 地域時代の抽出範囲は符号付きの年（紀元前は負数）、両端を含む区間です。境界は`data/regions.ts`に一元化しています。王朝の厳密な在位期間ではなく学習範囲の区切りで、「隋・唐」〜「五代・宋」は指定例に合わせ618〜1279年です。南北朝と室町、宋と元、明と清などの並立には区間の重複を許容しています。最初の先史範囲と最後の9999年は抽出の上下限で、画面では「先史」「現在」と表示します。
+- 更新後は `npm test` と `npm run build` を実行してください。
+
+## 保存データの移行
+
+保存先は `localStorage` の `history-dates:v2`。初回にv2がなければv1を読み込み、既存の総解答・総正誤・お気に入り・直近履歴を引き継ぎます。旧モード別記録を再加算せず、既存の問題単位の合計から共通履歴に移行します。v1のキーはバックアップとして残します。
+
+科目・解答方式・出題数・出題順・プリセットを引き継ぎます。旧単元名は小単元IDへ変換し、旧地域指定は先頭の1地域へ変換します。廃止した複合フィルター（大分類・テーマ・任意年範囲など）は新方式に持ち越しません。
+
+## サンプルと制約
+
+確認済みの単一年号33問（日本史17問・世界史16問）です。全単元に問題があるわけではなく、未収録の地域・単元では0問を表示します。
+
+既存の国立公文書館・国立国会図書館・豊橋市アーカイブ・National Humanities Centerの資料に加え、以下を確認してサンプルを追加しました。各問題に出典URLを保存しています。
+
+- [ウェストファリア条約原文（Yale Avalon Project）](https://avalon.law.yale.edu/17th_century/westphal.asp)
+- [高麗建国918年（韓国国立済州博物館）](https://jeju.museum.go.kr/html/en/sub03/sub03_030106.html)
+- [コロンブス1492年（National Humanities Center）](https://nationalhumanitiescenter.org/ows/seminars/tcentury/MustKnowDates.pdf)
+
+問題の拡充、端末間同期・バックアップ、実機iOS/Androidでのソフトウェアキーボード操作は今後の確認・拡張対象です。保存は利用中のブラウザ内のみで、ブラウザのデータを消すと履歴や進行状態も消えます。

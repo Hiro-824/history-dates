@@ -1,0 +1,613 @@
+[
+  {
+    "id": "jp-057",
+    "subject": "japan",
+    "name": "奴国王が後漢に使いを送る",
+    "year": 57,
+    "era": "CE",
+    "dateType": "single",
+    "period": "弥生",
+    "regions": [
+      "japan"
+    ],
+    "themes": [
+      "外交史"
+    ],
+    "source": "https://adeac.jp/toyohashi-city/timeline/tm000020",
+    "unitId": "J01-04",
+    "priority": 4
+  },
+  {
+    "id": "jp-239",
+    "subject": "japan",
+    "name": "卑弥呼が魏に使いを送る",
+    "year": 239,
+    "era": "CE",
+    "dateType": "single",
+    "period": "弥生",
+    "regions": [
+      "japan"
+    ],
+    "themes": [
+      "外交史"
+    ],
+    "source": "https://adeac.jp/toyohashi-city/timeline/tm000020",
+    "unitId": "J01-04",
+    "priority": 4
+  },
+  {
+    "id": "jp-607",
+    "subject": "japan",
+    "name": "小野妹子を隋に派遣",
+    "year": 607,
+    "era": "CE",
+    "dateType": "single",
+    "period": "飛鳥",
+    "regions": [
+      "japan"
+    ],
+    "themes": [
+      "外交史"
+    ],
+    "source": "https://adeac.jp/toyohashi-city/timeline/tm000020",
+    "unitId": "J02-01",
+    "priority": 4
+  },
+  {
+    "id": "jp-645",
+    "subject": "japan",
+    "name": "大化の改新が始まる",
+    "year": 645,
+    "era": "CE",
+    "dateType": "single",
+    "period": "飛鳥",
+    "regions": [
+      "japan"
+    ],
+    "themes": [
+      "政治史",
+      "制度史"
+    ],
+    "note": "乙巳の変を契機に始まった政治改革。ここでは開始年を問います。",
+    "source": "https://www.archives.go.jp/exhibition/digital/rekishitomonogatari/history01.html",
+    "unitId": "J02-02",
+    "priority": 5
+  },
+  {
+    "id": "jp-701",
+    "subject": "japan",
+    "name": "大宝律令の制定",
+    "year": 701,
+    "era": "CE",
+    "dateType": "single",
+    "period": "飛鳥",
+    "regions": [
+      "japan"
+    ],
+    "themes": [
+      "制度史"
+    ],
+    "source": "https://adeac.jp/toyohashi-city/timeline/tm000020",
+    "unitId": "J02-02",
+    "priority": 4
+  },
+  {
+    "id": "jp-710",
+    "subject": "japan",
+    "name": "平城京への遷都",
+    "year": 710,
+    "era": "CE",
+    "dateType": "single",
+    "period": "奈良",
+    "regions": [
+      "japan"
+    ],
+    "themes": [
+      "政治史"
+    ],
+    "source": "https://adeac.jp/toyohashi-city/timeline/tm000020",
+    "unitId": "J03-01",
+    "priority": 5
+  },
+  {
+    "id": "jp-743",
+    "subject": "japan",
+    "name": "墾田永世私財法の制定",
+    "year": 743,
+    "era": "CE",
+    "dateType": "single",
+    "period": "奈良",
+    "regions": [
+      "japan"
+    ],
+    "themes": [
+      "経済史",
+      "制度史"
+    ],
+    "source": "https://adeac.jp/toyohashi-city/timeline/tm000020",
+    "unitId": "J03-02",
+    "priority": 4
+  },
+  {
+    "id": "jp-752",
+    "subject": "japan",
+    "name": "東大寺大仏の開眼供養",
+    "year": 752,
+    "era": "CE",
+    "dateType": "single",
+    "period": "奈良",
+    "regions": [
+      "japan"
+    ],
+    "themes": [
+      "文化史",
+      "宗教史"
+    ],
+    "source": "https://adeac.jp/toyohashi-city/timeline/tm000020",
+    "unitId": "J03-03",
+    "priority": 3
+  },
+  {
+    "id": "jp-794",
+    "subject": "japan",
+    "name": "平安京への遷都",
+    "year": 794,
+    "era": "CE",
+    "dateType": "single",
+    "period": "平安",
+    "regions": [
+      "japan"
+    ],
+    "themes": [
+      "政治史"
+    ],
+    "source": "https://adeac.jp/toyohashi-city/timeline/tm000020",
+    "unitId": "J03-04",
+    "priority": 5
+  },
+  {
+    "id": "jp-1185",
+    "subject": "japan",
+    "name": "壇ノ浦の戦い",
+    "year": 1185,
+    "era": "CE",
+    "dateType": "single",
+    "period": "平安",
+    "regions": [
+      "japan"
+    ],
+    "themes": [
+      "戦争・軍事史"
+    ],
+    "source": "https://adeac.jp/toyohashi-city/timeline/tm000020",
+    "unitId": "J04-05",
+    "priority": 4
+  },
+  {
+    "id": "jp-1232",
+    "subject": "japan",
+    "name": "御成敗式目の制定",
+    "year": 1232,
+    "era": "CE",
+    "dateType": "single",
+    "period": "鎌倉",
+    "regions": [
+      "japan"
+    ],
+    "themes": [
+      "制度史"
+    ],
+    "source": "https://adeac.jp/toyohashi-city/timeline/tm000020",
+    "unitId": "J05-02",
+    "priority": 4
+  },
+  {
+    "id": "jp-1467",
+    "subject": "japan",
+    "name": "応仁の乱が始まる",
+    "year": 1467,
+    "era": "CE",
+    "dateType": "single",
+    "period": "室町",
+    "regions": [
+      "japan"
+    ],
+    "themes": [
+      "戦争・軍事史"
+    ],
+    "source": "https://adeac.jp/toyohashi-city/timeline/tm000020",
+    "unitId": "J06-06",
+    "priority": 5
+  },
+  {
+    "id": "jp-1600",
+    "subject": "japan",
+    "name": "関ヶ原の戦い",
+    "year": 1600,
+    "era": "CE",
+    "dateType": "single",
+    "period": "安土桃山",
+    "regions": [
+      "japan"
+    ],
+    "themes": [
+      "戦争・軍事史"
+    ],
+    "source": "https://www.archives.go.jp/exhibition/digital/rekishitomonogatari/history01.html",
+    "unitId": "J08-01",
+    "priority": 5
+  },
+  {
+    "id": "wh-b221",
+    "subject": "world",
+    "name": "秦の始皇帝が中国を統一",
+    "year": 221,
+    "era": "BCE",
+    "dateType": "single",
+    "period": "秦",
+    "regions": [
+      "china"
+    ],
+    "themes": [
+      "政治史"
+    ],
+    "source": "https://nationalhumanitiescenter.org/ows/seminars/tcentury/MustKnowDates.pdf",
+    "unitId": "W04-02",
+    "priority": 5
+  },
+  {
+    "id": "wh-220",
+    "subject": "world",
+    "name": "後漢の滅亡",
+    "year": 220,
+    "era": "CE",
+    "dateType": "single",
+    "period": "漢・三国",
+    "regions": [
+      "china"
+    ],
+    "themes": [
+      "政治史"
+    ],
+    "source": "https://nationalhumanitiescenter.org/ows/seminars/tcentury/MustKnowDates.pdf",
+    "unitId": "W04-03",
+    "priority": 3
+  },
+  {
+    "id": "wh-476",
+    "subject": "world",
+    "name": "西ローマ帝国の滅亡",
+    "year": 476,
+    "era": "CE",
+    "dateType": "single",
+    "period": "古代ローマ",
+    "regions": [
+      "europe"
+    ],
+    "themes": [
+      "政治史"
+    ],
+    "source": "https://nationalhumanitiescenter.org/ows/seminars/tcentury/MustKnowDates.pdf",
+    "unitId": "W02-05",
+    "priority": 5
+  },
+  {
+    "id": "wh-1054",
+    "subject": "world",
+    "name": "キリスト教会の東西分裂",
+    "year": 1054,
+    "era": "CE",
+    "dateType": "single",
+    "period": "中世ヨーロッパ",
+    "regions": [
+      "europe",
+      "west-asia"
+    ],
+    "themes": [
+      "宗教史"
+    ],
+    "source": "https://nationalhumanitiescenter.org/ows/seminars/tcentury/MustKnowDates.pdf",
+    "unitId": "W08-03",
+    "priority": 3
+  },
+  {
+    "id": "wh-1066",
+    "subject": "world",
+    "name": "ノルマン征服",
+    "year": 1066,
+    "era": "CE",
+    "dateType": "single",
+    "period": "中世ヨーロッパ",
+    "regions": [
+      "europe"
+    ],
+    "themes": [
+      "政治史",
+      "戦争・軍事史"
+    ],
+    "source": "https://nationalhumanitiescenter.org/ows/seminars/tcentury/MustKnowDates.pdf",
+    "unitId": "W08-05",
+    "priority": 4
+  },
+  {
+    "id": "wh-1258",
+    "subject": "world",
+    "name": "モンゴル軍によるバグダード陥落",
+    "year": 1258,
+    "era": "CE",
+    "dateType": "single",
+    "period": "アッバース朝",
+    "regions": [
+      "west-asia",
+      "central-asia"
+    ],
+    "themes": [
+      "戦争・軍事史"
+    ],
+    "source": "https://nationalhumanitiescenter.org/ows/seminars/tcentury/MustKnowDates.pdf",
+    "unitId": "W07-03",
+    "priority": 2,
+    "relatedUnitIds": [
+      "W06-03"
+    ]
+  },
+  {
+    "id": "wh-1453",
+    "subject": "world",
+    "name": "コンスタンティノープルの陥落",
+    "year": 1453,
+    "era": "CE",
+    "dateType": "single",
+    "period": "オスマン帝国",
+    "regions": [
+      "europe",
+      "west-asia"
+    ],
+    "themes": [
+      "戦争・軍事史"
+    ],
+    "source": "https://nationalhumanitiescenter.org/ows/seminars/tcentury/MustKnowDates.pdf",
+    "unitId": "W11-03",
+    "priority": 5
+  },
+  {
+    "id": "wh-1517",
+    "subject": "world",
+    "name": "ルターの九十五か条の論題",
+    "year": 1517,
+    "era": "CE",
+    "dateType": "single",
+    "period": "宗教改革",
+    "regions": [
+      "europe"
+    ],
+    "themes": [
+      "宗教史",
+      "思想史"
+    ],
+    "source": "https://nationalhumanitiescenter.org/ows/seminars/tcentury/MustKnowDates.pdf",
+    "unitId": "W13-02",
+    "priority": 5
+  },
+  {
+    "id": "wh-1776",
+    "subject": "world",
+    "name": "アメリカ独立宣言",
+    "year": 1776,
+    "era": "CE",
+    "dateType": "single",
+    "period": "市民革命",
+    "regions": [
+      "north-america"
+    ],
+    "themes": [
+      "政治史"
+    ],
+    "source": "https://nationalhumanitiescenter.org/ows/seminars/tcentury/MustKnowDates.pdf",
+    "unitId": "W14-02",
+    "priority": 5
+  },
+  {
+    "id": "wh-1789",
+    "subject": "world",
+    "name": "フランス革命が始まる",
+    "year": 1789,
+    "era": "CE",
+    "dateType": "single",
+    "period": "市民革命",
+    "regions": [
+      "europe"
+    ],
+    "themes": [
+      "政治史",
+      "社会史"
+    ],
+    "source": "https://nationalhumanitiescenter.org/ows/seminars/tcentury/MustKnowDates.pdf",
+    "unitId": "W14-03",
+    "priority": 5
+  },
+  {
+    "id": "wh-1914",
+    "subject": "world",
+    "name": "第一次世界大戦が始まる",
+    "year": 1914,
+    "era": "CE",
+    "dateType": "single",
+    "period": "二つの世界大戦",
+    "regions": [
+      "europe"
+    ],
+    "themes": [
+      "戦争・軍事史",
+      "外交史"
+    ],
+    "source": "https://nationalhumanitiescenter.org/ows/seminars/tcentury/MustKnowDates.pdf",
+    "unitId": "W18-01",
+    "priority": 5
+  },
+  {
+    "id": "wh-1947",
+    "subject": "world",
+    "name": "インド・パキスタンの分離独立",
+    "year": 1947,
+    "era": "CE",
+    "dateType": "single",
+    "period": "第二次世界大戦後",
+    "regions": [
+      "south-asia"
+    ],
+    "themes": [
+      "政治史"
+    ],
+    "source": "https://nationalhumanitiescenter.org/ows/seminars/tcentury/MustKnowDates.pdf",
+    "unitId": "W20-04",
+    "priority": 4
+  },
+  {
+    "id": "wh-1989",
+    "subject": "world",
+    "name": "ベルリンの壁の崩壊",
+    "year": 1989,
+    "era": "CE",
+    "dateType": "single",
+    "period": "第二次世界大戦後",
+    "regions": [
+      "europe"
+    ],
+    "themes": [
+      "政治史"
+    ],
+    "source": "https://nationalhumanitiescenter.org/ows/seminars/tcentury/MustKnowDates.pdf",
+    "unitId": "W21-01",
+    "priority": 5
+  },
+  {
+    "id": "jp-1872",
+    "subject": "japan",
+    "name": "新橋・横浜間の鉄道開業",
+    "year": 1872,
+    "era": "CE",
+    "dateType": "single",
+    "period": "明治",
+    "regions": [
+      "japan"
+    ],
+    "themes": [
+      "科学・技術史",
+      "経済史"
+    ],
+    "source": "https://www.archives.go.jp/exhibition/digital/henbou/history.html",
+    "unitId": "J10-04",
+    "priority": 4
+  },
+  {
+    "id": "jp-1889",
+    "subject": "japan",
+    "name": "大日本帝国憲法の発布",
+    "year": 1889,
+    "era": "CE",
+    "dateType": "single",
+    "period": "明治",
+    "regions": [
+      "japan"
+    ],
+    "themes": [
+      "政治史",
+      "制度史"
+    ],
+    "source": "https://www.ndl.go.jp/modern/utility/chronology.html",
+    "unitId": "J10-06",
+    "priority": 5
+  },
+  {
+    "id": "jp-1915",
+    "subject": "japan",
+    "name": "中国に二十一か条の要求を提示",
+    "year": 1915,
+    "era": "CE",
+    "dateType": "single",
+    "period": "大正",
+    "regions": [
+      "japan"
+    ],
+    "themes": [
+      "外交史"
+    ],
+    "source": "https://www.archives.go.jp/ayumi/table.html",
+    "unitId": "J11-05",
+    "priority": 3
+  },
+  {
+    "id": "jp-1945",
+    "subject": "japan",
+    "name": "太平洋戦争の終結",
+    "year": 1945,
+    "era": "CE",
+    "dateType": "single",
+    "period": "昭和",
+    "regions": [
+      "japan"
+    ],
+    "themes": [
+      "戦争・軍事史"
+    ],
+    "source": "https://www.ndl.go.jp/zoshoin/list.html",
+    "unitId": "J12-04",
+    "priority": 5
+  },
+  {
+    "id": "wh-1648",
+    "subject": "world",
+    "name": "ウェストファリア条約",
+    "year": 1648,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "W13-02",
+    "priority": 5,
+    "regions": [
+      "europe"
+    ],
+    "period": "近世ヨーロッパ",
+    "themes": [
+      "政治史"
+    ],
+    "source": "https://avalon.law.yale.edu/17th_century/westphal.asp"
+  },
+  {
+    "id": "wh-1492",
+    "subject": "world",
+    "name": "コロンブスのアメリカ到達",
+    "year": 1492,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "W12-01",
+    "priority": 5,
+    "regions": [
+      "europe",
+      "latin-america"
+    ],
+    "period": "大航海時代",
+    "themes": [
+      "政治史"
+    ],
+    "source": "https://nationalhumanitiescenter.org/ows/seminars/tcentury/MustKnowDates.pdf"
+  },
+  {
+    "id": "wh-918",
+    "subject": "world",
+    "name": "王建による高麗の建国",
+    "year": 918,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "W10-02",
+    "priority": 3,
+    "regions": [
+      "china"
+    ],
+    "period": "高麗",
+    "themes": [
+      "政治史"
+    ],
+    "source": "https://jeju.museum.go.kr/html/en/sub03/sub03_030106.html"
+  }
+]
