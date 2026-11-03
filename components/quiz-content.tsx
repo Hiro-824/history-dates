@@ -29,7 +29,7 @@ export function QuestionText({ text }: { text: string }) {
   return <div className="question-region" ref={regionRef}><h1 className="question-title" ref={textRef}>{text}</h1></div>;
 }
 
-export function PagedFeedback({ children }: { children: ReactNode }) {
+export function PagedFeedback({ children, label = "解説" }: { children: ReactNode; label?: string }) {
   const panelRef = useRef<HTMLDivElement>(null);
   const viewportRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -55,10 +55,10 @@ export function PagedFeedback({ children }: { children: ReactNode }) {
   const offset = Math.min(current * step, Math.max(0, size.content - size.viewport));
   return <div className="paged-feedback" ref={panelRef}>
     <div className="feedback-viewport" ref={viewportRef}><div className="feedback-content" ref={contentRef} style={{ transform: `translateY(-${offset}px)` }}>{children}</div></div>
-    {pages > 1 && <nav className="feedback-pagination" aria-label="解説のページ切り替え" onKeyDown={(event) => event.stopPropagation()}>
-      <button type="button" aria-label="解説の前のページ" disabled={current === 0} onClick={() => setPage(current - 1)}>前のページ</button>
+    {pages > 1 && <nav className="feedback-pagination" aria-label={`${label}のページ切り替え`} onKeyDown={(event) => event.stopPropagation()}>
+      <button type="button" aria-label={`${label}の前のページ`} disabled={current === 0} onClick={() => setPage(current - 1)}>前のページ</button>
       <span aria-live="polite">{current + 1} / {pages}</span>
-      <button type="button" aria-label="解説の次のページ" disabled={current + 1 === pages} onClick={() => setPage(current + 1)}>次のページ</button>
+      <button type="button" aria-label={`${label}の次のページ`} disabled={current + 1 === pages} onClick={() => setPage(current + 1)}>次のページ</button>
     </nav>}
   </div>;
 }

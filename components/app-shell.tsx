@@ -1,14 +1,27 @@
 "use client";
-import Link from "next/link";
-import { useEffect, useRef, type ReactNode } from "react";
+import { NavigationLink as Link } from "./navigation";
+import { useEffect, useLayoutEffect, useRef, type ReactNode } from "react";
 import { useStudyStore } from "@/lib/storage";
+import { releaseStudyKeyboard } from "@/lib/study-keyboard";
 import { Icon } from "./ui";
+
+const activeStudies = new Set<symbol>();
 
 export function AppShell({ children, active = "home", studying = false }: { children: ReactNode; active?: "home" | "library" | "records"; studying?: boolean }) {
   const { store } = useStudyStore();
   const shellRef = useRef<HTMLDivElement>(null);
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!studying) return;
+    const study = Symbol();
+    activeStudies.add(study);
+    document.body.classList.add("study-active");
+    return () => {
+      activeStudies.delete(study);
+      if (!activeStudies.size) document.body.classList.remove("study-active");
+    };
+  }, [studying]);
+  useEffect(() => {
+    if (!studying) { releaseStudyKeyboard(); return; }
     const viewport = window.visualViewport;
     const resize = () => {
       const shell = shellRef.current;

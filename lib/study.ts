@@ -19,6 +19,7 @@ export const DEFAULT_SETTINGS: Settings = {
 };
 export function chronologicalYear(event: Pick<HistoryEvent, "year" | "era">) { return event.era === "BCE" ? -event.year : event.year; }
 export function formatYear(event: Pick<HistoryEvent, "year" | "era">) { return `${event.era === "BCE" ? "紀元前" : ""}${event.year}年`; }
+export function formatCentury(event: Pick<HistoryEvent, "year" | "era">) { return `${event.era === "BCE" ? "紀元前" : ""}${Math.ceil(event.year / 100)}世紀`; }
 export function formatSignedYear(year: number) { if (year === -3000000) return "先史"; if (year === 9999) return "現在"; return `${year < 0 ? "紀元前" : ""}${Math.abs(year).toLocaleString("ja-JP")}年`; }
 export function answerParts(event: Pick<HistoryEvent, "year" | "answerPrecision">, mode: Mode) {
   const digits = String(event.year);
@@ -101,6 +102,10 @@ export function shuffled<T>(items: T[], random: () => number = Math.random) {
   const result = [...items];
   for (let i = result.length - 1; i > 0; i--) { const j = Math.floor(random() * (i + 1)); [result[i], result[j]] = [result[j], result[i]]; }
   return result;
+}
+export function sameYearHints(events: HistoryEvent[], question: Pick<HistoryEvent, "id" | "year" | "era">, random = Math.random) {
+  const candidates = events.filter((event) => event.id !== question.id && event.dateType === "single" && event.year === question.year && event.era === question.era);
+  return shuffled(candidates, random).slice(0, 3);
 }
 export function makeQueue(events: HistoryEvent[], settings: Settings, history: History, random = Math.random) {
   const queue = shuffled([...new Map(events.map((e) => [e.id, e])).values()], random);

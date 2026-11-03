@@ -5,6 +5,7 @@ import legacyUnits from "../data/legacy-units.json";
 import { regionById, regionsForSubject } from "../data/regions";
 import { unitById } from "../data/units";
 import { events } from "./events";
+import { prepareStudyKeyboard } from "./study-keyboard";
 import { DEFAULT_SETTINGS, filterEvents, makeQueue, MODES, ORDERS, selectRegion, selectSubject, weakness } from "./study";
 import type { Attempt, History, Mode, Score, Session, Settings, Store } from "./types";
 
@@ -135,6 +136,7 @@ export function startStudy(settings: Settings, restrictedIds?: string[], preserv
   if (!queue.length) return null;
   const session: Session = { id: crypto.randomUUID(), eventIds: queue.map((e) => e.id), settings: structuredClone(settings), index: 0, answers: [], input: "", era: "CE", stage: "active", createdAt: new Date().toISOString(), completedAt: null, ...(restrictedIds ? { restrictedIds } : {}) };
   updateStore((s) => ({ ...s, settings: preserveSettings ? s.settings : settings, sessions: [...s.sessions, session].slice(-20) }));
+  prepareStudyKeyboard();
   return session;
 }
 const subscribeReady = () => () => {};

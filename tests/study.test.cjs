@@ -16,6 +16,25 @@ const attempt = (correct, mode = 'exact', at = '2026-10-30T12:00:00.000Z') => ({
 const baseStore = () => ({ version: 2, settings: settings(), history: {}, recent: [], presets: [], sessions: [] });
 const session = (extra = {}) => ({ id: 'test-session', eventIds: [sample.id,bce.id], settings: settings(), index: 0, answers: [], input: '645', era: 'CE', stage: 'active', createdAt: '2026-10-31T00:00:00Z', completedAt: null, ...extra });
 
+test('same-year hints randomly select up to three other exact events across subjects, respecting the era', () => {
+  const question={...sample,id:'question',year:1905,era:'CE'};
+  const matches=Array.from({length:6},(_,i)=>({...question,id:'match-'+i,subject:i%2?'japan':'world'}));
+  const pool=[question,...matches,{...question,id:'other-era',era:'BCE'},{...question,id:'other-year',year:1906},{...question,id:'range',dateType:'range',endYear:1910},{...question,id:'approximate',dateType:'approximate'}];
+  const originalIds=pool.map(e=>e.id);
+  const hints=study.sameYearHints(pool,question,()=>0);
+  assert.equal(hints.length,3);
+  assert.equal(new Set(hints.map(e=>e.id)).size,3);
+  assert.ok(hints.every(e=>matches.includes(e)));
+  assert.notDeepEqual(hints,study.sameYearHints(pool,question,()=>.999));
+  assert.deepEqual(pool.map(e=>e.id),originalIds);
+  for(const count of [0,1,2,3]){
+    const available=matches.slice(0,count);
+    assert.deepEqual(new Set(study.sameYearHints([question,...available],question).map(e=>e.id)),new Set(available.map(e=>e.id)));
+  }
+  const bceQuestion={...question,era:'BCE'};
+  assert.deepEqual(study.sameYearHints(pool,bceQuestion).map(e=>e.id),['other-era']);
+});
+
 test('all 34 groups and supplied major study areas have stable unique IDs', () => {
   assert.equal(unitGroups.filter(g=>g.subject==='world').length,21);
   assert.equal(unitGroups.filter(g=>g.subject==='japan').length,13);

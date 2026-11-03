@@ -1,10 +1,7 @@
 import { Suspense } from "react";
-import { StudyPage } from "@/components/quiz";
+import { StudyRoute } from "@/components/quiz";
+import { PageLoading } from "@/components/page-loading";
 
-export default function Page({ params }: { params: Promise<{ id: string }> }) {
-  return <Suspense fallback={<p className="route-loading">読み込み中</p>}><Content params={params}/></Suspense>;
-}
-async function Content({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
-  return <StudyPage sessionId={id}/>;
+export default function Page() {
+  return <Suspense fallback={<PageLoading kind="study"/>}><StudyRoute/></Suspense>;
 }
