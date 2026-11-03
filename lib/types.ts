@@ -20,6 +20,8 @@ export interface HistoryEvent {
   period: string;
   themes: string[];
   note?: string;
+  answerPrecision?: "decade" | "hundred";
+  draftLines?: number[];
   source: string;
 }
 export interface Unit { id: string; name: string }

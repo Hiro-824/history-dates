@@ -8,6 +8,7 @@ import { advanceSession, answerParts, expectedAnswer, formatSubmittedAnswer, for
 import { startStudy, toggleFavorite, updateStore, useStudyStore } from "@/lib/storage";
 import type { HistoryEvent, Session } from "@/lib/types";
 import { AppShell } from "./app-shell";
+import { EventNote } from "./event-note";
 import { Favorite, Icon, Modal, Percent } from "./ui";
 
 function MissingSession() { return <><h1>学習データがありません</h1><Link href="/#settings" className="primary home-return">出題設定へ</Link></>; }
@@ -34,10 +35,10 @@ function Quiz({ session, event }: { session: Session; event: HistoryEvent }) {
   },[session.id,session.index,router]);
   useEffect(()=>{if(!ending)inputRef.current?.focus({preventScroll:true});},[session.id,session.index,ending]);
   useEffect(()=>{
-    if(!result?.correct||ending)return;
+    if(!result?.correct||ending||event.note)return;
     const timer=window.setTimeout(()=>{if(window.location.pathname===`/study/${session.id}`)advance();},1000);
     return ()=>window.clearTimeout(timer);
-  },[result?.at,result?.correct,ending,session.id,advance]);
+  },[result?.at,result?.correct,ending,session.id,advance,event.note]);
   const draft=(patch:Partial<Pick<Session,"input"|"era">>)=>updateStore((s)=>({...s,sessions:s.sessions.map((v)=>v.id===session.id&&v.stage==="active"&&v.answers.length===v.index?{...v,...patch}:v)}));
   const answer=()=>{
     if(result){advance();return;}
@@ -51,7 +52,7 @@ function Quiz({ session, event }: { session: Session; event: HistoryEvent }) {
         <fieldset className="era-toggle"><legend className="sr-only">紀元</legend>{(["BCE","CE"] as const).map((value)=><label key={value} className={session.era===value?"selected":""}><input type="radio" name={eraGroup} aria-label={value==="BCE"?"紀元前":"紀元後"} checked={session.era===value} disabled={!!result} onChange={()=>{draft({era:value});inputRef.current?.focus({preventScroll:true});}}/><span>{value==="BCE"?"前":"後"}</span></label>)}</fieldset>
         <div className="joined-number"><input ref={inputRef} id="year-answer" aria-label={label} type="text" inputMode="numeric" autoComplete="off" enterKeyHint={result?"next":"done"} placeholder={"?".repeat(parts.inputDigits)} maxLength={parts.inputDigits} style={{width:`${Math.max(1,session.input?normalizeNumber(session.input).length:parts.inputDigits)}ch`}} value={session.input} readOnly={!!result} aria-invalid={!!error} aria-describedby={error?"answer-error":undefined} onChange={(e)=>{draft({input:normalizeNumber(e.target.value)});setError("");}}/>{parts.suffix&&<span className="fixed-digits" aria-label={`固定表示 ${parts.suffix}`}>{parts.suffix}</span>}</div><span className="answer-unit">{session.settings.mode==="century"?"世紀":"年"}</span>
       </div>{error&&<p className="error-text" id="answer-error" role="alert">{error}</p>}
-      <div className="answer-feedback" aria-live="polite" aria-atomic="true">{result&&<div className={`feedback ${result.correct?"correct":"incorrect"}`}><div className="feedback-top"><span className="feedback-status"><Icon name={result.correct?"check":"close"}/>{result.correct?"正解":"不正解"}</span><Favorite selected={store.history[event.id]?.favorite??false} name={event.name} onClick={()=>toggleFavorite(event.id)}/></div><div className="correct-year">{formatYear(event)}</div><div className="answer-detail"><span>あなたの解答</span><strong>{formatSubmittedAnswer(event,result.mode,result.input,result.era)}</strong></div>{session.settings.mode==="century"&&<div className="answer-detail"><span>正しい世紀</span><strong>{event.era==="BCE"?"紀元前":""}{expectedAnswer(event,"century")}世紀</strong></div>}{event.note&&<p className="event-note">{event.note}</p>}{result.correct&&<p className="auto-next-hint">自動で次へ</p>}</div>}</div><button type="submit" className="primary answer-button">{result?session.index+1===session.eventIds.length?"結果を見る":"次へ":"解答"}<Icon name="arrow" size={19}/></button><p className="keyboard-hint"><kbd>Enter</kbd> {result?"次へ進む":"解答を確定"}</p>
+      <div className="answer-feedback" aria-live="polite" aria-atomic="true">{result&&<div className={`feedback ${result.correct?"correct":"incorrect"}`}><div className="feedback-top"><span className="feedback-status"><Icon name={result.correct?"check":"close"}/>{result.correct?"正解":"不正解"}</span><Favorite selected={store.history[event.id]?.favorite??false} name={event.name} onClick={()=>toggleFavorite(event.id)}/></div><div className="correct-year">{formatYear(event)}</div><div className="answer-detail"><span>あなたの解答</span><strong>{formatSubmittedAnswer(event,result.mode,result.input,result.era)}</strong></div>{session.settings.mode==="century"&&<div className="answer-detail"><span>正しい世紀</span><strong>{event.era==="BCE"?"紀元前":""}{expectedAnswer(event,"century")}世紀</strong></div>}<EventNote event={event}/>{result.correct&&<p className="auto-next-hint">{event.note?session.index+1===session.eventIds.length?"読み終えたら「結果を見る」":"読み終えたら「次へ」":"自動で次へ"}</p>}</div>}</div><button type="submit" className="primary answer-button">{result?session.index+1===session.eventIds.length?"結果を見る":"次へ":"解答"}<Icon name="arrow" size={19}/></button><p className="keyboard-hint"><kbd>Enter</kbd> {result?"次へ進む":"解答を確定"}</p>
     </form>{ending&&<Modal title="学習を終了しますか？" onClose={()=>setEnding(false)} footer={<><button className="secondary" onClick={()=>setEnding(false)}>学習に戻る</button><button className="primary" onClick={()=>{updateStore((s)=>({...s,sessions:s.sessions.map((v)=>v.id===session.id?{...v,stage:"finished",completedAt:new Date().toISOString()}:v)}));router.replace(`/results/${session.id}`);}}>{session.answers.length?"途中結果を見る":"終了する"}</button></>}><p className="muted">解答済みの{session.answers.length}問は学習記録に保存されています。</p></Modal>}
   </div>;
 }

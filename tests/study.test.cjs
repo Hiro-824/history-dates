@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports -- These tests run directly in Node.js as CommonJS. */
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
@@ -9,7 +10,7 @@ const { decodeStore, restoreSettings } = require('../lib/storage.ts');
 const { events, validateEvents } = require('../lib/events.ts');
 const { unitGroups, units } = require('../data/units.ts');
 const { regions } = require('../data/regions.ts');
-const sample = events.find(e => e.id === 'jp-645'), bce = events.find(e => e.id === 'wh-b221');
+const sample = { ...events.find(e => e.id === 'jp-1889'), year: 645 }, bce = events.find(e => e.id === 'wh-b221');
 const settings = (extra = {}) => ({ ...structuredClone(DEFAULT_SETTINGS), ...extra });
 const attempt = (correct, mode = 'exact', at = '2026-10-30T12:00:00.000Z') => ({ eventId: sample.id, mode, correct, input: '645', era: 'CE', at });
 const baseStore = () => ({ version: 2, settings: settings(), history: {}, recent: [], presets: [], sessions: [] });
@@ -25,17 +26,18 @@ test('all 34 groups and supplied major study areas have stable unique IDs', () =
 });
 test('unit selections union, respect subject, and never duplicate related events', () => {
   const s=settings({scopeMethod:'units',unitIds:['J02-02','W07-03','W06-03']});
-  const result=filterEvents(events,s,{});
-  assert.deepEqual(new Set(result.map(e=>e.id)),new Set(['jp-645','jp-701','wh-1258']));
-  assert.equal(filterEvents([...events,...events],s,{}).length,result.length);
-  assert.deepEqual(filterEvents(events,{...s,subject:'japan'},{}).map(e=>e.id),['jp-645','jp-701']);
+  const pool=[{...sample,unitId:'J02-02'},{...sample,id:'second',unitId:'J02-02'},events.find(e=>e.id==='wh-1258')];
+  const result=filterEvents(pool,s,{});
+  assert.deepEqual(new Set(result.map(e=>e.id)),new Set([sample.id,'second','wh-1258']));
+  assert.equal(filterEvents([...pool,...pool],s,{}).length,result.length);
+  assert.deepEqual(filterEvents(pool,{...s,subject:'japan'},{}).map(e=>e.id),[sample.id,'second']);
   assert.equal(filterEvents(events,settings({scopeMethod:'units'}),{}).length,0);
   assert.ok(rangeError(settings({scopeMethod:'units'})));
 });
 test('region ranges use regional tags and dates, independently of unit membership', () => {
   const china=settings({scopeMethod:'region',regionId:'china',startPeriodId:'china-05',endPeriodId:'china-06'});
   assert.deepEqual([regionRange(china).from,regionRange(china).to],[618,1279]);
-  assert.ok(filterEvents(events,china,{}).some(e=>e.id==='wh-918')); // Actual Korean history sample.
+  assert.ok(filterEvents(events,china,{}).some(e=>e.name.includes('澶淵の盟'))); // A draft event inside the selected period.
   const synthetic={...sample,id:'synthetic-1127',subject:'world',unitId:'W14-03',regions:['china'],year:1127};
   assert.equal(filterEvents([synthetic],china,{}).length,1);
   assert.equal(filterEvents([{...synthetic,regions:['west-asia']}],china,{}).length,0);
@@ -47,7 +49,7 @@ test('region ranges use regional tags and dates, independently of unit membershi
   const muromachi=settings({scopeMethod:'region',regionId:'japan',startPeriodId:'japan-09',endPeriodId:'japan-09'});
   assert.equal(filterEvents([{...sample,year:1467,regions:['japan']}],muromachi,{}).length,1);
   assert.equal(filterEvents(events,{...china,startPeriodId:'china-06',endPeriodId:'china-05'},{}).length,0);
-  assert.equal(filterEvents(events,settings({scopeMethod:'region',regionId:'oceania',startPeriodId:'oceania-01',endPeriodId:'oceania-05'}),{}).length,0);
+  assert.ok(filterEvents(events,settings({scopeMethod:'region',regionId:'oceania',startPeriodId:'oceania-01',endPeriodId:'oceania-05'}),{}).some(e=>e.year===1770));
 });
 test('subject and region changes keep region ranges valid', () => {
   const changed=selectSubject(settings(),'world');assert.equal(changed.regionId,'china');assert.ok(regionRange(changed));
@@ -108,7 +110,7 @@ test('recent errors and favorites use shared records', () => {
 });
 test('non-random ordering and short sessions still work without duplication', () => {
   const s=settings({scopeMethod:'units',unitIds:units.map(u=>u.id),count:'all',order:'oldest'});
-  const q=makeQueue(events,s,{});assert.equal(q[0].id,bce.id);
+  const q=makeQueue(events,s,{});assert.equal(study.chronologicalYear(q[0]),-770);
   for(const count of [10,20,50,'all']){
     const queue=makeQueue([...events,...events],settings({count}),{});assert.equal(queue.length,count==='all'?events.length:Math.min(count,events.length));assert.equal(new Set(queue.map(e=>e.id)).size,queue.length);
   }
@@ -141,9 +143,54 @@ test('settings, sessions, input, era, results and presets survive JSON round tri
   assert.equal(restoreSettings({mode:'bad',subject:'bad',priorities:[0,6]}).mode,'exact');
   assert.equal(decodeStore(JSON.stringify({...baseStore(),sessions:[session({index:99})]})).sessions.length,0);
 });
-test('sample data uses valid independent unit, region, priority and date attributes', () => {
-  assert.equal(events.length,33);assert.equal(new Set(events.map(e=>e.id)).size,events.length);
-  for(const id of ['jp-645','wh-1648','wh-1492']) assert.equal(events.find(e=>e.id===id).priority,5);
+test('draft data uses valid independent unit, region, priority and date attributes', () => {
+  assert.equal(events.length,546);assert.equal(new Set(events.map(e=>e.id)).size,events.length);
+  for(const id of ['jp-1889','wh-1648','wh-1492']) assert.ok(events.find(e=>e.id===id).priority>=4);
   assert.throws(()=>validateEvents([{...sample,priority:6}]));assert.throws(()=>validateEvents([{...sample,unitId:'W04-02'}]));
   assert.equal(filterEvents([{...sample,dateType:'range'},{...bce,dateType:'approximate'}],settings(),{}).length,0);
+});
+
+
+test('every supplied draft entry retains its year, era and right-hand notes', () => {
+  const lines=fs.readFileSync(require('node:path').join(__dirname,'../draft'),'utf8').split('\n');
+  const covered=new Set();
+  for(const event of events){
+    assert.equal(event.source,'draft');
+    for(const lineNumber of event.draftLines){
+      assert.ok(!covered.has(lineNumber),`duplicate draft line ${lineNumber}`);covered.add(lineNumber);
+      const line=lines[lineNumber-1].trim();
+      let year,era='CE',note;
+      if(line==='東遊運動')year=1905;
+      else {
+        const front=line.match(/^(前|後)?(\d+)年?[　\s]+(.+)$/);
+        const after=front?null:line.match(/^(.*?)[　]+(前|後)?(\d+)年?(?:[　]+(.*))?$/);
+        const fallback=front||after?null:line.match(/^(.*?)(前|後)?(\d+)年?$/);
+        if(front){year=Number(front[2]);era=front[1]==='前'?'BCE':'CE';}
+        else {const match=after||fallback;assert.ok(match,`parse line ${lineNumber}`);year=Number(match[3]);era=match[2]==='前'?'BCE':'CE';note=match[4]?.trim();}
+      }
+      assert.equal(event.year,year,`year on draft line ${lineNumber}`);
+      assert.equal(event.era,era,`era on draft line ${lineNumber}`);
+      if(note)assert.ok(event.note?.includes(note),`note on draft line ${lineNumber}`);
+    }
+  }
+  assert.equal(covered.size,lines.filter(line=>line.trim()).length);
+  assert.equal(events.filter(e=>e.note).length,20);
+  assert.ok(!events.some(e=>e.id==='jp-645'||e.id==='wh-1517'));
+  assert.ok(events.find(e=>e.name.includes('独立宣言')&&e.year===1776).name.includes('アメリカ'));
+  assert.ok(events.find(e=>e.year===1417).name.includes('終了'));
+});
+test('draft-specific reduced digits apply to full-year answers', () => {
+  const ottoman=events.find(e=>e.answerPrecision==='hundred');
+  const independence=events.find(e=>e.answerPrecision==='decade');
+  assert.deepEqual(answerParts(ottoman,'exact'),{prefix:'13',suffix:'00',inputDigits:2});
+  assert.equal(checkAnswer(ottoman,'exact','13','CE'),true);
+  assert.equal(checkAnswer(ottoman,'decade','13','CE'),true);
+  assert.equal(checkAnswer(ottoman,'hundred','13','CE'),true);
+  assert.equal(checkAnswer(ottoman,'exact','1300','CE'),false);
+  assert.equal(checkAnswer(independence,'exact','182','CE'),true);
+  assert.equal(checkAnswer(independence,'hundred','18','CE'),true);
+  assert.equal(checkAnswer(independence,'century','19','CE'),true);
+  assert.equal(study.formatSubmittedAnswer(independence,'exact','182','CE'),'1820年');
+  assert.throws(()=>validateEvents([{...sample,note:42}]));
+  assert.throws(()=>validateEvents([{...sample,answerPrecision:'invalid'}]));
 });

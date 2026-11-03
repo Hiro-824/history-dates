@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports -- These tests run directly in Node.js as CommonJS. */
 // Local headless Chrome only. No browser connector or extra npm package.
 const assert=require('node:assert/strict');
 const fs=require('node:fs/promises');
@@ -7,6 +8,8 @@ const {spawn}=require('node:child_process');
 const base=process.env.HISTORY_BASE_URL||'http://127.0.0.1:3105';
 const chromeBin=process.env.CHROME_BIN||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const delay=ms=>new Promise(r=>setTimeout(r,ms));
+const events=require('../data/events.json');
+const byLine=line=>events.find(e=>e.draftLines.includes(line));
 (async()=>{
  // Verify every route on the server under test, including a long-running dev server.
  for(const route of ['/','/library','/records','/settings']){
@@ -25,7 +28,7 @@ const delay=ms=>new Promise(r=>setTimeout(r,ms));
   socket=new WebSocket(tabs.find(t=>t.type==='page').webSocketDebuggerUrl);
   await new Promise((r,j)=>{socket.addEventListener('open',r,{once:true});socket.addEventListener('error',j,{once:true});});
   let seq=0;const pending=new Map();
-  socket.addEventListener('message',e=>{const m=JSON.parse(e.data);if(m.id){const p=pending.get(m.id);pending.delete(m.id);if(p)m.error?p.reject(new Error(JSON.stringify(m.error))):p.resolve(m.result);}});
+  socket.addEventListener('message',e=>{const m=JSON.parse(e.data);if(m.id){const p=pending.get(m.id);pending.delete(m.id);if(p){if(m.error)p.reject(new Error(JSON.stringify(m.error)));else p.resolve(m.result);}}});
   const call=(method,params={})=>new Promise((resolve,reject)=>{const id=++seq;pending.set(id,{resolve,reject});socket.send(JSON.stringify({id,method,params}));});
   const evaluate=async expression=>{const r=await call('Runtime.evaluate',{expression:`(()=>{const visibleAll=s=>[...window.document.querySelectorAll(s)].filter(e=>e.getClientRects().length>0);const visible=s=>visibleAll(s)[0]||null;return (${expression.replaceAll('document.querySelectorAll(', 'visibleAll(').replaceAll('document.querySelector(', 'visible(')});})()`,returnByValue:true,awaitPromise:true});if(r.exceptionDetails)throw new Error(r.exceptionDetails.text+' '+(r.exceptionDetails.exception?.description||''));return r.result.value;};
   const until=async(expression,label,timeout=8000)=>{const end=Date.now()+timeout;while(Date.now()<end){if(await evaluate(expression))return;await delay(70);}throw new Error('Timeout: '+label+'\n'+await evaluate('document.body.innerText'));};
@@ -51,7 +54,6 @@ const delay=ms=>new Promise(r=>setTimeout(r,ms));
   await until(`location.pathname==='/'&&location.hash==='#settings'&&!!document.querySelector('.settings-modal[open] .modal-footer button:not(:disabled)')`,'legacy URL opens home modal');
   const modalGeometry=await evaluate(`(()=>{const dialog=document.querySelector('.settings-modal'),body=dialog.querySelector('.modal-body'),footer=dialog.querySelector('.modal-footer').getBoundingClientRect();return {width:document.documentElement.scrollWidth,viewport:innerWidth,footerBottom:footer.bottom,height:innerHeight,scrollable:body.scrollHeight>body.clientHeight,locked:document.body.style.overflow==='hidden'}})()`);
   assert.equal(modalGeometry.width,modalGeometry.viewport);assert.ok(modalGeometry.footerBottom<=modalGeometry.height);assert.equal(modalGeometry.scrollable,true);assert.equal(modalGeometry.locked,true);
-  if(process.env.HISTORY_SCREENSHOT!=='0'){const shot=await call('Page.captureScreenshot',{format:'png',captureBeyondViewport:false});await fs.writeFile('/private/tmp/oboeyo-scope-modal.png',Buffer.from(shot.data,'base64'));}
   await click('.settings-modal .modal-header button');
   await until(`location.pathname==='/'&&!location.hash&&!document.querySelector('dialog[open]')&&document.body.style.overflow!=='hidden'`,'close direct modal without leaving home');
   await evaluate(`document.querySelector('.card-heading button').focus()`);
@@ -69,10 +71,10 @@ const delay=ms=>new Promise(r=>setTimeout(r,ms));
   assert.ok(await evaluate(`document.title.includes('覚えよ')&&!document.body.innerText.includes('このブラウザに自動保存')`));
   await labelClick('単元から選択');
   await until(`document.querySelectorAll('[data-group-id^="W"]').length===21&&document.querySelectorAll('[data-group-id^="J"]').length===13`,'34 unit groups');
-  await click('[data-group-id="J02"] summary');
-  await click('[data-group-id="J02"] .unit-children label:nth-child(1) input');
-  await click('[data-group-id="J02"] .unit-children label:nth-child(2) input');
-  await until(`document.querySelector('[data-group-id="J02"] summary input').indeterminate`,'partial selection');
+  await click('[data-group-id="J10"] summary');
+  await click('[data-group-id="J10"] .unit-children label:nth-child(3) input');
+  await click('[data-group-id="J10"] .unit-children label:nth-child(2) input');
+  await until(`document.querySelector('[data-group-id="J10"] summary input').indeterminate`,'partial selection');
   assert.equal(await evaluate(`document.querySelector('.settings-modal .modal-footer .target-count strong').textContent`),'3');
   await labelClick('地域×時代から選択');
   await select('.region-selector>label select','china');
@@ -80,7 +82,7 @@ const delay=ms=>new Promise(r=>setTimeout(r,ms));
   await select('.region-selector .two-fields label:nth-child(1) select','china-05');
   await select('.region-selector .two-fields label:nth-child(2) select','china-06');
   await until(`document.querySelector('.range-caption').textContent==='618年〜1,279年'`,'regional dates');
-  assert.equal(await evaluate(`document.querySelector('.settings-modal .modal-footer .target-count strong').textContent`),'1');
+  assert.equal(Number(await evaluate(`document.querySelector('.settings-modal .modal-footer .target-count strong').textContent`)),events.filter(e=>e.subject==='world'&&e.regions.includes('china')&&e.era==='CE'&&e.year>=618&&e.year<=1279).length);
   await textClick('★5のみ');
   await until(`document.querySelector('.settings-modal .modal-footer button').disabled`,'star empty selection');
   await textClick('すべて');
@@ -93,6 +95,10 @@ const delay=ms=>new Promise(r=>setTimeout(r,ms));
   await click('.settings-modal .modal-footer button');
   await until(`location.pathname.startsWith('/study/')&&!!document.querySelector('#year-answer')&&!document.querySelector('dialog[open]')&&document.body.style.overflow!=='hidden'`,'study route closes modal');
   const studyPath=await evaluate('location.pathname');
+  // Keep this navigation/persistence scenario to two actual draft questions.
+  await evaluate(`(()=>{const s=JSON.parse(localStorage.getItem('history-dates:v2'));s.sessions.at(-1).eventIds=s.sessions.at(-1).eventIds.slice(0,2);localStorage.setItem('history-dates:v2',JSON.stringify(s));})()`);
+  await call('Page.reload');
+  await until(`!!document.querySelector('#year-answer')`,'two-question session');
   assert.equal(await evaluate(`document.querySelector('.fixed-digits').textContent`),'48');
   await type('#year-answer','16');await click('.era-toggle label:first-of-type');
   await call('Page.reload');
@@ -124,14 +130,14 @@ const delay=ms=>new Promise(r=>setTimeout(r,ms));
   await until(`location.pathname==='/'&&!!document.querySelector('.mode-grid')`,'home');
   await click('.mode-grid .mode-option:nth-child(4)');
   await click('.review-panel button');
-  await until(`document.querySelector('.question-title')?.textContent==='ルターの九十五か条の論題'&&document.querySelector('#year-answer')?.getAttribute('aria-label')==='世紀を答える'`,'shared review in century mode');
-  await type('#year-answer','16');await click('.answer-button');
+  await until(`document.querySelector('.question-title')?.textContent.includes('三十年戦争勃発')&&document.querySelector('#year-answer')?.getAttribute('aria-label')==='世紀を答える'`,'shared review in century mode');
+  await type('#year-answer','17');await click('.answer-button');
   await until(`location.pathname.startsWith('/results/')`,'final correct auto results',4000);
-  const shared=await evaluate(`JSON.parse(localStorage.getItem('history-dates:v2')).history['wh-1517']`);
+  const shared=await evaluate(`JSON.parse(localStorage.getItem('history-dates:v2')).history[${JSON.stringify(byLine(202).id)}]`);
   assert.equal(shared.attempts,2);assert.equal(shared.correct,1);assert.equal(shared.incorrect,1);assert.equal(shared.modes,undefined);
   await navigate('/settings');await until(`!!document.querySelector('.settings-modal .modal-footer button:not(:disabled)')`,'settings repeat');
   await click('.settings-modal .modal-footer button');
-  await until(`document.querySelector('.question-title')?.textContent==='ウェストファリア条約'`,'new study');
+  await until(`document.querySelector('.question-title')?.textContent.includes('ウェストファリア条約')`,'new study');
   await type('#year-answer','17');await click('.answer-button');
   await until(`document.querySelector('.feedback-status')?.textContent==='正解'`,'timer started');
   const cancelId=await evaluate(`location.pathname.split('/').at(-1)`);
@@ -139,8 +145,44 @@ const delay=ms=>new Promise(r=>setTimeout(r,ms));
   await delay(1300);
   assert.equal(await evaluate('location.pathname'),'/');
   assert.equal(await evaluate(`JSON.parse(localStorage.getItem('history-dates:v2')).sessions.find(s=>s.id===${JSON.stringify(cancelId)}).index`),0);
-  console.log('Headless smoke passed: all route HTTP/SSR and client navigation, home modal, close/Escape/back/forward/reload, scope filters, answer persistence, shared review, result navigation, timer cleanup.');
-  console.log('One screenshot: /private/tmp/oboeyo-scope-modal.png');
+  // New draft content: notes appear only after answering and remain readable.
+  const seedStudy=async(eventIds,id)=>{
+   await evaluate(`(()=>{const s=JSON.parse(localStorage.getItem('history-dates:v2'));s.sessions.push({id:${JSON.stringify(id)},eventIds:${JSON.stringify(eventIds)},settings:{...s.settings,mode:'exact'},index:0,answers:[],input:'',era:'CE',stage:'active',createdAt:new Date().toISOString(),completedAt:null});localStorage.setItem('history-dates:v2',JSON.stringify(s));})()`);
+   await navigate('/study/'+id);await until(`!!document.querySelector('#year-answer')`,'seeded question');
+  };
+  const noted=byLine(78),plain=byLine(223);
+  await seedStudy([noted.id,plain.id],'draft-notes-test');
+  assert.equal(await evaluate(`!!document.querySelector('.event-note')`),false);
+  await type('#year-answer','751');await click('.answer-button');
+  await until(`!!document.querySelector('.event-note')`,'note revealed');
+  assert.equal(await evaluate(`document.querySelector('.event-note p').textContent`),noted.note);
+  assert.equal(await evaluate(`document.querySelector('.event-note h4').textContent`),'語呂合わせ・備考');
+  await delay(1300);
+  assert.equal(await evaluate(`document.querySelector('.progress-text').textContent.replaceAll(' ','')`),'1/2');
+  assert.equal(await evaluate(`document.documentElement.scrollWidth<=innerWidth`),true);
+  if(process.env.HISTORY_SCREENSHOT!=='0'){const shot=await call('Page.captureScreenshot',{format:'png',captureBeyondViewport:true});await fs.writeFile('/private/tmp/oboeyo-draft-notes.png',Buffer.from(shot.data,'base64'));}
+  await click('.answer-button');await until(`document.querySelector('.question-title')?.textContent.includes('アメリカ独立宣言')`,'next draft question');
+  assert.equal(await evaluate(`!!document.querySelector('.event-note')`),false);
+  await type('#year-answer','1776');await click('.answer-button');await until(`location.pathname.startsWith('/results/')`,'plain correct auto advance',4000);
+  await seedStudy([byLine(24).id],'draft-wrong-note');
+  await type('#year-answer','900');await click('.answer-button');
+  await until(`document.querySelector('.feedback-status')?.textContent==='不正解'&&!!document.querySelector('.event-note')`,'note on incorrect answer');
+  await navigate('/library');
+  await type('input[aria-label="出来事名・年号で検索"]','カロリング');
+  await until(`document.querySelectorAll('.event-row').length===1`,'draft library search');
+  await click('.event-name-button');await until(`!!document.querySelector('dialog .event-note')`,'detail note');
+  assert.equal(await evaluate(`document.querySelector('dialog .event-note p').textContent`),noted.note);
+  assert.equal(await evaluate(`!!document.querySelector('dialog .source-link')`),false);
+  await click('dialog .modal-header button');
+  for(const [line,prefix,suffix] of [[175,'13','00'],[232,'182','0']]){
+   await seedStudy([byLine(line).id],'draft-precision-'+line);
+   assert.equal(await evaluate(`document.querySelector('.answer-label').textContent`),`上${prefix.length}桁を答える`);
+   assert.equal(await evaluate(`document.querySelector('.fixed-digits').textContent`),suffix);
+   await type('#year-answer',prefix);await click('.answer-button');
+   await until(`document.querySelector('.feedback-status')?.textContent==='正解'`,'draft reduced-digit answer');
+   await until(`location.pathname.startsWith('/results/')`,'reduced-digit completion',4000);
+  }
+  console.log('Headless smoke passed: routes, settings, filters, persistence, review, timers; draft notes hidden before answers, displayed after correct/incorrect answers and in details, manual next for notes, mobile overflow, and draft-specific digit answers.');
   await call('Browser.close');
  }finally{socket?.close();chrome.kill();await delay(200);await fs.rm(profile,{recursive:true,force:true,maxRetries:3,retryDelay:100});}
 })().catch(e=>{console.error(e);process.exitCode=1;});

@@ -20,14 +20,15 @@ export const DEFAULT_SETTINGS: Settings = {
 export function chronologicalYear(event: Pick<HistoryEvent, "year" | "era">) { return event.era === "BCE" ? -event.year : event.year; }
 export function formatYear(event: Pick<HistoryEvent, "year" | "era">) { return `${event.era === "BCE" ? "紀元前" : ""}${event.year}年`; }
 export function formatSignedYear(year: number) { if (year === -3000000) return "先史"; if (year === 9999) return "現在"; return `${year < 0 ? "紀元前" : ""}${Math.abs(year).toLocaleString("ja-JP")}年`; }
-export function answerParts(event: Pick<HistoryEvent, "year">, mode: Mode) {
+export function answerParts(event: Pick<HistoryEvent, "year" | "answerPrecision">, mode: Mode) {
   const digits = String(event.year);
+  const fixedDigits = mode === "hundred" || event.answerPrecision === "hundred" ? 2 : mode === "decade" || event.answerPrecision === "decade" ? 1 : 0;
   // Short years retain at least one digit to answer rather than showing the whole answer.
-  const fixedCount = Math.min(mode === "decade" ? 1 : mode === "hundred" ? 2 : 0, digits.length - 1);
+  const fixedCount = Math.min(mode === "century" ? 0 : fixedDigits, digits.length - 1);
   const prefix = mode === "century" ? String(Math.ceil(event.year / 100)) : digits.slice(0, digits.length - fixedCount);
   return { suffix: fixedCount ? digits.slice(-fixedCount) : "", prefix, inputDigits: prefix.length };
 }
-export function expectedAnswer(event: Pick<HistoryEvent, "year">, mode: Mode) { return Number(answerParts(event, mode).prefix); }
+export function expectedAnswer(event: Pick<HistoryEvent, "year" | "answerPrecision">, mode: Mode) { return Number(answerParts(event, mode).prefix); }
 export function normalizeNumber(input: string) { return input.trim().replace(/[０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0)); }
 export function validAnswer(input: string) { return /^\d{1,6}$/.test(normalizeNumber(input)) && Number(normalizeNumber(input)) > 0; }
 export function checkAnswer(event: HistoryEvent, mode: Mode, input: string, era: Era) {

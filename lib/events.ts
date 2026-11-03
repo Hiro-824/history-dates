@@ -14,6 +14,8 @@ export function validateEvents(items: unknown[]): HistoryEvent[] {
       || unitById.get(e.unitId)?.subject !== e.subject
       || [e.id, e.name, e.period, e.source].some((v) => typeof v !== "string" || !v.trim())
       || !Array.isArray(e.regions) || !e.regions.length || e.regions.some((r) => regionById.get(r)?.subject !== e.subject)
+      || (e.note !== undefined && (typeof e.note !== "string" || !e.note.trim()))
+      || (e.answerPrecision !== undefined && !["decade", "hundred"].includes(e.answerPrecision))
       || (e.relatedUnitIds && e.relatedUnitIds.some((id) => unitById.get(id)?.subject !== e.subject))) {
       throw new Error(`問題データの属性、ID、単元、地域または年号が不正です: ${e?.id}`);
     }
