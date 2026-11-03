@@ -152,7 +152,7 @@ test('draft data uses valid independent unit, region, priority and date attribut
 
 
 test('every supplied draft entry retains its year, era and right-hand notes', () => {
-  const lines=fs.readFileSync(require('node:path').join(__dirname,'../draft'),'utf8').split('\n');
+  const lines=fs.readFileSync(require('node:path').join(__dirname,'../data/sources/events-draft.txt'),'utf8').split('\n');
   const covered=new Set();
   for(const event of events){
     assert.equal(event.source,'draft');
