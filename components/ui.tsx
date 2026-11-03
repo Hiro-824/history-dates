@@ -11,7 +11,6 @@ const paths = {
   check: <path d="m5 12 4 4L19 6"/>,
   close: <path d="m6 6 12 12M6 18 18 6"/>,
   repeat: <><path d="m16 3 4 4-4 4M20 7H8a4 4 0 0 0-4 4m4 10-4-4 4-4m-4 4h12a4 4 0 0 0 4-4"/></>,
-  star: <path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9z"/>,
   search: <><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4"/></>,
 };
 export function Icon({ name, size = 20 }: { name: keyof typeof paths; size?: number }) {
@@ -40,9 +39,6 @@ export function Modal({ title, children, onClose, footer, className = "" }: { ti
       {footer && <footer className="modal-footer">{footer}</footer>}
     </div>
   </dialog>;
-}
-export function Favorite({ selected, onClick, name }: { selected: boolean; onClick: () => void; name: string }) {
-  return <button type="button" className={`icon-button favorite ${selected ? "is-favorite" : ""}`} aria-label={`${name}をお気に入り${selected ? "から解除" : "に登録"}`} aria-pressed={selected} onClick={onClick}><Icon name="star" /></button>;
 }
 export function Percent({ correct, total }: { correct: number; total: number }) {
   return <>{total ? `${Math.round(correct / total * 100)}%` : "—"}</>;

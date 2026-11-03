@@ -6,7 +6,7 @@ import { regionById, regionsForSubject } from "../data/regions";
 import { unitById } from "../data/units";
 import { events } from "./events";
 import { DEFAULT_SETTINGS, filterEvents, makeQueue, MODES, ORDERS, selectRegion, selectSubject, STATUSES, weakness } from "./study";
-import type { Attempt, EventHistory, History, Mode, Score, Session, Settings, Store } from "./types";
+import type { Attempt, History, Mode, Score, Session, Settings, Store } from "./types";
 
 export const STORAGE_KEY = "history-dates:v2";
 export const LEGACY_STORAGE_KEY = "history-dates:v1";
@@ -66,7 +66,7 @@ function restoreHistory(value: Record<string, unknown>): History {
     if (!isScore(h) || !object(h)) continue;
     const recent = h.recent.slice(-10);
     const score = { attempts: h.attempts, correct: h.correct, incorrect: h.incorrect, streak: h.streak, lastAt: h.lastAt, recent };
-    result[id] = { ...score, favorite: h.favorite === true, lastCorrect: recent.at(-1)?.correct ?? (typeof h.lastCorrect === "boolean" ? h.lastCorrect : null), review: weakness(score) > 0 };
+    result[id] = { ...score, lastCorrect: recent.at(-1)?.correct ?? (typeof h.lastCorrect === "boolean" ? h.lastCorrect : null), review: weakness(score) > 0 };
   }
   return result;
 }
@@ -127,12 +127,6 @@ export function startStudy(settings: Settings, restrictedIds?: string[], preserv
   const session: Session = { id: crypto.randomUUID(), eventIds: queue.map((e) => e.id), settings: structuredClone(settings), index: 0, answers: [], input: "", era: "CE", stage: "active", createdAt: new Date().toISOString(), completedAt: null, ...(restrictedIds ? { restrictedIds } : {}) };
   updateStore((s) => ({ ...s, settings: preserveSettings ? s.settings : settings, sessions: [...s.sessions, session].slice(-20) }));
   return session;
-}
-export function toggleFavorite(id: string) {
-  updateStore((s) => {
-    const h: EventHistory = s.history[id] ?? { attempts: 0, correct: 0, incorrect: 0, streak: 0, lastAt: null, recent: [], favorite: false, lastCorrect: null, review: false };
-    return { ...s, history: { ...s.history, [id]: { ...h, favorite: !h.favorite } } };
-  });
 }
 const subscribeReady = () => () => {};
 export function useStudyStore() {

@@ -83,7 +83,7 @@ const byLine=line=>events.find(e=>e.draftLines.includes(line));
   await select('.region-selector .two-fields label:nth-child(2) select','china-06');
   await until(`document.querySelector('.range-caption').textContent==='618年〜1,279年'`,'regional dates');
   assert.equal(Number(await evaluate(`document.querySelector('.settings-modal .modal-footer .target-count strong').textContent`)),events.filter(e=>e.subject==='world'&&e.regions.includes('china')&&e.era==='CE'&&e.year>=618&&e.year<=1279).length);
-  await textClick('★5のみ');
+  await textClick('★★★★★のみ');
   await until(`document.querySelector('.settings-modal .modal-footer button').disabled`,'star empty selection');
   await textClick('すべて');
   await labelClick('単元から選択');await textClick('選択を解除');

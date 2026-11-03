@@ -28,7 +28,7 @@ export interface Unit { id: string; name: string }
 export interface UnitGroup { id: string; name: string; subject: Subject; units: Unit[] }
 export interface RegionPeriod { id: string; name: string; start: number; end: number; order: number }
 export interface StudyRegion { id: string; name: string; subject: Subject; periods: RegionPeriod[] }
-export type StudyStatus = "new" | "wrong" | "recent" | "weak" | "favorite" | "review";
+export type StudyStatus = "new" | "wrong" | "recent" | "weak" | "review";
 export type Order = "random" | "oldest" | "newest" | "weak" | "unseen";
 export interface Settings {
   subject: Subject | "both";
@@ -61,7 +61,6 @@ export interface Score {
   recent: Attempt[];
 }
 export interface EventHistory extends Score {
-  favorite: boolean;
   lastCorrect: boolean | null;
   review: boolean;
 }

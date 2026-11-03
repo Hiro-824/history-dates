@@ -102,11 +102,10 @@ test('learning history, review and error filters are shared across every mode', 
   h=recordAttempt(h,attempt(true,'hundred'));assert.equal(h.review,false);assert.equal(h.streak,2);
   assert.equal(h.attempts,3);assert.equal(h.correct,2);assert.equal(h.incorrect,1);assert.equal(h.lastCorrect,true);assert.equal(h.modes,undefined);assert.equal(weakness(h),0);
 });
-test('recent errors and favorites use shared records', () => {
-  const h=recordAttempt(undefined,attempt(false));h.favorite=true;
+test('recent errors use shared records', () => {
+  const h=recordAttempt(undefined,attempt(false));
   assert.equal(filterEvents([sample],settings({mode:'century',statuses:['recent']}),{[sample.id]:h},Date.parse('2026-10-31')).length,1);
   assert.equal(filterEvents([sample],settings({statuses:['recent']}),{[sample.id]:h},Date.parse('2026-11-10')).length,0);
-  assert.equal(filterEvents([sample],settings({statuses:['favorite']}),{[sample.id]:h}).length,1);
 });
 test('non-random ordering and short sessions still work without duplication', () => {
   const s=settings({scopeMethod:'units',unitIds:units.map(u=>u.id),count:'all',order:'oldest'});
@@ -129,16 +128,18 @@ test('persisted sessions make submission and manual/timed advancing idempotent',
   store=advanceSession(store,'test-session',1);assert.equal(store.sessions[0].stage,'finished');
   assert.equal(advanceSession(store,'test-session',1),store);
 });
-test('old aggregate histories migrate without double-counting modes or losing favorites', () => {
+test('old aggregate histories migrate without double-counting and discard removed favorite flags', () => {
   const old={...recordAttempt(undefined,attempt(false)),favorite:true,modes:{exact:{attempts:1,correct:0,incorrect:1,streak:0,lastAt:attempt(false).at,recent:[attempt(false)]}}};
   const migrated=decodeStore(JSON.stringify({version:1,settings:{subject:'japan',mode:'century',units:['律令国家の形成'],count:20},history:{[sample.id]:old},recent:[attempt(false)],presets:[{id:'p',name:'古代',settings:{units:['律令国家の形成']}}]}));
-  assert.equal(migrated.version,2);assert.equal(migrated.history[sample.id].attempts,1);assert.equal(migrated.history[sample.id].favorite,true);assert.equal(migrated.history[sample.id].review,true);assert.equal(migrated.history[sample.id].modes,undefined);
+  assert.equal(migrated.version,2);assert.equal(migrated.history[sample.id].attempts,1);assert.equal(migrated.history[sample.id].favorite,undefined);assert.equal(migrated.history[sample.id].review,true);assert.equal(migrated.history[sample.id].modes,undefined);
   assert.equal(migrated.settings.mode,'century');assert.equal(migrated.settings.count,20);assert.equal(migrated.settings.scopeMethod,'units');assert.ok(migrated.settings.unitIds.includes('J02-02'));assert.ok(migrated.presets[0].settings.unitIds.length);
 });
 test('settings, sessions, input, era, results and presets survive JSON round trips', () => {
   const s=settings({scopeMethod:'units',unitIds:['J02-02'],priorities:[3,5]});
   const store={...baseStore(),settings:s,history:{[sample.id]:recordAttempt(undefined,attempt(false))},sessions:[session({input:'64',era:'BCE'})],presets:[{id:'p',name:'任意',settings:s}]};
   assert.deepEqual(decodeStore(JSON.stringify(store)),store);
+  assert.deepEqual(restoreSettings({statuses:['favorite','review']}).statuses,['review']);
+  assert.deepEqual(restoreSettings({statuses:['favorite']}).statuses,[]);
   assert.throws(()=>decodeStore('{bad'));assert.throws(()=>decodeStore('{"version":99}'));
   assert.equal(restoreSettings({mode:'bad',subject:'bad',priorities:[0,6]}).mode,'exact');
   assert.equal(decodeStore(JSON.stringify({...baseStore(),sessions:[session({index:99})]})).sessions.length,0);

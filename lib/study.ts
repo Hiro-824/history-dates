@@ -12,7 +12,7 @@ export const MODES: Record<Mode, { label: string; detail: string }> = {
 };
 export const modeName = (mode: Mode) => `${MODES[mode].label}${mode === "decade" || mode === "hundred" ? `（${MODES[mode].detail}）` : ""}`;
 export const ORDERS = { random: "ランダム", oldest: "古い年代から", newest: "新しい年代から", weak: "苦手な問題を優先", unseen: "未学習を優先" };
-export const STATUSES = { new: "未学習", wrong: "過去に間違えた問題", recent: "最近間違えた問題", weak: "苦手な問題", favorite: "お気に入り", review: "復習対象" };
+export const STATUSES = { new: "未学習", wrong: "過去に間違えた問題", recent: "最近間違えた問題", weak: "苦手な問題", review: "復習対象" };
 export const DEFAULT_SETTINGS: Settings = {
   subject: "both", scopeMethod: "random", unitIds: [], regionId: "japan", startPeriodId: "japan-01", endPeriodId: "japan-20",
   priorities: [], mode: "exact", balanced: false, count: 10, order: "random", statuses: [],
@@ -40,7 +40,7 @@ export function formatSubmittedAnswer(event: HistoryEvent, mode: Mode, input: st
   return `${prefix}${Number(`${normalizeNumber(input)}${answerParts(event, mode).suffix}`)}年`;
 }
 export function emptyScore(): Score { return { attempts: 0, correct: 0, incorrect: 0, streak: 0, lastAt: null, recent: [] }; }
-export function emptyHistory(): EventHistory { return { ...emptyScore(), favorite: false, lastCorrect: null, review: false }; }
+export function emptyHistory(): EventHistory { return { ...emptyScore(), lastCorrect: null, review: false }; }
 export function weakness(score?: Score) {
   if (!score?.attempts) return 0;
   return Math.max(0, score.recent.filter((a) => !a.correct).length * 2 - score.streak);
@@ -91,7 +91,6 @@ export function filterEvents(events: HistoryEvent[], settings: Settings, history
         case "wrong": return (score?.incorrect ?? 0) > 0;
         case "recent": return score?.recent.some((a) => !a.correct && (now ?? Date.now()) - Date.parse(a.at) < 7 * 86400000) ?? false;
         case "weak": return weakness(score) > 0;
-        case "favorite": return score?.favorite ?? false;
         case "review": return score?.review ?? false;
       }
     });

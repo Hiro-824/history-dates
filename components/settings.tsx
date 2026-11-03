@@ -5,21 +5,33 @@ import { priorities, priorityStars } from "@/data/priorities";
 import { regionsForSubject } from "@/data/regions";
 import { unitById, unitGroups } from "@/data/units";
 import { events } from "@/lib/events";
-import { DEFAULT_SETTINGS, filterEvents, formatSignedYear, MODES, ORDERS, rangeError, regionRange, SCOPE_METHODS, selectRegion, selectSubject, STATUSES, SUBJECTS } from "@/lib/study";
+import { answerParts, DEFAULT_SETTINGS, filterEvents, formatSignedYear, MODES, ORDERS, rangeError, regionRange, SCOPE_METHODS, selectRegion, selectSubject, STATUSES, SUBJECTS } from "@/lib/study";
 import { updateStore, useStudyStore } from "@/lib/storage";
-import type { Priority, Settings, StudyStatus } from "@/lib/types";
+import type { Mode, Priority, Settings, StudyStatus } from "@/lib/types";
 import { Icon, Modal } from "./ui";
 
 export function SubjectControl({ settings, onChange }: { settings: Settings; onChange: (value: Settings) => void }) {
   const group = useId();
   return <fieldset className="field"><legend>科目</legend><div className="segments">{(["japan", "world", "both"] as const).map((value) => <label key={value} className={settings.subject === value ? "selected" : ""}><input type="radio" name={group} checked={settings.subject === value} onChange={() => onChange(selectSubject(settings, value))}/>{value === "both" ? "両方" : SUBJECTS[value]}</label>)}</div></fieldset>;
 }
+const modeLabels: Record<Mode, string> = { exact: "年号すべて", decade: "下一桁ヒント", hundred: "下二桁ヒント", century: "世紀" };
+
 export function ModeControl({ settings, onChange }: { settings: Settings; onChange: (value: Settings) => void }) {
   const group = useId();
-  return <fieldset className="field"><legend>解答方式</legend><div className="mode-grid">{Object.entries(MODES).map(([value, mode]) => <label key={value} className={`mode-option ${settings.mode === value ? "selected" : ""}`}><input type="radio" name={group} checked={settings.mode === value} onChange={() => onChange({ ...settings, mode: value as Settings["mode"] })}/><span><strong>{mode.label}</strong><small>{mode.detail}</small></span><span className="radio-mark" aria-hidden="true"/></label>)}</div></fieldset>;
+  return <fieldset className="field mode-field"><legend>解答方式</legend><div className="mode-grid">{(Object.keys(MODES) as Mode[]).map((value) => {
+    const parts = answerParts({ year: 1648 }, value);
+    const unit = value === "century" ? "世紀" : "年";
+    return <label key={value} className={`mode-option ${settings.mode === value ? "selected" : ""}`}>
+      <input type="radio" name={group} aria-label={`${modeLabels[value]}。1648年なら${parts.prefix}を入力`} checked={settings.mode === value} onChange={() => onChange({ ...settings, mode: value })}/>
+      <span className="mode-copy"><strong>{modeLabels[value]}</strong><span className="mode-example" aria-hidden="true"><span className="mode-example-input">{"□".repeat(parts.inputDigits)}</span>{parts.suffix}<span className="mode-example-unit">{unit}</span></span><small><b>{parts.prefix}</b> を入力</small></span><span className="radio-mark" aria-hidden="true"/>
+    </label>;
+  })}</div></fieldset>;
+}
+export function CountControl({ settings, onChange }: { settings: Settings; onChange: (value: Settings) => void }) {
+  return <label className="field count-field"><span>出題数</span><select value={settings.count} onChange={(e) => onChange({ ...settings, count: e.target.value === "all" ? "all" : Number(e.target.value) as Settings["count"] })}>{[10, 20, 50, "all"].map((value) => <option key={value} value={value}>{value === "all" ? "全問" : `${value}問`}</option>)}</select></label>;
 }
 export function OrderCount({ settings, onChange }: { settings: Settings; onChange: (value: Settings) => void }) {
-  return <div className="two-fields">{settings.scopeMethod !== "random" && <label className="field"><span>出題順</span><select value={settings.order} onChange={(e) => onChange({ ...settings, order: e.target.value as Settings["order"] })}>{Object.entries(ORDERS).map(([value, label]) => <option key={value} value={value}>{label}</option>)}</select></label>}<label className="field"><span>出題数</span><select value={settings.count} onChange={(e) => onChange({ ...settings, count: e.target.value === "all" ? "all" : Number(e.target.value) as Settings["count"] })}>{[10, 20, 50, "all"].map((value) => <option key={value} value={value}>{value === "all" ? "全問" : `${value}問`}</option>)}</select></label></div>;
+  return <div className="two-fields">{settings.scopeMethod !== "random" && <label className="field"><span>出題順</span><select value={settings.order} onChange={(e) => onChange({ ...settings, order: e.target.value as Settings["order"] })}>{Object.entries(ORDERS).map(([value, label]) => <option key={value} value={value}>{label}</option>)}</select></label>}<CountControl settings={settings} onChange={onChange}/></div>;
 }
 export function scopeSummary(settings: Settings) {
   if (settings.scopeMethod === "units") return `単元から選択 · ${settings.unitIds.filter((id) => settings.subject === "both" || unitById.get(id)?.subject === settings.subject).length}単元`;
@@ -54,9 +66,16 @@ function RegionRange({ settings, change }: { settings: Settings; change: (s: Set
   const range = regionRange(settings);
   return <div className="region-selector"><label className="field"><span>地域</span><select value={region.id} onChange={(e) => change(selectRegion(settings, e.target.value))}>{options.map((r) => <option key={r.id} value={r.id}>{r.name}</option>)}</select></label><div className="two-fields"><label className="field"><span>開始時代</span><select value={start.id} onChange={(e) => { const next = region.periods.find((p) => p.id === e.target.value)!; change({ ...settings, startPeriodId: next.id, endPeriodId: next.order > end.order ? next.id : end.id }); }}>{region.periods.map((p) => <option key={p.id} value={p.id}>{p.name}</option>)}</select></label><label className="field"><span>終了時代</span><select value={end.id} onChange={(e) => change({ ...settings, endPeriodId: e.target.value })}>{region.periods.filter((p) => p.order >= start.order).map((p) => <option key={p.id} value={p.id}>{p.name}</option>)}</select></label></div>{range && <p className="range-caption">{formatSignedYear(range.from)}〜{formatSignedYear(range.to)}</p>}</div>;
 }
-export function PriorityFilter({ settings, change, compact = false }: { settings: Settings; change: (s: Settings) => void; compact?: boolean }) {
+export function PriorityFilter({ settings, change }: { settings: Settings; change: (s: Settings) => void }) {
   const equal = (values: number[]) => settings.priorities.length === values.length && values.every((p) => settings.priorities.includes(p as Priority));
-  return <fieldset className={`field priority-field${compact ? " priority-compact" : ""}`}><legend>優先度</legend><p className="help">星が多いほど優先度が高い · 複数選択可</p><div className="chips priority-shortcuts">{[{label:"すべて",values:[]},{label:"★5のみ",values:[5]},{label:"★4以上",values:[4,5]},{label:"★3以上",values:[3,4,5]}].map(({label,values}) => <button type="button" key={label} aria-pressed={equal(values)} className={equal(values)?"selected":""} onClick={() => change({ ...settings, priorities: values as Priority[] })}>{label}</button>)}</div><div className="priority-options" aria-label="任意の星を複数選択">{priorities.map((p) => <label key={p.value} title={p.label}><input type="checkbox" aria-label={`星${p.value}（${p.label}）`} checked={settings.priorities.includes(p.value)} onChange={(e) => change({ ...settings, priorities: e.target.checked ? [...settings.priorities,p.value] : settings.priorities.filter((v) => v !== p.value) })}/><span className="priority-stars" aria-hidden="true">{compact ? `★${p.value}` : priorityStars(p.value)}</span>{!compact&&<small>{p.label}</small>}</label>)}</div></fieldset>;
+  const allButton = <button type="button" aria-pressed={equal([])} className={equal([]) ? "selected" : ""} onClick={() => change({ ...settings, priorities: [] })}>すべて</button>;
+  return <fieldset className="field priority-field">
+    <legend>優先度</legend>
+    <div className="chips priority-shortcuts">{allButton}{[{label:"★★★★★のみ",values:[5]},{label:"★★★★以上",values:[4,5]},{label:"★★★以上",values:[3,4,5]}].map(({label,values}) => <button type="button" key={label} aria-pressed={equal(values)} className={equal(values)?"selected":""} onClick={() => change({ ...settings, priorities: values as Priority[] })}>{label}</button>)}</div>
+    <div className="priority-options" aria-label="任意の星を複数選択">{priorities.map((p) => <label key={p.value} title={p.label}>
+      <input type="checkbox" aria-label={`星${p.value}（${p.label}）`} checked={settings.priorities.includes(p.value)} onChange={(e) => change({ ...settings, priorities: e.target.checked ? [...settings.priorities,p.value] : settings.priorities.filter((v) => v !== p.value) })}/><span className="priority-stars" aria-hidden="true">{priorityStars(p.value)}</span><small>{p.label}</small>
+    </label>)}</div>
+  </fieldset>;
 }
 export function SettingsModal({ onClose, onStart }: { onClose: () => void; onStart: () => void }) {
   const { store, ready } = useStudyStore(); const settings = store.settings;
