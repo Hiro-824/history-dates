@@ -11,11 +11,11 @@ export const MODES: Record<Mode, { label: string; detail: string }> = {
   century: { label: "世紀を答える", detail: "世紀の数字を入力" },
 };
 export const modeName = (mode: Mode) => `${MODES[mode].label}${mode === "decade" || mode === "hundred" ? `（${MODES[mode].detail}）` : ""}`;
-export const ORDERS = { random: "ランダム", oldest: "古い年代から", newest: "新しい年代から", weak: "苦手な問題を優先", unseen: "未学習を優先" };
+export const ORDERS = { random: "ランダム", oldest: "古い年代から", newest: "新しい年代から", weak: "苦手な問題を優先" };
 export const STATUSES = { new: "未学習", wrong: "過去に間違えた問題", recent: "最近間違えた問題", weak: "苦手な問題", review: "復習対象" };
 export const DEFAULT_SETTINGS: Settings = {
   subject: "both", scopeMethod: "random", unitIds: [], regionId: "japan", startPeriodId: "japan-01", endPeriodId: "japan-20",
-  priorities: [], mode: "exact", balanced: false, count: 10, order: "random", statuses: [],
+  priorities: [], mode: "exact", balanced: false, prioritizeUnseen: false, prioritizeWeak: false, count: 10, order: "random", statuses: [],
 };
 export function chronologicalYear(event: Pick<HistoryEvent, "year" | "era">) { return event.era === "BCE" ? -event.year : event.year; }
 export function formatYear(event: Pick<HistoryEvent, "year" | "era">) { return `${event.era === "BCE" ? "紀元前" : ""}${event.year}年`; }
@@ -35,6 +35,7 @@ export function checkAnswer(event: HistoryEvent, mode: Mode, input: string, era:
   return validAnswer(input) && era === event.era && Number(normalizeNumber(input)) === expectedAnswer(event, mode);
 }
 export function formatSubmittedAnswer(event: HistoryEvent, mode: Mode, input: string, era: Era) {
+  if (!normalizeNumber(input)) return "わからない";
   const prefix = era === "BCE" ? "紀元前" : "";
   if (mode === "century") return `${prefix}${Number(input)}世紀`;
   return `${prefix}${Number(`${normalizeNumber(input)}${answerParts(event, mode).suffix}`)}年`;
@@ -102,34 +103,55 @@ export function shuffled<T>(items: T[], random: () => number = Math.random) {
   return result;
 }
 export function makeQueue(events: HistoryEvent[], settings: Settings, history: History, random = Math.random) {
-  let queue = shuffled([...new Map(events.map((e) => [e.id, e])).values()], random);
-  // The full-range method is uniform even when old order/balancing settings remain saved.
+  const queue = shuffled([...new Map(events.map((e) => [e.id, e])).values()], random);
+  // The full-range method ignores saved chronological order and subject balancing.
   const order = settings.scopeMethod === "random" ? "random" : settings.order;
-  if (order === "oldest" || order === "newest") queue.sort((a, b) => (order === "oldest" ? 1 : -1) * (chronologicalYear(a) - chronologicalYear(b)));
-  if (order === "weak") queue.sort((a, b) => weakness(history[b.id]) - weakness(history[a.id]) || lastWrong(history[b.id]) - lastWrong(history[a.id]));
-  if (order === "unseen") queue.sort((a, b) => Number(!!history[a.id]?.attempts) - Number(!!history[b.id]?.attempts));
+  const compareYears = (a: HistoryEvent, b: HistoryEvent) => (order === "oldest" ? 1 : -1) * (chronologicalYear(a) - chronologicalYear(b));
+  if (order === "oldest" || order === "newest") queue.sort(compareYears);
+  if (order === "weak" || settings.prioritizeWeak) queue.sort((a, b) => weakness(history[b.id]) - weakness(history[a.id]) || lastWrong(history[b.id]) - lastWrong(history[a.id]));
   const count = settings.count === "all" ? queue.length : Math.min(settings.count, queue.length);
-  if (settings.scopeMethod !== "random" && settings.balanced && settings.subject === "both") {
-    const japan = queue.filter((e) => e.subject === "japan"), world = queue.filter((e) => e.subject === "world");
-    const mixed: HistoryEvent[] = [];
-    let next = random() < .5 ? japan : world;
-    while (mixed.length < count && (japan.length || world.length)) {
-      const other = next === japan ? world : japan;
-      const event = next.shift() ?? other.shift();
-      if (event) mixed.push(event);
-      next = other;
-    }
-    queue = order === "oldest" || order === "newest" ? mixed.sort((a, b) => (order === "oldest" ? 1 : -1) * (chronologicalYear(a) - chronologicalYear(b))) : mixed;
+  // Apply preferences before limiting or balancing: unseen, weak, then the rest.
+  const groups: HistoryEvent[][] = [];
+  let remainingPool = queue;
+  if (settings.prioritizeUnseen) {
+    groups.push(remainingPool.filter((e) => !history[e.id]?.attempts));
+    remainingPool = remainingPool.filter((e) => !!history[e.id]?.attempts);
   }
-  return queue.slice(0, count);
+  if (settings.prioritizeWeak) {
+    groups.push(remainingPool.filter((e) => weakness(history[e.id]) > 0));
+    remainingPool = remainingPool.filter((e) => weakness(history[e.id]) <= 0);
+  }
+  groups.push(remainingPool);
+  const result: HistoryEvent[] = [];
+  for (const group of groups) {
+    const remaining = count - result.length;
+    if (remaining <= 0) break;
+    if (settings.scopeMethod !== "random" && settings.balanced && settings.subject === "both") {
+      const japan = group.filter((e) => e.subject === "japan"), world = group.filter((e) => e.subject === "world");
+      const mixed: HistoryEvent[] = [];
+      const japanCount = result.filter((e) => e.subject === "japan").length;
+      const worldCount = result.length - japanCount;
+      let next = japanCount === worldCount ? (random() < .5 ? japan : world) : japanCount < worldCount ? japan : world;
+      while (mixed.length < remaining && (japan.length || world.length)) {
+        const other = next === japan ? world : japan;
+        const event = next.shift() ?? other.shift();
+        if (event) mixed.push(event);
+        next = other;
+      }
+      result.push(...(order === "oldest" || order === "newest" ? mixed.sort(compareYears) : mixed));
+    } else {
+      result.push(...group.slice(0, remaining));
+    }
+  }
+  return result;
 }
 function lastWrong(score?: Score) { return Math.max(0, ...(score?.recent.filter((a) => !a.correct).map((a) => Date.parse(a.at)) ?? [])); }
 
-export function submitSession(store: Store, id: string, index: number, event: HistoryEvent, at = new Date().toISOString()): Store {
+export function submitSession(store: Store, id: string, index: number, event: HistoryEvent, at = new Date().toISOString(), unknown = false): Store {
   const session = store.sessions.find((s) => s.id === id);
-  if (!session || session.stage !== "active" || session.index !== index || session.answers.length !== index || session.eventIds[index] !== event.id || !validAnswer(session.input)) return store;
-  const attempt: Attempt = { eventId: event.id, mode: session.settings.mode, input: normalizeNumber(session.input), era: session.era, correct: checkAnswer(event, session.settings.mode, session.input, session.era), at };
-  return { ...store, history: { ...store.history, [event.id]: recordAttempt(store.history[event.id], attempt) }, recent: [...store.recent, attempt].slice(-100), sessions: store.sessions.map((s) => s.id === id ? { ...s, answers: [...s.answers, attempt] } : s) };
+  if (!session || session.stage !== "active" || session.index !== index || session.answers.length !== index || session.eventIds[index] !== event.id || (!unknown && !validAnswer(session.input))) return store;
+  const attempt: Attempt = { eventId: event.id, mode: session.settings.mode, input: unknown ? "" : normalizeNumber(session.input), era: session.era, correct: !unknown && checkAnswer(event, session.settings.mode, session.input, session.era), at, ...(unknown ? { unknown: true } : {}) };
+  return { ...store, history: { ...store.history, [event.id]: recordAttempt(store.history[event.id], attempt) }, recent: [...store.recent, attempt].slice(-100), sessions: store.sessions.map((s) => s.id === id ? { ...s, input: unknown ? "" : s.input, answers: [...s.answers, attempt] } : s) };
 }
 export function advanceSession(store: Store, id: string, index: number, at = new Date().toISOString()): Store {
   const session = store.sessions.find((s) => s.id === id);

@@ -29,7 +29,7 @@ export interface UnitGroup { id: string; name: string; subject: Subject; units: 
 export interface RegionPeriod { id: string; name: string; start: number; end: number; order: number }
 export interface StudyRegion { id: string; name: string; subject: Subject; periods: RegionPeriod[] }
 export type StudyStatus = "new" | "wrong" | "recent" | "weak" | "review";
-export type Order = "random" | "oldest" | "newest" | "weak" | "unseen";
+export type Order = "random" | "oldest" | "newest" | "weak";
 export interface Settings {
   subject: Subject | "both";
   scopeMethod: ScopeMethod;
@@ -40,6 +40,8 @@ export interface Settings {
   priorities: Priority[];
   mode: Mode;
   balanced: boolean;
+  prioritizeUnseen: boolean;
+  prioritizeWeak: boolean;
   count: 10 | 20 | 50 | "all";
   order: Order;
   statuses: StudyStatus[];
@@ -48,6 +50,7 @@ export interface Attempt {
   eventId: string;
   mode: Mode;
   correct: boolean;
+  unknown?: boolean;
   input: string;
   era: Era;
   at: string;

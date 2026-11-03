@@ -5,11 +5,12 @@ import { useRouter } from "next/navigation";
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { eventById } from "@/lib/events";
 import { priorityStars } from "@/data/priorities";
-import { advanceSession, answerParts, expectedAnswer, formatSubmittedAnswer, formatYear, modeName, normalizeNumber, SUBJECTS, submitSession, validAnswer } from "@/lib/study";
+import { advanceSession, answerParts, expectedAnswer, formatSubmittedAnswer, formatYear, modeName, normalizeNumber, submitSession, validAnswer } from "@/lib/study";
 import { startStudy, updateStore, useStudyStore } from "@/lib/storage";
 import type { HistoryEvent, Session } from "@/lib/types";
 import { AppShell } from "./app-shell";
 import { EventNote } from "./event-note";
+import { PagedFeedback, QuestionText } from "./quiz-content";
 import { Icon, Modal, Percent } from "./ui";
 
 function MissingSession() { return <><h1>学習データがありません</h1><Link href="/#settings" className="primary home-return">出題設定へ</Link></>; }
@@ -27,7 +28,7 @@ function CompletedStudy({ sessionId }: { sessionId: string }) {
 function Quiz({ session, event }: { session: Session; event: HistoryEvent }) {
   const router = useRouter();
   const [error, setError] = useState(""); const [ending, setEnding] = useState(false);
-  const inputRef = useRef<HTMLInputElement>(null); const eraGroup = useId();
+  const inputRef = useRef<HTMLInputElement>(null); const answerButtonRef = useRef<HTMLButtonElement>(null); const eraGroup = useId();
   const result = session.answers[session.index]; const parts=answerParts(event,session.settings.mode);
   const advance = useCallback(() => {
     let advanced=false;
@@ -40,20 +41,23 @@ function Quiz({ session, event }: { session: Session; event: HistoryEvent }) {
     const timer=window.setTimeout(()=>{if(window.location.pathname===`/study/${session.id}`)advance();},1000);
     return ()=>window.clearTimeout(timer);
   },[result?.at,result?.correct,ending,session.id,advance,event.note]);
+  useEffect(()=>{if(result&&!ending)answerButtonRef.current?.focus({preventScroll:true});},[result,ending]);
   const draft=(patch:Partial<Pick<Session,"input"|"era">>)=>updateStore((s)=>({...s,sessions:s.sessions.map((v)=>v.id===session.id&&v.stage==="active"&&v.answers.length===v.index?{...v,...patch}:v)}));
-  const answer=()=>{
-    if(result){advance();return;}
-    if(!validAnswer(session.input)){setError("1以上の整数を入力してください。");inputRef.current?.focus({preventScroll:true});return;}
-    updateStore((s)=>submitSession(s,session.id,session.index,event));setError("");
+  const answer=(unknown=false)=>{
+    if(result){if(!unknown)advance();return;}
+    if(!unknown&&!validAnswer(session.input)){setError("1以上の整数を入力してください。");inputRef.current?.focus({preventScroll:true});return;}
+    updateStore((s)=>submitSession(s,session.id,session.index,event,new Date().toISOString(),unknown));setError("");
+    inputRef.current?.blur();
   };
-  const label=session.settings.mode==="century"?"世紀を答える":parts.suffix?`上${parts.inputDigits}桁を答える`:"年号を入力";
-  return <div className="quiz-page"><div className="quiz-toolbar"><button className="text-button muted" onClick={()=>setEnding(true)}>学習を終了</button><span>{modeName(session.settings.mode)}</span><span className="progress-text">{session.index+1}<span> / {session.eventIds.length}</span></span></div><div className="progress-track" role="progressbar" aria-label="解答済み問題" aria-valuenow={session.answers.length} aria-valuemin={0} aria-valuemax={session.eventIds.length}><div style={{width:`${session.answers.length/session.eventIds.length*100}%`}}/></div><div className="question-heading"><span>{SUBJECTS[event.subject]}</span><span className="dot"/><span>{event.period}</span></div><h1 className="question-title">{event.name}</h1>
-    <form className="answer-form" onSubmit={(e)=>{e.preventDefault();answer();}} onKeyDown={(e)=>{if(e.key==="Enter"&&(e.repeat||e.nativeEvent.isComposing))e.preventDefault();}}><label className="answer-label" htmlFor="year-answer">{label}</label>
+  const label=session.settings.mode==="century"?"世紀を答える":"年号を入力";
+  const question=event.name.replace(/（上[0-9０-９]+桁(?:を答える|だけでよい)）/g,"");
+  return <div className="quiz-page"><div className="quiz-toolbar"><button className="text-button muted" onClick={()=>setEnding(true)}>学習を終了</button><span className="progress-text">{session.index+1}<span> / {session.eventIds.length}</span></span></div><div className="progress-track" role="progressbar" aria-label="解答済み問題" aria-valuenow={session.answers.length} aria-valuemin={0} aria-valuemax={session.eventIds.length}><div style={{width:`${session.answers.length/session.eventIds.length*100}%`}}/></div><QuestionText text={question}/>
+    <form className="answer-form" onSubmit={(e)=>{e.preventDefault();answer();}} onKeyDown={(e)=>{if(e.key!=="Enter")return;if(e.repeat||e.nativeEvent.isComposing){e.preventDefault();return;}if(result){e.preventDefault();advance();}}}><label className="sr-only" htmlFor="year-answer">{label}</label>
       <div className={`answer-composer ${result?result.correct?"correct-border":"wrong-border":""}`}>
         <fieldset className="era-toggle"><legend className="sr-only">紀元</legend>{(["BCE","CE"] as const).map((value)=><label key={value} className={session.era===value?"selected":""}><input type="radio" name={eraGroup} aria-label={value==="BCE"?"紀元前":"紀元後"} checked={session.era===value} disabled={!!result} onChange={()=>{draft({era:value});inputRef.current?.focus({preventScroll:true});}}/><span>{value==="BCE"?"前":"後"}</span></label>)}</fieldset>
-        <div className="joined-number"><input ref={inputRef} id="year-answer" aria-label={label} type="text" inputMode="numeric" autoComplete="off" enterKeyHint={result?"next":"done"} placeholder={"?".repeat(parts.inputDigits)} maxLength={parts.inputDigits} style={{width:`${Math.max(1,session.input?normalizeNumber(session.input).length:parts.inputDigits)}ch`}} value={session.input} readOnly={!!result} aria-invalid={!!error} aria-describedby={error?"answer-error":undefined} onChange={(e)=>{draft({input:normalizeNumber(e.target.value)});setError("");}}/>{parts.suffix&&<span className="fixed-digits" aria-label={`固定表示 ${parts.suffix}`}>{parts.suffix}</span>}</div><span className="answer-unit">{session.settings.mode==="century"?"世紀":"年"}</span>
-      </div>{error&&<p className="error-text" id="answer-error" role="alert">{error}</p>}
-      <div className="answer-feedback" aria-live="polite" aria-atomic="true">{result&&<div className={`feedback ${result.correct?"correct":"incorrect"}`}><div className="feedback-top"><span className="feedback-status"><Icon name={result.correct?"check":"close"}/>{result.correct?"正解":"不正解"}</span></div><div className="correct-year">{formatYear(event)}</div><div className="answer-detail"><span>あなたの解答</span><strong>{formatSubmittedAnswer(event,result.mode,result.input,result.era)}</strong></div>{session.settings.mode==="century"&&<div className="answer-detail"><span>正しい世紀</span><strong>{event.era==="BCE"?"紀元前":""}{expectedAnswer(event,"century")}世紀</strong></div>}<EventNote event={event}/>{result.correct&&<p className="auto-next-hint">{event.note?session.index+1===session.eventIds.length?"読み終えたら「結果を見る」":"読み終えたら「次へ」":"自動で次へ"}</p>}</div>}</div><button type="submit" className="primary answer-button">{result?session.index+1===session.eventIds.length?"結果を見る":"次へ":"解答"}<Icon name="arrow" size={19}/></button><p className="keyboard-hint"><kbd>Enter</kbd> {result?"次へ進む":"解答を確定"}</p>
+        <div className="joined-number"><input ref={inputRef} id="year-answer" aria-label={label} type="text" inputMode="numeric" autoComplete="off" enterKeyHint={result?"next":"done"} placeholder="?" maxLength={6} style={{width:`${Math.max(1,normalizeNumber(session.input).length)}ch`}} value={session.input} readOnly={!!result} aria-invalid={!!error} aria-describedby={error?"answer-error":undefined} onChange={(e)=>{draft({input:normalizeNumber(e.target.value)});setError("");}}/>{parts.suffix&&<span className="fixed-digits" aria-label={`固定表示 ${parts.suffix}`}>{parts.suffix}</span>}</div><span className="answer-unit">{session.settings.mode==="century"?"世紀":"年"}</span>
+      </div><div className="answer-error-slot">{error&&<p className="error-text" id="answer-error" role="alert">{error}</p>}</div>
+      <div className="answer-feedback" aria-live="polite" aria-atomic="true">{result&&<PagedFeedback key={`${session.index}-${result.at}`}><div className={`feedback ${result.correct?"correct":"incorrect"}`}><div className="feedback-top"><span className="feedback-status"><Icon name={result.correct?"check":"close"}/>{result.unknown?"わからない":result.correct?"正解":"不正解"}</span></div><div className="correct-year">{formatYear(event)}</div><div className="answer-detail"><span>あなたの解答</span><strong>{formatSubmittedAnswer(event,result.mode,result.input,result.era)}</strong></div>{session.settings.mode==="century"&&<div className="answer-detail"><span>正しい世紀</span><strong>{event.era==="BCE"?"紀元前":""}{expectedAnswer(event,"century")}世紀</strong></div>}<EventNote event={event}/>{result.correct&&<p className="auto-next-hint">{event.note?session.index+1===session.eventIds.length?"読み終えたら「結果を見る」":"読み終えたら「次へ」":"自動で次へ"}</p>}</div></PagedFeedback>}</div><div className="answer-actions"><button ref={answerButtonRef} type="submit" className="primary answer-button">{result?session.index+1===session.eventIds.length?"結果を見る":"次へ":"解答"}<Icon name="arrow" size={19}/></button>{!result&&<button type="button" className="secondary unknown-button" onClick={()=>answer(true)}>わからない</button>}</div><p className="keyboard-hint"><kbd>Enter</kbd> {result?"次へ進む":"解答を確定"}</p>
     </form>{ending&&<Modal title="学習を終了しますか？" onClose={()=>setEnding(false)} footer={<><button className="secondary" onClick={()=>setEnding(false)}>学習に戻る</button><button className="primary" onClick={()=>{updateStore((s)=>({...s,sessions:s.sessions.map((v)=>v.id===session.id?{...v,stage:"finished",completedAt:new Date().toISOString()}:v)}));router.replace(`/results/${session.id}`);}}>{session.answers.length?"途中結果を見る":"終了する"}</button></>}><p className="muted">解答済みの{session.answers.length}問は学習記録に保存されています。</p></Modal>}
   </div>;
 }

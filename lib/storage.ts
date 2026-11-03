@@ -5,7 +5,7 @@ import legacyUnits from "../data/legacy-units.json";
 import { regionById, regionsForSubject } from "../data/regions";
 import { unitById } from "../data/units";
 import { events } from "./events";
-import { DEFAULT_SETTINGS, filterEvents, makeQueue, MODES, ORDERS, selectRegion, selectSubject, STATUSES, weakness } from "./study";
+import { DEFAULT_SETTINGS, filterEvents, makeQueue, MODES, ORDERS, selectRegion, selectSubject, weakness } from "./study";
 import type { Attempt, History, Mode, Score, Session, Settings, Store } from "./types";
 
 export const STORAGE_KEY = "history-dates:v2";
@@ -22,10 +22,17 @@ export function restoreSettings(value: unknown): Settings {
   let result = structuredClone(DEFAULT_SETTINGS);
   if (value.subject === "japan" || value.subject === "world" || value.subject === "both") result = selectSubject(result, value.subject);
   if (own(MODES, value.mode)) result.mode = value.mode as Mode;
-  if (own(ORDERS, value.order)) result.order = value.order as Settings["order"];
+  if (own(ORDERS, value.order) && value.order !== "weak") result.order = value.order as Settings["order"];
   if ([10, 20, 50, "all"].includes(value.count as number)) result.count = value.count as Settings["count"];
   if (typeof value.balanced === "boolean") result.balanced = value.balanced;
-  if (strings(value.statuses)) result.statuses = value.statuses.filter((x) => own(STATUSES, x)) as Settings["statuses"];
+  if (value.order === "unseen") result.prioritizeUnseen = true;
+  if (value.order === "weak") result.prioritizeWeak = true;
+  if (strings(value.statuses)) {
+    if (value.statuses.includes("new")) result.prioritizeUnseen = true;
+    if (value.statuses.some((status) => ["wrong", "recent", "weak", "review"].includes(status))) result.prioritizeWeak = true;
+  }
+  if (typeof value.prioritizeUnseen === "boolean") result.prioritizeUnseen = value.prioritizeUnseen;
+  if (typeof value.prioritizeWeak === "boolean") result.prioritizeWeak = value.prioritizeWeak;
   if (value.scopeMethod === "units" || value.scopeMethod === "region" || value.scopeMethod === "random") result.scopeMethod = value.scopeMethod;
   if (strings(value.unitIds)) result.unitIds = [...new Set(value.unitIds.filter((id) => unitById.has(id)))];
   if (Array.isArray(value.priorities)) result.priorities = [...new Set(value.priorities.filter((p): p is 1 | 2 | 3 | 4 | 5 => Number.isInteger(p) && p >= 1 && p <= 5))];
@@ -52,6 +59,8 @@ function migrateSettings(value: unknown): Settings {
 }
 function isAttempt(value: unknown): value is Attempt {
   return object(value) && typeof value.eventId === "string" && typeof value.correct === "boolean" && typeof value.input === "string" && era(value.era)
+    && (value.unknown === undefined || typeof value.unknown === "boolean")
+    && (!value.unknown || (value.correct === false && value.input === ""))
     && own(MODES, value.mode) && typeof value.at === "string" && Number.isFinite(Date.parse(value.at));
 }
 function isScore(value: unknown): value is Score {

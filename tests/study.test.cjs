@@ -72,6 +72,60 @@ test('full-range shuffle is uniform and ignores saved order, balancing and prior
   assert.equal(permutations.size,6);assert.deepEqual(first,{a:2,b:2,c:2});
   assert.deepEqual(shuffled(items,()=>.5),makeQueue(items,settings({count:'all',balanced:true,order:'weak'}),{a:recordAttempt(undefined,attempt(false))},()=>.5));
 });
+test('unseen priority precedes answered questions across scopes, orders and balancing', () => {
+  const items=Array.from({length:12},(_,i)=>({...(i%2?bce:sample),id:`q${i}`,year:1000+i,era:'CE'}));
+  const history=Object.fromEntries(items.slice(0,8).map(e=>[e.id,recordAttempt(undefined,attempt(false))]));
+  for(const scopeMethod of ['random','units','region'])for(const order of ['random','oldest','newest','weak'])for(const balanced of [false,true]){
+    const s=settings({scopeMethod,order,balanced,count:10,prioritizeUnseen:true});
+    const queue=makeQueue([...items,...items],s,history,()=>.99);
+    assert.equal(queue.length,10);assert.equal(new Set(queue.map(e=>e.id)).size,10);
+    assert.ok(queue.slice(0,4).every(e=>!history[e.id]?.attempts),`${scopeMethod}/${order}/${balanced}`);
+    assert.ok(queue.slice(4).every(e=>history[e.id]?.attempts));
+  }
+  const s=settings({count:10,prioritizeUnseen:true});
+  assert.equal(makeQueue(items,{...s,prioritizeUnseen:false},history,()=>.99)[0].id,'q0');
+  assert.deepEqual(makeQueue(items,s,{},()=>.99),makeQueue(items,{...s,prioritizeUnseen:false},{},()=>.99));
+  const allSeen=Object.fromEntries(items.map(e=>[e.id,recordAttempt(undefined,attempt(true))]));
+  assert.deepEqual(makeQueue(items,s,allSeen,()=>.99),makeQueue(items,{...s,prioritizeUnseen:false},allSeen,()=>.99));
+  const unseenWorld=items.map(e=>({...bce,id:`new-${e.id}`}));
+  const balanced=makeQueue([...items,...unseenWorld],{...s,scopeMethod:'units',balanced:true},allSeen,()=>.99);
+  assert.equal(balanced.length,10);assert.ok(balanced.every(e=>e.id.startsWith('new-')));
+});
+test('unseen priority defaults off and restores saved and legacy preferences', () => {
+  assert.equal(restoreSettings({}).prioritizeUnseen,false);
+  assert.equal(restoreSettings({prioritizeUnseen:true}).prioritizeUnseen,true);
+  assert.equal(restoreSettings({prioritizeUnseen:'true'}).prioritizeUnseen,false);
+  const legacy=restoreSettings({order:'unseen'});
+  assert.equal(legacy.prioritizeUnseen,true);assert.equal(legacy.order,'random');
+});
+test('weak priority works across scopes, fills from other questions and follows unseen priority', () => {
+  const items=Array.from({length:12},(_,i)=>({...(i%2?bce:sample),id:`weak-${i}`,year:1000+i,era:'CE'}));
+  const history=Object.fromEntries(items.slice(0,8).map((e,i)=>[e.id,recordAttempt(undefined,attempt(i>=4))]));
+  for(const scopeMethod of ['random','units','region'])for(const balanced of [false,true]){
+    for(const prioritizeUnseen of [false,true]){
+      const queue=makeQueue(items,settings({scopeMethod,balanced,count:10,prioritizeWeak:true,prioritizeUnseen}),history,()=>.99);
+      assert.equal(queue.length,10);assert.equal(new Set(queue.map(e=>e.id)).size,10);
+      const offset=prioritizeUnseen?4:0;
+      if(prioritizeUnseen)assert.ok(queue.slice(0,4).every(e=>!history[e.id]));
+      assert.ok(queue.slice(offset,offset+4).every(e=>weakness(history[e.id])>0));
+      assert.ok(queue.slice(offset+4).every(e=>weakness(history[e.id])===0));
+    }
+  }
+  const noWeak=Object.fromEntries(items.map(e=>[e.id,recordAttempt(undefined,attempt(true))]));
+  assert.deepEqual(makeQueue(items,settings({prioritizeWeak:true}),noWeak,()=>.99),makeQueue(items,settings(),noWeak,()=>.99));
+});
+test('old status filters migrate to priority flags without hiding other questions', () => {
+  for(const status of ['wrong','recent','weak','review']){
+    const restored=restoreSettings({statuses:[status]});
+    assert.equal(restored.prioritizeWeak,true);assert.deepEqual(restored.statuses,[]);
+  }
+  assert.equal(restoreSettings({statuses:['new']}).prioritizeUnseen,true);
+  assert.equal(restoreSettings({order:'weak'}).prioritizeWeak,true);
+  assert.equal(restoreSettings({order:'weak'}).order,'random');
+  assert.equal(restoreSettings({}).prioritizeWeak,false);
+  assert.equal(restoreSettings({prioritizeWeak:'true'}).prioritizeWeak,false);
+  assert.equal(restoreSettings({prioritizeWeak:true}).prioritizeWeak,true);
+});
 test('all modes compose suffixes correctly, including short years and BCE', () => {
   const e={...sample,year:1648};
   for(const [mode,answer,suffix] of [['exact',1648,''],['decade',164,'8'],['hundred',16,'48'],['century',17,'']]){
@@ -128,6 +182,37 @@ test('persisted sessions make submission and manual/timed advancing idempotent',
   store=advanceSession(store,'test-session',1);assert.equal(store.sessions[0].stage,'finished');
   assert.equal(advanceSession(store,'test-session',1),store);
 });
+test('unknown answers record one incorrect attempt, persist and become review targets in every mode', () => {
+  for(const mode of ['exact','decade','hundred','century'])for(const event of [sample,bce]){
+    const current=session({eventIds:[event.id,sample.id===event.id?bce.id:sample.id],settings:settings({mode}),input:''});
+    const initial={...baseStore(),sessions:[current]};
+    assert.equal(submitSession(initial,current.id,0,event),initial);
+    const saved=submitSession(initial,current.id,0,event,'2026-11-03T00:00:00Z',true);
+    const answer=saved.sessions[0].answers[0];
+    assert.equal(answer.unknown,true);assert.equal(answer.correct,false);assert.equal(answer.input,'');
+    assert.equal(saved.history[event.id].attempts,1);assert.equal(saved.history[event.id].incorrect,1);
+    assert.equal(saved.history[event.id].streak,0);assert.equal(saved.history[event.id].review,true);
+    assert.equal(filterEvents([event],settings({statuses:['new']}),saved.history).length,0);
+    assert.equal(filterEvents([event],settings({statuses:['review']}),saved.history).length,1);
+    assert.deepEqual(decodeStore(JSON.stringify(saved)),saved);
+    assert.equal(study.formatSubmittedAnswer(event,mode,answer.input,answer.era),'わからない');
+    assert.equal(submitSession(saved,current.id,0,event,'2026-11-03T00:00:01Z',true),saved);
+    assert.equal(submitSession(saved,current.id,0,event),saved);
+    const next=advanceSession(saved,current.id,0);
+    assert.equal(next.sessions[0].index,1);assert.equal(next.history[event.id].attempts,1);
+  }
+});
+test('unknown answers discard a partial guess and cannot be forged as correct', () => {
+  for(const input of ['645','abc']){
+    const store={...baseStore(),sessions:[session({input})]};
+    const saved=submitSession(store,'test-session',0,sample,'2026-11-03T00:00:00Z',true);
+    assert.equal(saved.sessions[0].input,'');assert.equal(saved.sessions[0].answers[0].input,'');
+    assert.equal(saved.sessions[0].answers[0].correct,false);
+    const answer=saved.recent[0];
+    assert.equal(decodeStore(JSON.stringify({...baseStore(),recent:[{...answer,correct:true}]})).recent.length,0);
+    assert.equal(decodeStore(JSON.stringify({...baseStore(),recent:[{...answer,unknown:'yes'}]})).recent.length,0);
+  }
+});
 test('old aggregate histories migrate without double-counting and discard removed favorite flags', () => {
   const old={...recordAttempt(undefined,attempt(false)),favorite:true,modes:{exact:{attempts:1,correct:0,incorrect:1,streak:0,lastAt:attempt(false).at,recent:[attempt(false)]}}};
   const migrated=decodeStore(JSON.stringify({version:1,settings:{subject:'japan',mode:'century',units:['律令国家の形成'],count:20},history:{[sample.id]:old},recent:[attempt(false)],presets:[{id:'p',name:'古代',settings:{units:['律令国家の形成']}}]}));
@@ -135,10 +220,11 @@ test('old aggregate histories migrate without double-counting and discard remove
   assert.equal(migrated.settings.mode,'century');assert.equal(migrated.settings.count,20);assert.equal(migrated.settings.scopeMethod,'units');assert.ok(migrated.settings.unitIds.includes('J02-02'));assert.ok(migrated.presets[0].settings.unitIds.length);
 });
 test('settings, sessions, input, era, results and presets survive JSON round trips', () => {
-  const s=settings({scopeMethod:'units',unitIds:['J02-02'],priorities:[3,5]});
+  const s=settings({scopeMethod:'units',unitIds:['J02-02'],priorities:[3,5],prioritizeUnseen:true,prioritizeWeak:true});
   const store={...baseStore(),settings:s,history:{[sample.id]:recordAttempt(undefined,attempt(false))},sessions:[session({input:'64',era:'BCE'})],presets:[{id:'p',name:'任意',settings:s}]};
   assert.deepEqual(decodeStore(JSON.stringify(store)),store);
-  assert.deepEqual(restoreSettings({statuses:['favorite','review']}).statuses,['review']);
+  assert.deepEqual(restoreSettings({statuses:['favorite','review']}).statuses,[]);
+  assert.equal(restoreSettings({statuses:['review']}).prioritizeWeak,true);
   assert.deepEqual(restoreSettings({statuses:['favorite']}).statuses,[]);
   assert.throws(()=>decodeStore('{bad'));assert.throws(()=>decodeStore('{"version":99}'));
   assert.equal(restoreSettings({mode:'bad',subject:'bad',priorities:[0,6]}).mode,'exact');
