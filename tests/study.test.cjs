@@ -250,7 +250,7 @@ test('settings, sessions, input, era, results and presets survive JSON round tri
   assert.equal(decodeStore(JSON.stringify({...baseStore(),sessions:[session({index:99})]})).sessions.length,0);
 });
 test('draft data uses valid independent unit, region, priority and date attributes', () => {
-  assert.equal(events.length,546);assert.equal(new Set(events.map(e=>e.id)).size,events.length);
+  assert.equal(events.length,547);assert.equal(new Set(events.map(e=>e.id)).size,events.length);
   for(const id of ['jp-1889','wh-1648','wh-1492']) assert.ok(events.find(e=>e.id===id).priority>=4);
   assert.throws(()=>validateEvents([{...sample,priority:6}]));assert.throws(()=>validateEvents([{...sample,unitId:'W04-02'}]));
   assert.equal(filterEvents([{...sample,dateType:'range'},{...bce,dateType:'approximate'}],settings(),{}).length,0);

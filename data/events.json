@@ -9055,6 +9055,26 @@
     ]
   },
   {
+    "id": "wh-1945-end-ww2",
+    "subject": "world",
+    "name": "第二次世界大戦終結（ドイツ・日本の降伏）",
+    "year": 1945,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "W19-04",
+    "regions": [
+      "europe",
+      "china"
+    ],
+    "priority": 5,
+    "period": "第二次世界大戦",
+    "themes": [],
+    "source": "draft",
+    "draftLines": [
+      553
+    ]
+  },
+  {
     "id": "wh-8170998f207b",
     "subject": "world",
     "name": "西ドイツの主権回復を認めるパリ協定調印",
