@@ -1448,7 +1448,7 @@
     "id": "wh-85201dad4bae",
     "subject": "world",
     "name": "フランク王国のクローヴィスが改宗する",
-    "year": 481,
+    "year": 496,
     "era": "CE",
     "dateType": "single",
     "unitId": "W08-02",
@@ -1717,7 +1717,7 @@
   {
     "id": "wh-39f13013fddc",
     "subject": "world",
-    "name": "ガズナ朝成立（インド）",
+    "name": "ガズナ朝成立（アフガニスタン）",
     "year": 977,
     "era": "CE",
     "dateType": "single",
@@ -1736,7 +1736,7 @@
   {
     "id": "wh-daa6ecb0738c",
     "subject": "world",
-    "name": "ゴール朝成立（インド）",
+    "name": "ゴール朝成立（アフガニスタン）",
     "year": 1148,
     "era": "CE",
     "dateType": "single",
@@ -1755,7 +1755,7 @@
   {
     "id": "wh-315f81e7802d",
     "subject": "world",
-    "name": "ゴール朝滅亡（インド）",
+    "name": "ゴール朝滅亡（アフガニスタン）",
     "year": 1215,
     "era": "CE",
     "dateType": "single",
@@ -1947,7 +1947,7 @@
   {
     "id": "wh-06ac12f0e54c",
     "subject": "world",
-    "name": "ファーティマ朝を廃し、アイユーブ朝が成立（エジプト）",
+    "name": "アイユーブ朝成立（エジプト）",
     "year": 1169,
     "era": "CE",
     "dateType": "single",
@@ -2182,7 +2182,7 @@
   {
     "id": "wh-e8036f4edf89",
     "subject": "world",
-    "name": "ウラディミル1世の改宗（キエフ公国の君主がギリシア正教に改宗、ビザンツ的専政化の意図）",
+    "name": "ウラディミル1世の改宗（キエフ公国の君主がギリシア正教に改宗、ビザンツ的専制化の意図）",
     "year": 988,
     "era": "CE",
     "dateType": "single",
@@ -2197,7 +2197,7 @@
     "draftLines": [
       116
     ],
-    "note": "ビザンツ的専政化の意図があったらしい"
+    "note": "ビザンツ的専制化の意図があったらしい"
   },
   {
     "id": "wh-9dbb193f80e6",
@@ -2679,7 +2679,7 @@
   {
     "id": "wh-9c26f69b408d",
     "subject": "world",
-    "name": "金印勅書（カール4世が神聖ローマ皇帝選挙の手続きを法制化、七選帝侯を選出）",
+    "name": "金印勅書（神聖ローマ皇帝カール4世が七選帝侯による選挙を制度化）",
     "year": 1356,
     "era": "CE",
     "dateType": "single",
@@ -3270,7 +3270,7 @@
   {
     "id": "wh-a13e8a63160e",
     "subject": "world",
-    "name": "アンカラの戦い（オスマンがティムールに敗れる ）",
+    "name": "アンカラの戦い（オスマンがティムールに敗れる）",
     "year": 1402,
     "era": "CE",
     "dateType": "single",
@@ -3328,7 +3328,7 @@
     "id": "wh-a9c75290ff0d",
     "subject": "world",
     "name": "サファヴィー朝成立（イラン）",
-    "year": 1510,
+    "year": 1501,
     "era": "CE",
     "dateType": "single",
     "unitId": "W11-04",
@@ -4073,7 +4073,7 @@
   {
     "id": "wh-9276bc4b87b8",
     "subject": "world",
-    "name": "第三回ポーランド分割でポーランドが消滅（エカチェリーナ2世、フリードリヒ2世、ヨーゼフ2世）（東ヨーロッパ）",
+    "name": "第三回ポーランド分割でポーランドが消滅（東ヨーロッパ）",
     "year": 1795,
     "era": "CE",
     "dateType": "single",
@@ -4111,7 +4111,7 @@
   {
     "id": "wh-abed23b0c96a",
     "subject": "world",
-    "name": "カルロヴィッツ条約（オーストリアが第二次ウィーン包囲でオスマン帝国を撃退）",
+    "name": "カルロヴィッツ条約（第二次ウィーン包囲の撃退を機にオーストリアなどが反攻し、オスマン帝国と講和）",
     "year": 1699,
     "era": "CE",
     "dateType": "single",
@@ -4744,7 +4744,7 @@
     "id": "wh-34e70b04d559",
     "subject": "world",
     "name": "ジャガイモ飢饉（アイルランド）",
-    "year": 1840,
+    "year": 1845,
     "era": "CE",
     "dateType": "single",
     "unitId": "W15-03",
@@ -4800,7 +4800,7 @@
   {
     "id": "wh-40df2abca960",
     "subject": "world",
-    "name": "イタリア統一戦争（サルデーニャ王国  vs. オーストリア）",
+    "name": "イタリア統一戦争（サルデーニャ王国 vs. オーストリア）",
     "year": 1859,
     "era": "CE",
     "dateType": "single",
@@ -5220,7 +5220,7 @@
   {
     "id": "wh-bb0c24ffc3ae",
     "subject": "world",
-    "name": "イランでサファヴィー朝が滅び、ガージャール朝成立",
+    "name": "カージャール朝成立（イラン）",
     "year": 1796,
     "era": "CE",
     "dateType": "single",
@@ -5375,7 +5375,7 @@
   {
     "id": "wh-b41d2894bc2d",
     "subject": "world",
-    "name": "イギリス東インド会社解散",
+    "name": "東インド会社のインド統治権がイギリス政府へ移る",
     "year": 1858,
     "era": "CE",
     "dateType": "single",
@@ -5831,7 +5831,7 @@
   {
     "id": "wh-2372462cbeb7",
     "subject": "world",
-    "name": "イギリスがスエズ運河獲得（エジプト）",
+    "name": "イギリスがスエズ運河株獲得（エジプト）",
     "year": 1875,
     "era": "CE",
     "dateType": "single",
@@ -5926,7 +5926,7 @@
   {
     "id": "wh-f4ac4ecc9461",
     "subject": "world",
-    "name": "アメリカがハワイ・グアム・フィリピン・プエルトリコなどを獲得し、キューバを保護国化（ハワイ以外は米西戦争がらみ）",
+    "name": "米西戦争後のパリ条約調印（アメリカがグアム・フィリピン・プエルトリコ獲得。同年ハワイ併合、キューバは後に保護国化）",
     "year": 1898,
     "era": "CE",
     "dateType": "single",
@@ -6251,7 +6251,7 @@
   {
     "id": "wh-432d85ae91d5",
     "subject": "world",
-    "name": "オーストラリアがイギリス領に",
+    "name": "イギリスのクックがオーストラリアの東岸領有宣言",
     "year": 1770,
     "era": "CE",
     "dateType": "single",
@@ -6391,8 +6391,8 @@
   {
     "id": "wh-b7c116977090",
     "subject": "world",
-    "name": "露仏同盟（ロシア・フランス）",
-    "year": 1890,
+    "name": "露仏同盟成立（ロシア・フランス）",
+    "year": 1894,
     "era": "CE",
     "dateType": "single",
     "unitId": "W17-03",
@@ -6544,7 +6544,7 @@
   {
     "id": "wh-814abbf8a0ab",
     "subject": "world",
-    "name": "外モンゴルが辛亥革命を契機に中国から独立。モンゴル人民共和国成立",
+    "name": "辛亥革命で清から分離したモンゴルにモンゴル人民共和国成立",
     "year": 1924,
     "era": "CE",
     "dateType": "single",
@@ -6868,7 +6868,7 @@
     "id": "wh-fc336d17b3b8",
     "subject": "world",
     "name": "ワシントン会議開始（アメリカ）",
-    "year": 1922,
+    "year": 1921,
     "era": "CE",
     "dateType": "single",
     "unitId": "W18-03",
@@ -6924,7 +6924,7 @@
   {
     "id": "wh-0f104f94b461",
     "subject": "world",
-    "name": "マクドナルド労働党・自由党連立内閣成立（イギリス）",
+    "name": "第1次マクドナルド労働党内閣（自由党の支持・連立）（イギリス）",
     "year": 1924,
     "era": "CE",
     "dateType": "single",
@@ -7267,7 +7267,7 @@
   {
     "id": "wh-5dc44739d559",
     "subject": "world",
-    "name": "ラパロ条約（ドイツがソ連承認、ロシアの国際復帰へ）",
+    "name": "ラパロ条約（ドイツがソヴィエト＝ロシアを承認、ロシアの国際復帰へ）",
     "year": 1922,
     "era": "CE",
     "dateType": "single",
@@ -7951,7 +7951,7 @@
   {
     "id": "wh-e4017a2d04a0",
     "subject": "world",
-    "name": "イギリスの保護国となっていたエジプトが独立",
+    "name": "エジプトでイギリスの保護国状態からの独立を目指す革命",
     "year": 1919,
     "era": "CE",
     "dateType": "single",
@@ -8065,8 +8065,8 @@
   {
     "id": "wh-5383bccefa97",
     "subject": "world",
-    "name": "ニューディール（アメリカ）",
-    "year": 1932,
+    "name": "ニューディール政策開始（アメリカ）",
+    "year": 1933,
     "era": "CE",
     "dateType": "single",
     "unitId": "W19-01",
@@ -9057,7 +9057,7 @@
   {
     "id": "wh-8170998f207b",
     "subject": "world",
-    "name": "西ドイツ主権回復",
+    "name": "西ドイツの主権回復を認めるパリ協定調印",
     "year": 1954,
     "era": "CE",
     "dateType": "single",
@@ -9462,7 +9462,7 @@
   {
     "id": "wh-8e02233dd59f",
     "subject": "world",
-    "name": "エジプト革命（共和化）",
+    "name": "エジプト革命開始（翌年、共和化）",
     "year": 1952,
     "era": "CE",
     "dateType": "single",
@@ -9885,7 +9885,7 @@
   {
     "id": "wh-57bde1457660",
     "subject": "world",
-    "name": "ギリシアが軍事政権から民主化へ移行",
+    "name": "ギリシアが軍事政権から民主化へ移行し、新憲法が制定",
     "year": 1975,
     "era": "CE",
     "dateType": "single",
