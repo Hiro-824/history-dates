@@ -423,6 +423,7 @@ a { color: inherit; text-decoration: none; }
 .home-page { max-width: 620px; margin: 0 auto; }
 .home-page .page-heading { margin-bottom: 20px; }
 .home-page .card-body { padding-top: 22px; padding-bottom: 3px; }
+.home-page .priority-note { margin-bottom: 18px; }
 .home-basics { display: grid; grid-template-columns: minmax(0, 1fr) 100px; gap: 22px; }
 .home-basics .field { margin-bottom: 22px; }
 .home-basics .segments label { min-height: 35px; }
