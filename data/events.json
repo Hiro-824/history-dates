@@ -10,7 +10,7 @@
     "regions": [
       "china"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -29,7 +29,7 @@
     "regions": [
       "china"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -105,7 +105,7 @@
     "regions": [
       "china"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -143,7 +143,7 @@
     "regions": [
       "china"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -181,7 +181,7 @@
     "regions": [
       "china"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -200,7 +200,7 @@
     "regions": [
       "china"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -219,7 +219,7 @@
     "regions": [
       "china"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -239,7 +239,7 @@
     "regions": [
       "china"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -258,7 +258,7 @@
     "regions": [
       "china"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -277,7 +277,7 @@
     "regions": [
       "china"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -334,7 +334,7 @@
     "regions": [
       "japan"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "弥生",
     "themes": [],
     "source": "draft",
@@ -474,7 +474,7 @@
     "regions": [
       "china"
     ],
-    "priority": 4,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -493,7 +493,7 @@
     "regions": [
       "china"
     ],
-    "priority": 4,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -513,7 +513,7 @@
     "regions": [
       "central-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -532,7 +532,7 @@
     "regions": [
       "south-asia"
     ],
-    "priority": 4,
+    "priority": 2,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -551,7 +551,7 @@
     "regions": [
       "west-asia"
     ],
-    "priority": 4,
+    "priority": 2,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -570,7 +570,7 @@
     "regions": [
       "west-asia"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -589,7 +589,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -628,7 +628,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -648,7 +648,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -708,7 +708,7 @@
       "europe",
       "west-asia"
     ],
-    "priority": 4,
+    "priority": 2,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -727,7 +727,7 @@
     "regions": [
       "west-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -746,7 +746,7 @@
     "regions": [
       "west-asia"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -784,7 +784,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -842,7 +842,7 @@
       "africa",
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -861,7 +861,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -880,7 +880,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -899,7 +899,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -918,7 +918,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -956,7 +956,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -975,7 +975,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -994,7 +994,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -1013,7 +1013,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -1032,7 +1032,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -1051,7 +1051,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 5,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -1108,7 +1108,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -1148,7 +1148,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -1208,7 +1208,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -1246,7 +1246,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -1265,7 +1265,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "古代",
     "themes": [],
     "source": "draft",
@@ -1284,7 +1284,7 @@
     "regions": [
       "west-asia"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1341,7 +1341,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1379,7 +1379,7 @@
     "regions": [
       "africa"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1398,7 +1398,7 @@
     "regions": [
       "west-asia"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1417,7 +1417,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1474,7 +1474,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1494,7 +1494,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1514,7 +1514,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1552,7 +1552,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1609,7 +1609,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1628,7 +1628,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1647,7 +1647,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1667,7 +1667,7 @@
       "central-asia",
       "china"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1686,7 +1686,7 @@
     "regions": [
       "central-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1705,7 +1705,7 @@
     "regions": [
       "central-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1725,7 +1725,7 @@
     "regions": [
       "south-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1744,7 +1744,7 @@
     "regions": [
       "south-asia"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1763,7 +1763,7 @@
     "regions": [
       "south-asia"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1782,7 +1782,7 @@
     "regions": [
       "south-asia"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1801,7 +1801,7 @@
     "regions": [
       "south-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -1820,7 +1820,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1839,7 +1839,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -1859,7 +1859,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -1878,7 +1878,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -1898,7 +1898,7 @@
     "regions": [
       "africa"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1917,7 +1917,7 @@
     "regions": [
       "africa"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1955,7 +1955,7 @@
     "regions": [
       "africa"
     ],
-    "priority": 4,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -1993,7 +1993,7 @@
     "regions": [
       "west-asia"
     ],
-    "priority": 2,
+    "priority": 3,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2016,7 +2016,7 @@
     "regions": [
       "africa"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2035,7 +2035,7 @@
     "regions": [
       "africa"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2054,7 +2054,7 @@
     "regions": [
       "africa"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2073,7 +2073,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2210,7 +2210,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2267,7 +2267,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2286,7 +2286,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2324,7 +2324,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2362,7 +2362,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2381,7 +2381,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2419,7 +2419,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2438,7 +2438,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2457,7 +2457,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2477,7 +2477,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2535,7 +2535,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2554,7 +2554,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2573,7 +2573,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -2592,7 +2592,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -2630,7 +2630,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2668,7 +2668,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2706,7 +2706,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2725,7 +2725,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2744,7 +2744,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -2782,7 +2782,7 @@
     "regions": [
       "china"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2896,7 +2896,7 @@
     "regions": [
       "china"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -2972,7 +2972,7 @@
     "regions": [
       "central-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3068,7 +3068,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "中世",
     "themes": [],
     "source": "draft",
@@ -3087,7 +3087,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3106,7 +3106,7 @@
     "regions": [
       "china"
     ],
-    "priority": 3,
+    "priority": 5,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3125,7 +3125,7 @@
     "regions": [
       "china"
     ],
-    "priority": 3,
+    "priority": 5,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3144,7 +3144,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3163,7 +3163,7 @@
     "regions": [
       "china"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3220,7 +3220,7 @@
     "regions": [
       "latin-america"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3239,7 +3239,7 @@
     "regions": [
       "latin-america"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3297,7 +3297,7 @@
     "regions": [
       "west-asia"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3316,7 +3316,7 @@
     "regions": [
       "west-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3335,7 +3335,7 @@
     "regions": [
       "west-asia"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3354,7 +3354,7 @@
     "regions": [
       "west-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3373,7 +3373,7 @@
     "regions": [
       "west-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3411,7 +3411,7 @@
     "regions": [
       "south-asia"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3468,7 +3468,7 @@
     "regions": [
       "china"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3506,7 +3506,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3563,7 +3563,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 2,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3601,7 +3601,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3639,7 +3639,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3698,7 +3698,7 @@
       "south-asia",
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3718,7 +3718,7 @@
       "south-asia",
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3909,7 +3909,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3928,7 +3928,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3947,7 +3947,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3966,7 +3966,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -3985,7 +3985,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -4043,7 +4043,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -4081,7 +4081,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4120,7 +4120,7 @@
       "europe",
       "west-asia"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -4253,7 +4253,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4291,7 +4291,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4348,7 +4348,7 @@
     "regions": [
       "latin-america"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4387,7 +4387,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4425,7 +4425,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4444,7 +4444,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4464,7 +4464,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4483,7 +4483,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4502,7 +4502,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4522,7 +4522,7 @@
       "south-asia",
       "china"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4542,7 +4542,7 @@
       "south-asia",
       "china"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4618,7 +4618,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4637,7 +4637,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4675,7 +4675,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4694,7 +4694,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4751,7 +4751,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4770,7 +4770,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4865,7 +4865,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4922,7 +4922,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4941,7 +4941,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -4998,7 +4998,7 @@
     "regions": [
       "north-america"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5036,7 +5036,7 @@
     "regions": [
       "north-america"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5055,7 +5055,7 @@
     "regions": [
       "north-america"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5074,7 +5074,7 @@
     "regions": [
       "north-america"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5094,7 +5094,7 @@
       "africa",
       "west-asia"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5114,7 +5114,7 @@
       "africa",
       "west-asia"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5133,7 +5133,7 @@
     "regions": [
       "africa"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5171,7 +5171,7 @@
     "regions": [
       "west-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5209,7 +5209,7 @@
     "regions": [
       "west-asia"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5228,7 +5228,7 @@
     "regions": [
       "west-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5248,7 +5248,7 @@
       "west-asia",
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5268,7 +5268,7 @@
       "south-asia",
       "central-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5288,7 +5288,7 @@
       "south-asia",
       "central-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5307,7 +5307,7 @@
     "regions": [
       "central-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5326,7 +5326,7 @@
     "regions": [
       "south-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5345,7 +5345,7 @@
     "regions": [
       "south-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5383,7 +5383,7 @@
     "regions": [
       "south-asia"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5440,7 +5440,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5459,7 +5459,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5478,7 +5478,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5497,7 +5497,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5535,7 +5535,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5554,7 +5554,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5573,7 +5573,7 @@
     "regions": [
       "china"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5611,7 +5611,7 @@
     "regions": [
       "china"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5668,7 +5668,7 @@
     "regions": [
       "japan"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "幕末",
     "themes": [],
     "source": "draft",
@@ -5687,7 +5687,7 @@
     "regions": [
       "japan"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "明治",
     "themes": [],
     "source": "draft",
@@ -5706,7 +5706,7 @@
     "regions": [
       "japan"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "明治",
     "themes": [],
     "source": "draft",
@@ -5744,7 +5744,7 @@
     "regions": [
       "japan"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "明治",
     "themes": [],
     "source": "draft",
@@ -5763,7 +5763,7 @@
     "regions": [
       "japan"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "明治",
     "themes": [],
     "source": "draft",
@@ -5820,7 +5820,7 @@
     "regions": [
       "japan"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "明治",
     "themes": [],
     "source": "draft",
@@ -5839,7 +5839,7 @@
     "regions": [
       "africa"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5877,7 +5877,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -5915,7 +5915,7 @@
     "regions": [
       "japan"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "明治",
     "themes": [],
     "source": "draft",
@@ -5935,7 +5935,7 @@
       "north-america",
       "latin-america"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6012,7 +6012,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6050,7 +6050,7 @@
     "regions": [
       "africa"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6088,7 +6088,7 @@
     "regions": [
       "west-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6145,7 +6145,7 @@
     "regions": [
       "west-asia"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6240,7 +6240,7 @@
     "regions": [
       "africa"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6259,7 +6259,7 @@
     "regions": [
       "oceania"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近世",
     "themes": [],
     "source": "draft",
@@ -6279,7 +6279,7 @@
       "latin-america",
       "north-america"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6299,7 +6299,7 @@
       "latin-america",
       "north-america"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6319,7 +6319,7 @@
       "latin-america",
       "north-america"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6339,7 +6339,7 @@
       "latin-america",
       "north-america"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6360,7 +6360,7 @@
       "latin-america",
       "north-america"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6399,7 +6399,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6419,7 +6419,7 @@
       "china",
       "europe"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6457,7 +6457,7 @@
     "regions": [
       "china"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6495,7 +6495,7 @@
     "regions": [
       "japan"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "明治",
     "themes": [],
     "source": "draft",
@@ -6514,7 +6514,7 @@
     "regions": [
       "china"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6533,7 +6533,7 @@
     "regions": [
       "china"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6552,7 +6552,7 @@
     "regions": [
       "central-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -6571,7 +6571,7 @@
     "regions": [
       "china"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6628,7 +6628,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6647,7 +6647,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6666,7 +6666,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6685,7 +6685,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6704,7 +6704,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6723,7 +6723,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "近代",
     "themes": [],
     "source": "draft",
@@ -6761,7 +6761,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -6837,7 +6837,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -6856,7 +6856,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -6894,7 +6894,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -6913,7 +6913,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -6932,7 +6932,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -6951,7 +6951,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -6990,7 +6990,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7047,7 +7047,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7142,7 +7142,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7161,7 +7161,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7180,7 +7180,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7199,7 +7199,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7218,7 +7218,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7237,7 +7237,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -7256,7 +7256,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7294,7 +7294,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7313,7 +7313,7 @@
     "regions": [
       "north-america"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7332,7 +7332,7 @@
     "regions": [
       "north-america"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7370,7 +7370,7 @@
     "regions": [
       "japan"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "大正",
     "themes": [],
     "source": "draft",
@@ -7484,7 +7484,7 @@
     "regions": [
       "china"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7522,7 +7522,7 @@
     "regions": [
       "china"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7541,7 +7541,7 @@
     "regions": [
       "china"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7598,7 +7598,7 @@
     "regions": [
       "south-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7617,7 +7617,7 @@
     "regions": [
       "south-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7655,7 +7655,7 @@
     "regions": [
       "south-asia"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7674,7 +7674,7 @@
     "regions": [
       "south-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第二次世界大戦",
     "themes": [],
     "source": "draft",
@@ -7693,7 +7693,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7731,7 +7731,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7769,7 +7769,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7788,7 +7788,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7807,7 +7807,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7902,7 +7902,7 @@
     "regions": [
       "west-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7940,7 +7940,7 @@
     "regions": [
       "africa"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7959,7 +7959,7 @@
     "regions": [
       "africa"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -7978,7 +7978,7 @@
     "regions": [
       "africa"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -8035,7 +8035,7 @@
     "regions": [
       "north-america"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -8092,7 +8092,7 @@
     "regions": [
       "north-america"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -8111,7 +8111,7 @@
     "regions": [
       "north-america"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -8130,7 +8130,7 @@
     "regions": [
       "north-america"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -8149,7 +8149,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -8188,7 +8188,7 @@
     "regions": [
       "north-america"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -8208,7 +8208,7 @@
       "europe",
       "north-america"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -8227,7 +8227,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -8246,7 +8246,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -8322,7 +8322,7 @@
     "regions": [
       "japan"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "昭和戦前・戦中",
     "themes": [],
     "source": "draft",
@@ -8341,7 +8341,7 @@
     "regions": [
       "japan"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "昭和戦前・戦中",
     "themes": [],
     "source": "draft",
@@ -8379,7 +8379,7 @@
     "regions": [
       "china"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -8417,7 +8417,7 @@
     "regions": [
       "china"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -8436,7 +8436,7 @@
     "regions": [
       "japan"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "昭和戦前・戦中",
     "themes": [],
     "source": "draft",
@@ -8455,7 +8455,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -8474,7 +8474,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -8493,7 +8493,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -8512,7 +8512,7 @@
     "regions": [
       "africa"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -8550,7 +8550,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -8646,7 +8646,7 @@
       "china",
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -8685,7 +8685,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第一次世界大戦・戦間期",
     "themes": [],
     "source": "draft",
@@ -8761,7 +8761,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "第二次世界大戦",
     "themes": [],
     "source": "draft",
@@ -8799,7 +8799,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "第二次世界大戦",
     "themes": [],
     "source": "draft",
@@ -8818,7 +8818,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "第二次世界大戦",
     "themes": [],
     "source": "draft",
@@ -8894,7 +8894,7 @@
     "regions": [
       "japan"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "昭和戦前・戦中",
     "themes": [],
     "source": "draft",
@@ -8932,7 +8932,7 @@
     "regions": [
       "japan"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "昭和戦前・戦中",
     "themes": [],
     "source": "draft",
@@ -9008,7 +9008,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "第二次世界大戦",
     "themes": [],
     "source": "draft",
@@ -9084,7 +9084,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9103,7 +9103,7 @@
     "regions": [
       "china"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9141,7 +9141,7 @@
     "regions": [
       "china"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9179,7 +9179,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9198,7 +9198,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9217,7 +9217,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9236,7 +9236,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9255,7 +9255,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9394,7 +9394,7 @@
       "west-asia",
       "africa"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9432,7 +9432,7 @@
     "regions": [
       "japan"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "昭和戦後",
     "themes": [],
     "source": "draft",
@@ -9470,7 +9470,7 @@
     "regions": [
       "africa"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9489,7 +9489,7 @@
     "regions": [
       "africa"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9529,7 +9529,7 @@
       "latin-america",
       "north-america"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9549,7 +9549,7 @@
       "north-america",
       "europe"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9608,7 +9608,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 4,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9665,7 +9665,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9684,7 +9684,7 @@
     "regions": [
       "north-america"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9703,7 +9703,7 @@
     "regions": [
       "north-america"
     ],
-    "priority": 3,
+    "priority": 1,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9836,7 +9836,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9893,7 +9893,7 @@
     "regions": [
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9950,7 +9950,7 @@
     "regions": [
       "china"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -9970,7 +9970,7 @@
       "china",
       "south-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -10009,7 +10009,7 @@
     "regions": [
       "china"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -10047,7 +10047,7 @@
     "regions": [
       "china"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -10123,7 +10123,7 @@
     "regions": [
       "china"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -10161,7 +10161,7 @@
     "regions": [
       "china"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -10199,7 +10199,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -10218,7 +10218,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -10275,7 +10275,7 @@
     "regions": [
       "southeast-asia"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -10294,7 +10294,7 @@
     "regions": [
       "south-asia"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -10313,7 +10313,7 @@
     "regions": [
       "latin-america"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -10393,7 +10393,7 @@
       "north-america",
       "europe"
     ],
-    "priority": 4,
+    "priority": 5,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -10433,7 +10433,7 @@
       "latin-america",
       "europe"
     ],
-    "priority": 3,
+    "priority": 2,
     "period": "戦後・冷戦期",
     "themes": [],
     "source": "draft",
@@ -10452,7 +10452,7 @@
     "regions": [
       "japan"
     ],
-    "priority": 4,
+    "priority": 3,
     "period": "昭和戦後",
     "themes": [],
     "source": "draft",

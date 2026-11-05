@@ -51,6 +51,10 @@ const byLine=line=>events.find(e=>e.draftLines.includes(line));
     await call('Emulation.setDeviceMetricsOverride',{width,height:844,deviceScaleFactor:1,mobile:width<700});
     const metrics=await evaluate(`(()=>{const a=document.querySelector('.site-header nav a[href="/development-log"]');const r=a.getBoundingClientRect();return {right:r.right,viewport:innerWidth,scroll:document.documentElement.scrollWidth,bell:a.querySelector('svg').getBoundingClientRect().width};})()`);
     assert.ok(metrics.right<=metrics.viewport&&metrics.scroll<=metrics.viewport&&metrics.bell>0,'header fits with bell at '+width+' '+JSON.stringify(metrics));
+    const label=await evaluate(`(()=>{const a=document.querySelector('.site-header nav a[href="/development-log"]');return {visible:a.querySelector('.updates-tab-label').getClientRects().length>0,name:a.getAttribute('aria-label'),width:a.getBoundingClientRect().width};})()`);
+    assert.equal(label.visible,width>700,'update label visibility at '+width);
+    assert.ok(label.name.startsWith('アップデート'),'icon has accessible name');
+    if(width<=700)assert.ok(label.width>=44,'mobile bell tap target');
    }
    await click('.site-header nav a[href="/development-log"]');
    await until(`!!document.querySelector('.development-log-page')&&!document.querySelector('.notification-dot')`,'view updates marks read');

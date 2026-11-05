@@ -356,13 +356,8 @@ a { color: inherit; text-decoration: none; }
   .header-inner .brand { min-width: 0; }
   .site-header nav { gap: 8px; }
   .site-header nav a { gap: 4px; padding-left: 0; padding-right: 0; white-space: nowrap; }
-}
-@media (max-width: 380px) {
-  .header-inner { padding-left: 10px; padding-right: 10px; gap: 8px; }
-  .site-header nav { gap: 8px; }
-  .brand { gap: 5px; font-size: 13px; }
-  .brand-symbol { width: 25px; height: 25px; }
-  .site-header .header-inner nav a { font-size: 10px; }
+  .site-header nav a[href="/development-log"] { min-width: 44px; }
+  .updates-tab-label { display: none; }
 }
 .scope-summary>a { display: inline-flex; align-items: center; justify-content: flex-end; gap: 12px; min-height: 34px; color: var(--foreground); max-width: 78%; text-align: right; overflow-wrap: anywhere; }
 .scope-summary>a>span { font-size: 19px; color: var(--muted); }

@@ -130,7 +130,7 @@ HISTORY_BASE_URL=http://localhost:3000 HISTORY_SCREENSHOT=0 npm run test:browser
 - `subject` は `japan` / `world`、`era` は `CE` / `BCE`。`year` は常に1以上の整数です。紀元前221年は `year: 221, era: "BCE"`。
 - 主所属は `unitId` 1つ。必要なら `relatedUnitIds` を追加できます。同じ問題は1件として出題します。
 - `regions` は地域IDの配列。複数地域を設定できます。日本史は `japan`。東アジア周辺諸国は学習上の関連に応じ `china` を含めます。
-- `priority` は1〜5。既存の問題は従来の評価を継承し、新規問題は標準（★★★）を基準に基本事項を★★★★としています。入試頻度の実測値ではありません。
+- `priority` は1〜5。収録546問は `data/sources/new-stars.md` の評価に合わせています。年号全桁を覚える優先度を表し、入試頻度の実測値ではありません。
 - `note` は任意で、解答後と詳細画面に「語呂合わせ・備考」欄として表示します。年号右側の内容はすべてここに保存しています。`source` は今回の収録元では `draft`、外部資料のURLの場合だけ参照リンクを表示します。
 - `draftLines` は元の `data/sources/events-draft.txt` に対応する行番号です。重複を統合した問題では複数行を保持し、テストで全項目の年号・紀元・備考を照合します。
 - `answerPrecision` は `decade`（下一桁不要）／`hundred`（下二桁不要）。draftで指定された2問では完全解答モードでも指定桁だけを答え、他の数値入力モードでも指定以上の桁を要求しません。
