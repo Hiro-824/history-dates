@@ -12,7 +12,7 @@ const events=require('../data/events.json');
 const byLine=line=>events.find(e=>e.draftLines.includes(line));
 (async()=>{
  // Verify every route on the server under test, including a long-running dev server.
- for(const route of ['/','/library','/records','/settings']){
+ for(const route of ['/','/library','/records','/development-log','/settings']){
   const response=await fetch(base+route,{redirect:'manual'});
   assert.equal(response.status,route==='/settings'?307:200,`HTTP response for ${route}`);
   assert.ok(!(await response.text()).includes('Element type is invalid'),`Invalid React export on ${route}`);
@@ -42,6 +42,32 @@ const byLine=line=>events.find(e=>e.draftLines.includes(line));
   const history=()=>call('Page.getNavigationHistory');
   const traverse=async delta=>{const h=await history();await call('Page.navigateToHistoryEntry',{entryId:h.entries[h.currentIndex+delta].id});};
   await call('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
+  if(process.env.HISTORY_DEVELOPMENT_LOG_ONLY==='1'){
+   await navigate('/');
+   await until(`!!document.querySelector('.start-button:not(:disabled)')`,'updates home ready');
+   const hasLogs=await evaluate(`!!document.querySelector('a[href="/development-log"] .notification-dot')`);
+   assert.deepEqual(await evaluate(`[...document.querySelectorAll('.site-header nav a')].map(a=>a.textContent)`),['学習','問題一覧','学習記録','アップデート']);
+   for(const width of [320,390,1024]){
+    await call('Emulation.setDeviceMetricsOverride',{width,height:844,deviceScaleFactor:1,mobile:width<700});
+    const metrics=await evaluate(`(()=>{const a=document.querySelector('.site-header nav a[href="/development-log"]');const r=a.getBoundingClientRect();return {right:r.right,viewport:innerWidth,scroll:document.documentElement.scrollWidth,bell:a.querySelector('svg').getBoundingClientRect().width};})()`);
+    assert.ok(metrics.right<=metrics.viewport&&metrics.scroll<=metrics.viewport&&metrics.bell>0,'header fits with bell at '+width+' '+JSON.stringify(metrics));
+   }
+   await click('.site-header nav a[href="/development-log"]');
+   await until(`!!document.querySelector('.development-log-page')&&!document.querySelector('.notification-dot')`,'view updates marks read');
+   assert.equal(await evaluate(`!!document.querySelector('.development-log-entry')`),hasLogs);
+   await click('.site-header nav a[href="/"]');
+   await until(`!!document.querySelector('.start-button:not(:disabled)')`,'return home');
+   assert.equal(await evaluate(`!!document.querySelector('.notification-dot')`),false);
+   await call('Page.reload');
+   await until(`!!document.querySelector('.start-button:not(:disabled)')`,'reload home');
+   assert.equal(await evaluate(`!!document.querySelector('.notification-dot')`),false,'read state persists on reload');
+   await evaluate(`localStorage.removeItem('history-dates:development-log:read')`);
+   await call('Page.reload');
+   await until(`!!document.querySelector('.start-button:not(:disabled)')`,'fresh storage home ready');
+   assert.equal(await evaluate(`!!document.querySelector('.notification-dot')`),hasLogs,'fresh browser storage is unread only when logs exist');
+   console.log('Development log passed: tab order, unread/read, persistence, fresh storage and responsive bell at 320/390/1024px.');
+   return;
+  }
   if(process.env.HISTORY_SCROLL_ONLY==='1'||process.env.HISTORY_NAVIGATION_ONLY!=='1'){
    await call('Emulation.setDeviceMetricsOverride',{width:390,height:568,deviceScaleFactor:1,mobile:true});
    await navigate('/');await until(`!!document.querySelector('.start-button:not(:disabled)')`,'scroll test home');

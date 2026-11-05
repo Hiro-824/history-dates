@@ -6,6 +6,7 @@ const paths = {
   book: <><path d="M4 4h6a3 3 0 0 1 3 3v14a4 4 0 0 0-4-3H4z"/><path d="M20 4h-4a3 3 0 0 0-3 3v14a4 4 0 0 1 4-3h3z"/></>,
   list: <><path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6h.01M4 12h.01M4 18h.01"/></>,
   chart: <><path d="M4 4v16h17M9 15v-4M14 15V7M19 15v-6"/></>,
+  bell: <><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></>,
   arrow: <path d="M4 12h16m-6-6 6 6-6 6"/>,
   settings: <><path d="M4 7h16M4 17h16M8 4v6M16 14v6"/></>,
   check: <path d="m5 12 4 4L19 6"/>,
