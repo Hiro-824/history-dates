@@ -53,7 +53,7 @@ export default function HistoryApp() {
         </button></fieldset>
         <ModeControl settings={settings} onChange={change}/>
         <PriorityFilter settings={settings} change={change}/>
-        <p className="help priority-note">あくまで、年号全桁を覚えるか、という基準での選定です。{priorityExample && <>例えば、ブワイフ朝が大アミール号を獲得（946年）は（{priorityStars(priorityExample.priority)}）ですが、10世紀であることは共通テストレベルでも覚えておくべきでしょう。このように、</>}★が少なくても世紀を覚えておくべき出来事はあります。世紀モードでは、すべてを対象にすることをおすすめします。</p>
+        <p className="help priority-note">あくまで、年号全桁を覚えるか、という基準での選定です。{priorityExample && <>例えば、「ブワイフ朝が大アミール号を獲得（946年）」は{priorityStars(priorityExample.priority)}ですが、10世紀であることは共通テストレベルでも覚えておくべきでしょう。このように、</>}★が少なくても世紀を覚えておくべき出来事はあります。世紀モードでは、「すべて」を対象にすることをおすすめします。</p>
         <StudyPreferences settings={settings} onChange={change}/>
       </div>
       {ready && !filtered.length && <p className="home-empty error-text">{rangeError(settings) || "条件に一致する問題がありません。星や出題範囲を変更してください。"}</p>}
