@@ -354,7 +354,7 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 700px) {
   .header-inner { gap: 12px; }
   .header-inner .brand { min-width: 0; }
-  .site-header nav { gap: 8px; }
+  .site-header nav { gap: clamp(10px, calc(25vw - 70px), 20px); }
   .site-header nav a { gap: 4px; padding-left: 0; padding-right: 0; white-space: nowrap; }
   .site-header nav a[href="/development-log"] { min-width: 44px; }
   .updates-tab-label { display: none; }
