@@ -7,7 +7,7 @@ import { priorityStars } from "@/data/priorities";
 import { regionById } from "@/data/regions";
 import { unitById } from "@/data/units";
 import { events, eventSubjectLabel, matchesSubject } from "@/lib/events";
-import { DEFAULT_SETTINGS, formatYear, modeName, SUBJECTS, weakness } from "@/lib/study";
+import { chronologicalYear, DEFAULT_SETTINGS, formatYear, modeName, SUBJECTS, weakness } from "@/lib/study";
 import { startStudy, useStudyStore } from "@/lib/storage";
 import type { HistoryEvent, Settings, Store } from "@/lib/types";
 import { AppShell } from "./app-shell";
@@ -19,7 +19,7 @@ export function LibraryPage() {
   const [query,setQuery]=useState("");const [subject,setSubject]=useState<Settings["subject"]>("both");const [period,setPeriod]=useState("");
   const [selected,setSelected]=useState<HistoryEvent|null>(null);
   const deferredQuery=useDeferredValue(query);
-  const candidates=useMemo(()=>events.filter((e)=>matchesSubject(e,subject)),[subject]);
+  const candidates=useMemo(()=>events.filter((e)=>matchesSubject(e,subject)).sort((a,b)=>chronologicalYear(a)-chronologicalYear(b)),[subject]);
   const periods=[...new Set(candidates.map((e)=>e.period))];
   const q=deferredQuery.trim().replace(/[０-９]/g,(c)=>String.fromCharCode(c.charCodeAt(0)-0xfee0)).toLowerCase();
   const filtered=useMemo(()=>candidates.filter((e)=>(!period||e.period===period)&&(!q||`${e.name} ${e.year} ${formatYear(e)} ${e.era==="BCE"?"bc bce":"ce"}`.toLowerCase().includes(q))),[candidates,period,q]);
