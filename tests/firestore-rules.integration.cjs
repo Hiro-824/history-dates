@@ -43,7 +43,7 @@ test('Firestore enforces public states, validation, atomic rate limits and priva
     await assertFails(getDoc(doc(other, 'submissionLimits', 'poster')));
     await assertFails(post(db, 'poster', id2));
     await assertFails(post(other, 'poster', id2));
-    const invalid = [{ reviewStatus: 'verified' }, { reviewStatus: 'hidden' }, { priority: 5 }, { year: 0 }, { year: 1.5 }, { year: 10000 }, { name: '' }, { name: ' ' }, { name: 'a'.repeat(161) }, { note: 'a'.repeat(1001) }, { duplicateChecked: false }, { duplicateChecked: 'true' }, { source: 'https://example.org/source' }, { regionId: 'europe' }, { unitId: 'W01-01' }, { createdAt: Timestamp.fromMillis(0) }, { author: 'private information' }];
+    const invalid = [{ reviewStatus: 'verified' }, { reviewStatus: 'hidden' }, { priority: 0 }, { priority: 6 }, { priority: 1.5 }, { priority: '3' }, { priority: null }, { year: 0 }, { year: 1.5 }, { year: 10000 }, { name: '' }, { name: ' ' }, { name: 'a'.repeat(161) }, { note: 'a'.repeat(1001) }, { duplicateChecked: false }, { duplicateChecked: 'true' }, { source: 'https://example.org/source' }, { regionId: 'europe' }, { unitId: 'W01-01' }, { createdAt: Timestamp.fromMillis(0) }, { author: 'private information' }];
     for (let i = 0; i < invalid.length; i++) {
       const uid = 'invalid-' + i;
       await assertFails(post(env.authenticatedContext(uid).firestore(), uid, id2, invalid[i]));
@@ -51,7 +51,14 @@ test('Firestore enforces public states, validation, atomic rate limits and priva
     await env.withSecurityRulesDisabled(async (context) => {
       await setDoc(doc(context.firestore(), 'submissionLimits', 'poster'), { lastAt: Timestamp.fromMillis(Date.now() - 61000), submissionId: id });
     });
-    await assertSucceeds(post(db, 'poster', id2));
+    await assertSucceeds(post(db, 'poster', id2, { priority: 5 }));
+    assert.equal((await getDoc(doc(guest, 'submissions', id2))).data().priority, 5);
+    for (const priority of [1, 2, 3, 4]) {
+      const uid = 'priority-' + priority;
+      const docId = 'PriorityABCDEFGHIJK' + priority;
+      await assertSucceeds(post(env.authenticatedContext(uid).firestore(), uid, docId, { priority }));
+      await env.withSecurityRulesDisabled(async context => { await deleteDoc(doc(context.firestore(), 'submissions', docId)); });
+    }
     await env.withSecurityRulesDisabled(async (context) => {
       await updateDoc(doc(context.firestore(), 'submissions', id), { reviewStatus: 'hidden' });
     });

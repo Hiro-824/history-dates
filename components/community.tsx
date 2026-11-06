@@ -4,11 +4,12 @@ import { useRef, useState, type FormEvent } from "react";
 import { Plus } from "lucide-react";
 import { regionsForSubject } from "@/data/regions";
 import { unitGroups } from "@/data/units";
+import { priorities, priorityStars } from "@/data/priorities";
 import { sameYearEvents, mergeEvents, validateSubmission, type SubmissionInput } from "@/lib/community";
 import { communityError, fetchSameYearCommunityEvents, reportCommunityEvent, submitCommunityEvent } from "@/lib/community-client";
 import { events as builtins, eventSubjectLabel } from "@/lib/events";
 import { formatYear } from "@/lib/study";
-import type { HistoryEvent, Settings } from "@/lib/types";
+import type { HistoryEvent, Priority, Settings } from "@/lib/types";
 import { AppShell } from "./app-shell";
 import { CommunityStatus, useEventCatalog } from "./community-provider";
 import { NavigationLink as Link } from "./navigation";
@@ -21,8 +22,8 @@ export function ReviewBadge({ event }: { event: HistoryEvent }) {
 export function CommunitySettings({ settings, change }: { settings: Settings; change: (settings: Settings) => void }) {
   const { configured } = useEventCatalog();
   return <section className="community-settings">
-    <label className="check-field"><input type="checkbox" checked={settings.includeUnverified} disabled={!configured} onChange={(event) => change({ ...settings, includeUnverified: event.target.checked })}/>未確認の投稿も出題する</label>
-    <p className="help">未確認の投稿は、年号や内容が正確でない場合があります。投稿問題の優先度は確認まで仮の★★★です。</p>
+    <label className="check-field"><input type="checkbox" checked={!settings.includeUnverified} disabled={!configured} onChange={(event) => change({ ...settings, includeUnverified: !event.target.checked })}/>投稿後未確認の問題は出題しない</label>
+    <p className="help">未確認の投稿は、年号や内容が正確でない場合があります。投稿問題の優先度は確認まで仮の評価です。</p>
     <Link href="/submit" className="text-button"><Plus size={17} aria-hidden="true"/>年号を投稿</Link>
     <CommunityStatus/>
   </section>;
@@ -84,6 +85,7 @@ export function SubmissionPage() {
       <div className="two-fields"><label className="field"><span>科目</span><select value={input.subject} onChange={(event) => { const subject = event.target.value as SubmissionInput["subject"]; patch({ subject, unitId: "", regionId: regionsForSubject(subject)[0].id }); }}><option value="japan">日本史</option><option value="world">世界史</option></select></label><label className="field"><span>地域</span><select value={input.regionId} onChange={(event) => patch({ regionId: event.target.value })}>{regionsForSubject(input.subject).map((region) => <option key={region.id} value={region.id}>{region.name}</option>)}</select></label></div>
       <label className="field"><span>単元（任意）</span><select value={input.unitId} onChange={(event) => patch({ unitId: event.target.value })}><option value="">わからない・未分類</option>{unitGroups.filter((group) => group.subject === input.subject).map((group) => <optgroup key={group.id} label={group.name}>{group.units.map((unit) => <option key={unit.id} value={unit.id}>{unit.name}</option>)}</optgroup>)}</select></label>
       <p className="help">単元が未分類の投稿は、全範囲ランダム・地域×時代の設定で出題できます。</p>
+      <label className="field"><span>優先度（任意）</span><select name="priority" value={input.priority ?? ""} onChange={(event) => patch({ priority: event.target.value === "" ? undefined : Number(event.target.value) as Priority })}><option value="">指定しない（★★★・標準）</option>{priorities.map((priority) => <option key={priority.value} value={priority.value}>{priorityStars(priority.value)}・{priority.label}</option>)}</select></label>
       <label className="field"><span>語呂合わせ・備考（任意）</span><textarea name="note" rows={4} maxLength={1000} value={input.note} onChange={(event) => patch({ note: event.target.value })}/></label>
       <section className="same-year-check" aria-labelledby="same-year-heading"><h2 id="same-year-heading">投稿前の重複確認</h2>
         <p className="help">同じ年でも別の出来事なら投稿できます。日本史・世界史と未確認の投稿を含めて、同じ出来事が登録されていないか確認してください。</p>

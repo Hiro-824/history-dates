@@ -26,7 +26,7 @@ export async function submitCommunityEvent(input: SubmissionInput) {
     const last = previous.data()?.lastAt?.toMillis?.();
     if (typeof last === "number" && Date.now() - last < 60_000) throw new Error("続けて投稿する場合は、前の投稿から1分お待ちください。");
     transaction.set(quota, { lastAt: serverTimestamp(), submissionId: submission.id });
-    transaction.set(submission, { ...value, priority: 3, reviewStatus: "unverified", createdAt: serverTimestamp() });
+    transaction.set(submission, { ...value, reviewStatus: "unverified", createdAt: serverTimestamp() });
   });
   return submission.id;
 }

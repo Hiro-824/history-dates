@@ -1,6 +1,6 @@
 import { regionById } from "../data/regions";
 import { unitById } from "../data/units";
-import type { HistoryEvent, Subject } from "./types";
+import type { HistoryEvent, Priority, Subject } from "./types";
 
 export const COMMUNITY_LIMIT = 500;
 export interface SubmissionInput {
@@ -12,15 +12,17 @@ export interface SubmissionInput {
   regionId: string;
   note: string;
   duplicateChecked: boolean;
+  priority?: Priority;
 }
-export function validateSubmission(input: SubmissionInput): SubmissionInput {
-  const value = { name: input.name.trim(), year: input.year, era: input.era, subject: input.subject, unitId: input.unitId, regionId: input.regionId, note: input.note.trim(), duplicateChecked: input.duplicateChecked };
+export function validateSubmission(input: SubmissionInput): SubmissionInput & { priority: Priority } {
+  const value = { name: input.name.trim(), year: input.year, era: input.era, subject: input.subject, unitId: input.unitId, regionId: input.regionId, note: input.note.trim(), duplicateChecked: input.duplicateChecked, priority: input.priority === undefined ? 3 as const : input.priority };
   if (!value.name || value.name.length > 160) throw new Error("出来事は1〜160文字で入力してください。");
   if (!Number.isInteger(value.year) || value.year < 1 || value.year > 9999) throw new Error("年号は1〜9999の整数で入力してください。");
   if (!["CE", "BCE"].includes(value.era) || !["japan", "world"].includes(value.subject)) throw new Error("科目と紀元を選択してください。");
   if (value.unitId !== "" && unitById.get(value.unitId)?.subject !== value.subject) throw new Error("科目に対応する単元を選択してください。");
   if (regionById.get(value.regionId)?.subject !== value.subject) throw new Error("科目に対応する地域を選択してください。");
   if (value.note.length > 1000) throw new Error("備考は1000文字以内で入力してください。");
+  if (!Number.isInteger(value.priority) || value.priority < 1 || value.priority > 5) throw new Error("優先度は星1〜5から選択してください。");
   if (value.duplicateChecked !== true) throw new Error("同じ年号の既存データを確認し、重複がないことを確認してください。");
   return value;
 }

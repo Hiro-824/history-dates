@@ -16,7 +16,8 @@ service cloud.firestore {
         && d.era in ['CE', 'BCE'] && validClassification(d)
         && d.duplicateChecked == true
         && d.note is string && d.note.size() <= 1000
-        && d.priority == 3 && d.reviewStatus == 'unverified' && d.createdAt == request.time;
+        && d.priority is int && d.priority >= 1 && d.priority <= 5
+        && d.reviewStatus == 'unverified' && d.createdAt == request.time;
     }
     match /submissions/{id} {
       allow get: if publicStatus(resource.data.reviewStatus);

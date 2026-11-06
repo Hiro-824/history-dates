@@ -44,6 +44,18 @@ test('unverified questions default off across every scope; confirmed questions k
   assert.equal(restoreSettings({ includeUnverified: true }).includeUnverified, true);
   assert.equal(restoreSettings({ includeUnverified: 'yes' }).includeUnverified, false);
 });
+test('optional submission priority defaults to three and preserves every valid choice through study filters', () => {
+  assert.equal(validateSubmission(input).priority, 3);
+  for (const priority of [1, 2, 3, 4, 5]) {
+    assert.equal(validateSubmission({ ...input, priority }).priority, priority);
+    const event = communityEvent(id, { ...data, priority });
+    assert.equal(event.priority, priority);
+    const settings = { ...DEFAULT_SETTINGS, includeUnverified: true, priorities: [priority] };
+    assert.equal(filterEvents([event], settings, {}).length, 1);
+    assert.equal(filterEvents([event], { ...settings, priorities: [priority === 5 ? 1 : 5] }, {}).length, 0);
+  }
+  for (const priority of [0, 6, 1.5, '3', null, NaN]) assert.throws(() => validateSubmission({ ...input, priority }));
+});
 test('same-year review includes both subjects and unverified posts while separating CE and BCE', () => {
   const posted = communityEvent(id, data);
   const builtin = events.find(event => event.year === 1600 && event.era === 'CE');
