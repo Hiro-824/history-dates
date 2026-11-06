@@ -70,7 +70,7 @@ export function SubmissionPage() {
     finally { busy.current = false; setPending(false); }
   };
   return <AppShell><div className="submission-page"><div className="page-heading"><h1>年号を投稿</h1></div>
-    <p>学習に役立つ年号を教えてください。同じ年号の既存データを確認してから投稿できます。投稿内容は公開されます。</p>
+    <p>学習に役立つ年号を教えてください。同じ年号の既存データを確認してから投稿できます。</p>
     <p className="help">個人情報は入力しないでください。出来事を簡潔に記載してください。</p>
     {!configured && <p className="inline-error" role="status">投稿の受付は現在準備中です。</p>}
     {success && <section className="submission-success" role="status"><strong>投稿を受け付けました。</strong></section>}
