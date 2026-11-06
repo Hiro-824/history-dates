@@ -332,7 +332,8 @@
     "dateType": "single",
     "unitId": "J01-04",
     "regions": [
-      "japan"
+      "japan",
+      "china"
     ],
     "priority": 3,
     "period": "弥生",
@@ -342,7 +343,12 @@
       19
     ],
     "relatedUnitIds": [
-      "J01-04"
+      "J01-04",
+      "W04-02"
+    ],
+    "subjects": [
+      "japan",
+      "world"
     ]
   },
   {
@@ -354,7 +360,8 @@
     "dateType": "single",
     "unitId": "J01-04",
     "regions": [
-      "japan"
+      "japan",
+      "china"
     ],
     "priority": 4,
     "period": "弥生",
@@ -364,7 +371,12 @@
       20
     ],
     "relatedUnitIds": [
-      "J01-04"
+      "J01-04",
+      "W04-03"
+    ],
+    "subjects": [
+      "japan",
+      "world"
     ]
   },
   {
@@ -3105,7 +3117,8 @@
     "dateType": "single",
     "unitId": "W10-06",
     "regions": [
-      "china"
+      "china",
+      "japan"
     ],
     "priority": 5,
     "period": "近世",
@@ -3113,6 +3126,13 @@
     "source": "draft",
     "draftLines": [
       167
+    ],
+    "relatedUnitIds": [
+      "J07-04"
+    ],
+    "subjects": [
+      "world",
+      "japan"
     ]
   },
   {
@@ -3124,7 +3144,8 @@
     "dateType": "single",
     "unitId": "W10-06",
     "regions": [
-      "china"
+      "china",
+      "japan"
     ],
     "priority": 5,
     "period": "近世",
@@ -3132,6 +3153,13 @@
     "source": "draft",
     "draftLines": [
       168
+    ],
+    "relatedUnitIds": [
+      "J07-04"
+    ],
+    "subjects": [
+      "world",
+      "japan"
     ]
   },
   {
@@ -5743,7 +5771,8 @@
     "dateType": "single",
     "unitId": "J11-02",
     "regions": [
-      "japan"
+      "japan",
+      "china"
     ],
     "priority": 4,
     "period": "明治",
@@ -5751,6 +5780,13 @@
     "source": "draft",
     "draftLines": [
       306
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ],
+    "subjects": [
+      "japan",
+      "world"
     ]
   },
   {
@@ -5762,7 +5798,8 @@
     "dateType": "single",
     "unitId": "J11-02",
     "regions": [
-      "japan"
+      "japan",
+      "china"
     ],
     "priority": 4,
     "period": "明治",
@@ -5770,7 +5807,15 @@
     "source": "draft",
     "draftLines": [
       307
-    ]
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ],
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "note": "沖縄県を設置し琉球王国滅亡"
   },
   {
     "id": "wh-313a8a769579",
@@ -5781,7 +5826,8 @@
     "dateType": "single",
     "unitId": "W17-04",
     "regions": [
-      "china"
+      "china",
+      "japan"
     ],
     "priority": 3,
     "period": "近代",
@@ -5789,6 +5835,13 @@
     "source": "draft",
     "draftLines": [
       308
+    ],
+    "relatedUnitIds": [
+      "J11-02"
+    ],
+    "subjects": [
+      "world",
+      "japan"
     ]
   },
   {
@@ -5800,7 +5853,8 @@
     "dateType": "single",
     "unitId": "W17-04",
     "regions": [
-      "china"
+      "china",
+      "japan"
     ],
     "priority": 3,
     "period": "近代",
@@ -5808,6 +5862,13 @@
     "source": "draft",
     "draftLines": [
       309
+    ],
+    "relatedUnitIds": [
+      "J11-02"
+    ],
+    "subjects": [
+      "world",
+      "japan"
     ]
   },
   {
@@ -5819,7 +5880,8 @@
     "dateType": "single",
     "unitId": "J11-01",
     "regions": [
-      "japan"
+      "japan",
+      "china"
     ],
     "priority": 5,
     "period": "明治",
@@ -5827,6 +5889,13 @@
     "source": "draft",
     "draftLines": [
       310
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ],
+    "subjects": [
+      "japan",
+      "world"
     ]
   },
   {
@@ -5914,7 +5983,8 @@
     "dateType": "single",
     "unitId": "J11-01",
     "regions": [
-      "japan"
+      "japan",
+      "china"
     ],
     "priority": 5,
     "period": "明治",
@@ -5922,6 +5992,13 @@
     "source": "draft",
     "draftLines": [
       315
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ],
+    "subjects": [
+      "japan",
+      "world"
     ]
   },
   {
@@ -6418,7 +6495,8 @@
     "unitId": "W17-03",
     "regions": [
       "china",
-      "europe"
+      "europe",
+      "japan"
     ],
     "priority": 5,
     "period": "近代",
@@ -6426,6 +6504,13 @@
     "source": "draft",
     "draftLines": [
       341
+    ],
+    "relatedUnitIds": [
+      "J11-01"
+    ],
+    "subjects": [
+      "world",
+      "japan"
     ]
   },
   {
@@ -6475,7 +6560,8 @@
     "dateType": "single",
     "unitId": "W16-05",
     "regions": [
-      "china"
+      "china",
+      "japan"
     ],
     "priority": 4,
     "period": "近代",
@@ -6483,6 +6569,13 @@
     "source": "draft",
     "draftLines": [
       344
+    ],
+    "relatedUnitIds": [
+      "J11-02"
+    ],
+    "subjects": [
+      "world",
+      "japan"
     ]
   },
   {
@@ -6494,7 +6587,8 @@
     "dateType": "single",
     "unitId": "J11-02",
     "regions": [
-      "japan"
+      "japan",
+      "china"
     ],
     "priority": 5,
     "period": "明治",
@@ -6502,6 +6596,13 @@
     "source": "draft",
     "draftLines": [
       345
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ],
+    "subjects": [
+      "japan",
+      "world"
     ]
   },
   {
@@ -6855,7 +6956,8 @@
     "dateType": "single",
     "unitId": "W18-03",
     "regions": [
-      "europe"
+      "europe",
+      "japan"
     ],
     "priority": 5,
     "period": "第一次世界大戦・戦間期",
@@ -6863,7 +6965,15 @@
     "source": "draft",
     "draftLines": [
       364
-    ]
+    ],
+    "relatedUnitIds": [
+      "J11-05"
+    ],
+    "subjects": [
+      "world",
+      "japan"
+    ],
+    "note": "常任理事国となる"
   },
   {
     "id": "wh-fc336d17b3b8",
@@ -6874,7 +6984,8 @@
     "dateType": "single",
     "unitId": "W18-03",
     "regions": [
-      "north-america"
+      "north-america",
+      "japan"
     ],
     "priority": 4,
     "period": "第一次世界大戦・戦間期",
@@ -6882,6 +6993,13 @@
     "source": "draft",
     "draftLines": [
       365
+    ],
+    "relatedUnitIds": [
+      "J11-05"
+    ],
+    "subjects": [
+      "world",
+      "japan"
     ]
   },
   {
@@ -7369,7 +7487,8 @@
     "dateType": "single",
     "unitId": "J11-05",
     "regions": [
-      "japan"
+      "japan",
+      "china"
     ],
     "priority": 4,
     "period": "大正",
@@ -7377,6 +7496,13 @@
     "source": "draft",
     "draftLines": [
       391
+    ],
+    "relatedUnitIds": [
+      "W18-05"
+    ],
+    "subjects": [
+      "japan",
+      "world"
     ]
   },
   {
@@ -7388,7 +7514,8 @@
     "dateType": "single",
     "unitId": "W18-05",
     "regions": [
-      "china"
+      "china",
+      "japan"
     ],
     "priority": 4,
     "period": "第一次世界大戦・戦間期",
@@ -7396,6 +7523,13 @@
     "source": "draft",
     "draftLines": [
       392
+    ],
+    "relatedUnitIds": [
+      "J11-05"
+    ],
+    "subjects": [
+      "world",
+      "japan"
     ]
   },
   {
@@ -7540,7 +7674,8 @@
     "dateType": "single",
     "unitId": "W18-05",
     "regions": [
-      "china"
+      "china",
+      "japan"
     ],
     "priority": 4,
     "period": "第一次世界大戦・戦間期",
@@ -7548,6 +7683,13 @@
     "source": "draft",
     "draftLines": [
       400
+    ],
+    "relatedUnitIds": [
+      "J12-02"
+    ],
+    "subjects": [
+      "world",
+      "japan"
     ]
   },
   {
@@ -8034,7 +8176,9 @@
     "dateType": "single",
     "unitId": "W19-01",
     "regions": [
-      "north-america"
+      "north-america",
+      "japan",
+      "china"
     ],
     "priority": 5,
     "period": "第一次世界大戦・戦間期",
@@ -8042,6 +8186,13 @@
     "source": "draft",
     "draftLines": [
       426
+    ],
+    "relatedUnitIds": [
+      "J12-01"
+    ],
+    "subjects": [
+      "world",
+      "japan"
     ]
   },
   {
@@ -8340,7 +8491,8 @@
     "dateType": "single",
     "unitId": "J12-02",
     "regions": [
-      "japan"
+      "japan",
+      "china"
     ],
     "priority": 5,
     "period": "昭和戦前・戦中",
@@ -8348,6 +8500,13 @@
     "source": "draft",
     "draftLines": [
       442
+    ],
+    "relatedUnitIds": [
+      "W19-03"
+    ],
+    "subjects": [
+      "japan",
+      "world"
     ]
   },
   {
@@ -8359,7 +8518,8 @@
     "dateType": "single",
     "unitId": "J12-02",
     "regions": [
-      "japan"
+      "japan",
+      "china"
     ],
     "priority": 4,
     "period": "昭和戦前・戦中",
@@ -8367,6 +8527,13 @@
     "source": "draft",
     "draftLines": [
       443
+    ],
+    "relatedUnitIds": [
+      "W19-03"
+    ],
+    "subjects": [
+      "japan",
+      "world"
     ]
   },
   {
@@ -8416,7 +8583,8 @@
     "dateType": "single",
     "unitId": "W19-03",
     "regions": [
-      "china"
+      "china",
+      "japan"
     ],
     "priority": 5,
     "period": "第一次世界大戦・戦間期",
@@ -8424,6 +8592,13 @@
     "source": "draft",
     "draftLines": [
       446
+    ],
+    "relatedUnitIds": [
+      "J12-03"
+    ],
+    "subjects": [
+      "world",
+      "japan"
     ]
   },
   {
@@ -8435,7 +8610,8 @@
     "dateType": "single",
     "unitId": "J12-03",
     "regions": [
-      "japan"
+      "japan",
+      "china"
     ],
     "priority": 2,
     "period": "昭和戦前・戦中",
@@ -8443,6 +8619,13 @@
     "source": "draft",
     "draftLines": [
       447
+    ],
+    "relatedUnitIds": [
+      "W19-03"
+    ],
+    "subjects": [
+      "japan",
+      "world"
     ]
   },
   {
@@ -8665,7 +8848,8 @@
     "unitId": "W19-04",
     "regions": [
       "china",
-      "europe"
+      "europe",
+      "japan"
     ],
     "priority": 3,
     "period": "第一次世界大戦・戦間期",
@@ -8673,6 +8857,13 @@
     "source": "draft",
     "draftLines": [
       459
+    ],
+    "relatedUnitIds": [
+      "J12-04"
+    ],
+    "subjects": [
+      "world",
+      "japan"
     ]
   },
   {
@@ -8855,7 +9046,8 @@
     "dateType": "single",
     "unitId": "J12-04",
     "regions": [
-      "japan"
+      "japan",
+      "southeast-asia"
     ],
     "priority": 3,
     "period": "昭和戦前・戦中",
@@ -8863,6 +9055,13 @@
     "source": "draft",
     "draftLines": [
       469
+    ],
+    "relatedUnitIds": [
+      "W19-04"
+    ],
+    "subjects": [
+      "japan",
+      "world"
     ]
   },
   {
@@ -8874,7 +9073,8 @@
     "dateType": "single",
     "unitId": "J12-04",
     "regions": [
-      "japan"
+      "japan",
+      "europe"
     ],
     "priority": 4,
     "period": "昭和戦前・戦中",
@@ -8882,6 +9082,13 @@
     "source": "draft",
     "draftLines": [
       470
+    ],
+    "relatedUnitIds": [
+      "W19-04"
+    ],
+    "subjects": [
+      "japan",
+      "world"
     ]
   },
   {
@@ -8893,7 +9100,8 @@
     "dateType": "single",
     "unitId": "J12-04",
     "regions": [
-      "japan"
+      "japan",
+      "europe"
     ],
     "priority": 4,
     "period": "昭和戦前・戦中",
@@ -8901,6 +9109,13 @@
     "source": "draft",
     "draftLines": [
       471
+    ],
+    "relatedUnitIds": [
+      "W19-04"
+    ],
+    "subjects": [
+      "japan",
+      "world"
     ]
   },
   {
@@ -8912,7 +9127,8 @@
     "dateType": "single",
     "unitId": "J12-04",
     "regions": [
-      "japan"
+      "japan",
+      "southeast-asia"
     ],
     "priority": 3,
     "period": "昭和戦前・戦中",
@@ -8920,6 +9136,13 @@
     "source": "draft",
     "draftLines": [
       472
+    ],
+    "relatedUnitIds": [
+      "W19-04"
+    ],
+    "subjects": [
+      "japan",
+      "world"
     ]
   },
   {
@@ -8931,7 +9154,8 @@
     "dateType": "single",
     "unitId": "J12-04",
     "regions": [
-      "japan"
+      "japan",
+      "north-america"
     ],
     "priority": 5,
     "period": "昭和戦前・戦中",
@@ -8939,6 +9163,13 @@
     "source": "draft",
     "draftLines": [
       473
+    ],
+    "relatedUnitIds": [
+      "W19-04"
+    ],
+    "subjects": [
+      "japan",
+      "world"
     ]
   },
   {
@@ -8950,7 +9181,8 @@
     "dateType": "single",
     "unitId": "J12-04",
     "regions": [
-      "japan"
+      "japan",
+      "north-america"
     ],
     "priority": 4,
     "period": "昭和戦前・戦中",
@@ -8958,6 +9190,13 @@
     "source": "draft",
     "draftLines": [
       474
+    ],
+    "relatedUnitIds": [
+      "W19-04"
+    ],
+    "subjects": [
+      "japan",
+      "world"
     ]
   },
   {
@@ -10479,6 +10718,4265 @@
     "source": "draft",
     "draftLines": [
       552
+    ]
+  },
+  {
+    "id": "jp-import-jp0002",
+    "subject": "japan",
+    "name": "倭国王帥升らが後漢に遣使",
+    "year": 107,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J01-04",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 2,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W04-02"
+    ]
+  },
+  {
+    "id": "jp-import-jp0004",
+    "subject": "japan",
+    "name": "磐井の乱",
+    "year": 527,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J01-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0005",
+    "subject": "japan",
+    "name": "仏教公伝（『上宮聖徳法王帝説』・『元興寺縁起』による）",
+    "year": 538,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J01-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "note": "仏教公伝には538年説と552年説がある。ここでは元CSVの538年説で出題する。"
+  },
+  {
+    "id": "jp-import-jp0006",
+    "subject": "japan",
+    "name": "大伴金村失脚",
+    "year": 540,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J01-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0007",
+    "subject": "japan",
+    "name": "この年までに伽耶諸国滅亡",
+    "year": 562,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J01-04",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W04-05"
+    ]
+  },
+  {
+    "id": "jp-import-jp0008",
+    "subject": "japan",
+    "name": "蘇我馬子が物部守屋を滅ぼす",
+    "year": 587,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J01-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0009",
+    "subject": "japan",
+    "name": "推古天皇の摂政に厩戸王（聖徳太子）が就く",
+    "year": 593,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J02-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0010",
+    "subject": "japan",
+    "name": "『隋書』倭国伝に最初の遣使記録",
+    "year": 600,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J02-01",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 2,
+    "period": "古代",
+    "themes": [],
+    "source": "https://gakusyu.live/2024/05/28/nihonsi-nengoichiran/",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W04-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0011",
+    "subject": "japan",
+    "name": "冠位十二階制定",
+    "year": 603,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J02-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0012",
+    "subject": "japan",
+    "name": "十七条の憲法制定",
+    "year": 604,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J02-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0013",
+    "subject": "japan",
+    "name": "小野妹子を隋に派遣",
+    "year": 607,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J02-01",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 4,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W04-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0014",
+    "subject": "japan",
+    "name": "第一次遣唐使派遣",
+    "year": 630,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J02-01",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W04-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0015",
+    "subject": "japan",
+    "name": "乙巳の変",
+    "year": 645,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J02-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 5,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0016",
+    "subject": "japan",
+    "name": "改新の詔",
+    "year": 646,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J02-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0017",
+    "subject": "japan",
+    "name": "白村江の戦い",
+    "year": 663,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J02-02",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 4,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W04-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0018",
+    "subject": "japan",
+    "name": "壬申の乱",
+    "year": 672,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J02-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 5,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0019",
+    "subject": "japan",
+    "name": "藤原京遷都",
+    "year": 694,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J02-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0020",
+    "subject": "japan",
+    "name": "大宝律令完成",
+    "year": 701,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J02-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 5,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0021",
+    "subject": "japan",
+    "name": "和同開珎の鋳造",
+    "year": 708,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J03-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0022",
+    "subject": "japan",
+    "name": "平城京遷都",
+    "year": 710,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J03-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 5,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "note": "なんと大きな平城京"
+  },
+  {
+    "id": "jp-import-jp0023",
+    "subject": "japan",
+    "name": "三世一身法",
+    "year": 723,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J03-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0024",
+    "subject": "japan",
+    "name": "長屋王の変",
+    "year": 729,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J03-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0025",
+    "subject": "japan",
+    "name": "藤原広嗣の乱",
+    "year": 740,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J03-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0026",
+    "subject": "japan",
+    "name": "墾田永年私財法",
+    "year": 743,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J03-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 5,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0027",
+    "subject": "japan",
+    "name": "東大寺大仏開眼供養",
+    "year": 752,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J03-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0028",
+    "subject": "japan",
+    "name": "橘奈良麻呂の乱",
+    "year": 757,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J03-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0029",
+    "subject": "japan",
+    "name": "恵美押勝の乱",
+    "year": 764,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J03-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0030",
+    "subject": "japan",
+    "name": "宇佐八幡神託事件",
+    "year": 769,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J03-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0031",
+    "subject": "japan",
+    "name": "長岡京遷都",
+    "year": 784,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J03-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "note": "平安京の10年前"
+  },
+  {
+    "id": "jp-import-jp0032",
+    "subject": "japan",
+    "name": "平安京遷都",
+    "year": 794,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J03-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 5,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "note": "鳴くよウグイス平安京"
+  },
+  {
+    "id": "jp-import-jp0033",
+    "subject": "japan",
+    "name": "勘解由使設置",
+    "year": 797,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J03-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "古代",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0033"
+  },
+  {
+    "id": "jp-import-jp0034",
+    "subject": "japan",
+    "name": "平城太上天皇の変",
+    "year": 810,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J03-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0035",
+    "subject": "japan",
+    "name": "承和の変",
+    "year": 842,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0036",
+    "subject": "japan",
+    "name": "藤原良房が事実上の摂政となる",
+    "year": 858,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "note": "858年は清和天皇即位に伴う事実上の摂政。正式な摂政就任は866年として区別される。"
+  },
+  {
+    "id": "jp-import-jp0037",
+    "subject": "japan",
+    "name": "応天門の変",
+    "year": 866,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0038",
+    "subject": "japan",
+    "name": "阿衡の紛議",
+    "year": 887,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0039",
+    "subject": "japan",
+    "name": "菅原道真が遣唐使派遣の見直しを建議",
+    "year": 894,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J03-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "note": "白紙にしよう遣唐使"
+  },
+  {
+    "id": "jp-import-jp0040",
+    "subject": "japan",
+    "name": "菅原道真が大宰府に左遷される",
+    "year": 901,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0041",
+    "subject": "japan",
+    "name": "平将門の乱が始まる",
+    "year": 935,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0042",
+    "subject": "japan",
+    "name": "藤原純友の乱が本格化",
+    "year": 939,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0043",
+    "subject": "japan",
+    "name": "平将門の乱鎮圧",
+    "year": 940,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0044",
+    "subject": "japan",
+    "name": "藤原純友の乱鎮圧",
+    "year": 941,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0045",
+    "subject": "japan",
+    "name": "安和の変",
+    "year": 969,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0046",
+    "subject": "japan",
+    "name": "藤原道長が内覧となる",
+    "year": 995,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "古代",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0046",
+    "note": "摂政含め1017まで"
+  },
+  {
+    "id": "jp-import-jp0047",
+    "subject": "japan",
+    "name": "藤原道長が摂政となる",
+    "year": 1016,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "古代",
+    "themes": [],
+    "source": "https://hello.ac/chronology.pdf"
+  },
+  {
+    "id": "jp-import-jp0048",
+    "subject": "japan",
+    "name": "藤原頼通が摂政となる",
+    "year": 1017,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "note": "関白含め1067まで"
+  },
+  {
+    "id": "jp-import-jp0049",
+    "subject": "japan",
+    "name": "末法の初年",
+    "year": 1052,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0050",
+    "subject": "japan",
+    "name": "白河上皇の院政開始",
+    "year": 1086,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 5,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0051",
+    "subject": "japan",
+    "name": "保元の乱",
+    "year": 1156,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0052",
+    "subject": "japan",
+    "name": "平治の乱",
+    "year": 1159,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0053",
+    "subject": "japan",
+    "name": "平清盛が太政大臣となる",
+    "year": 1167,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0054",
+    "subject": "japan",
+    "name": "源頼朝挙兵・治承・寿永の内乱が始まる",
+    "year": 1180,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "古代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0055",
+    "subject": "japan",
+    "name": "壇ノ浦の戦い",
+    "year": 1185,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J04-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0056",
+    "subject": "japan",
+    "name": "源頼朝が守護・地頭の設置を認められる",
+    "year": 1185,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J05-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 5,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "note": "いい箱作ろう鎌倉幕府"
+  },
+  {
+    "id": "jp-import-jp0057",
+    "subject": "japan",
+    "name": "源頼朝が奥州を平定",
+    "year": 1189,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J05-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0058",
+    "subject": "japan",
+    "name": "源頼朝が征夷大将軍に就任",
+    "year": 1192,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J05-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "note": "いい国作ろう鎌倉幕府"
+  },
+  {
+    "id": "jp-import-jp0059",
+    "subject": "japan",
+    "name": "承久の乱",
+    "year": 1221,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J05-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 5,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0060",
+    "subject": "japan",
+    "name": "御成敗式目制定",
+    "year": 1232,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J05-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0061",
+    "subject": "japan",
+    "name": "文永の役",
+    "year": 1274,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J05-04",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 4,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W06-03"
+    ]
+  },
+  {
+    "id": "jp-import-jp0062",
+    "subject": "japan",
+    "name": "弘安の役",
+    "year": 1281,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J05-04",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 4,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W06-03"
+    ]
+  },
+  {
+    "id": "jp-import-jp0063",
+    "subject": "japan",
+    "name": "永仁の徳政令",
+    "year": 1297,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J05-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0064",
+    "subject": "japan",
+    "name": "鎌倉幕府滅亡",
+    "year": 1333,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J05-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 5,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0065",
+    "subject": "japan",
+    "name": "建武に改元（建武の新政）",
+    "year": 1334,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J06-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "中世",
+    "themes": [],
+    "source": "https://www.town.ogose.saitama.jp/kamei/shogaigakushu/bunkazai/kaisetsu/explanation_cultural/H26_29.html",
+    "note": "後醍醐天皇の新政開始を1333年とする説明もある。1334年は建武への改元の年として出題する。"
+  },
+  {
+    "id": "jp-import-jp0066",
+    "subject": "japan",
+    "name": "南北朝の分裂",
+    "year": 1336,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J06-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "中世",
+    "themes": [],
+    "source": "https://hello.ac/chronology.pdf"
+  },
+  {
+    "id": "jp-import-jp0067",
+    "subject": "japan",
+    "name": "足利尊氏が征夷大将軍に就任",
+    "year": 1338,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J06-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0068",
+    "subject": "japan",
+    "name": "南北朝合一",
+    "year": 1392,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J06-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "note": "朝鮮王朝成立と同年。明を中心とする東アジアの新たな国際秩序の確立を象徴。"
+  },
+  {
+    "id": "jp-import-jp0069",
+    "subject": "japan",
+    "name": "勘合貿易開始",
+    "year": 1404,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J06-03",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 4,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W10-06"
+    ]
+  },
+  {
+    "id": "jp-import-jp0070",
+    "subject": "japan",
+    "name": "正長の土一揆",
+    "year": 1428,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J06-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0071",
+    "subject": "japan",
+    "name": "嘉吉の乱",
+    "year": 1441,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J06-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "中世",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0071"
+  },
+  {
+    "id": "jp-import-jp0072",
+    "subject": "japan",
+    "name": "応仁の乱",
+    "year": 1467,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J06-06",
+    "regions": [
+      "japan"
+    ],
+    "priority": 5,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0073",
+    "subject": "japan",
+    "name": "山城国一揆",
+    "year": 1485,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J06-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0074",
+    "subject": "japan",
+    "name": "加賀の一向一揆",
+    "year": 1488,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J06-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0075",
+    "subject": "japan",
+    "name": "三浦の乱",
+    "year": 1510,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J06-03",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 3,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W10-06"
+    ]
+  },
+  {
+    "id": "jp-import-jp0076",
+    "subject": "japan",
+    "name": "寧波の乱",
+    "year": 1523,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J06-03",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 3,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W10-06"
+    ]
+  },
+  {
+    "id": "jp-import-jp0077",
+    "subject": "japan",
+    "name": "ポルトガル人が種子島に漂着",
+    "year": 1543,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J07-04",
+    "regions": [
+      "japan",
+      "europe"
+    ],
+    "priority": 4,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W12-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0078",
+    "subject": "japan",
+    "name": "フランシスコ・ザビエルが鹿児島に上陸しキリスト教を伝える",
+    "year": 1549,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J07-04",
+    "regions": [
+      "japan",
+      "europe"
+    ],
+    "priority": 4,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W12-04"
+    ],
+    "note": "1549は以後よく広まるキリスト教"
+  },
+  {
+    "id": "jp-import-jp0079",
+    "subject": "japan",
+    "name": "桶狭間の戦い",
+    "year": 1560,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J07-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "中世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0080",
+    "subject": "japan",
+    "name": "室町幕府滅亡",
+    "year": 1573,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J07-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0081",
+    "subject": "japan",
+    "name": "長篠の戦い",
+    "year": 1575,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J07-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0082",
+    "subject": "japan",
+    "name": "本能寺の変",
+    "year": 1582,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J07-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 5,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0083",
+    "subject": "japan",
+    "name": "バテレン追放令",
+    "year": 1587,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J07-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "note": "1587は以後離れていくキリスト教"
+  },
+  {
+    "id": "jp-import-jp0084",
+    "subject": "japan",
+    "name": "刀狩令",
+    "year": 1588,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J07-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0085",
+    "subject": "japan",
+    "name": "豊臣秀吉が全国統一",
+    "year": 1590,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J07-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0087",
+    "subject": "japan",
+    "name": "サン＝フェリペ号事件",
+    "year": 1596,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J07-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0089",
+    "subject": "japan",
+    "name": "豊臣秀吉死去",
+    "year": 1598,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J07-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "近世",
+    "themes": [],
+    "source": "https://www.archives.go.jp/exhibition/digital/rekishitomonogatari/history01.html"
+  },
+  {
+    "id": "jp-import-jp0090",
+    "subject": "japan",
+    "name": "関ヶ原の戦い",
+    "year": 1600,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 5,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0091",
+    "subject": "japan",
+    "name": "江戸幕府成立",
+    "year": 1603,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 5,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0092",
+    "subject": "japan",
+    "name": "島津氏が琉球王国に侵攻",
+    "year": 1609,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-02",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W10-06"
+    ]
+  },
+  {
+    "id": "jp-import-jp0093",
+    "subject": "japan",
+    "name": "対馬の宗氏が朝鮮と己酉約条を締結",
+    "year": 1609,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-02",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 2,
+    "period": "近世",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0093",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W10-06"
+    ]
+  },
+  {
+    "id": "jp-import-jp0094",
+    "subject": "japan",
+    "name": "オランダとの貿易開始",
+    "year": 1609,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-02",
+    "regions": [
+      "japan",
+      "europe"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0094",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W12-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0095",
+    "subject": "japan",
+    "name": "幕領に禁教令",
+    "year": 1612,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0096",
+    "subject": "japan",
+    "name": "慶長遣欧使節派遣",
+    "year": 1613,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "近世",
+    "themes": [],
+    "source": "https://www.mofa.go.jp/mofaj/annai/page5_000235.html"
+  },
+  {
+    "id": "jp-import-jp0097",
+    "subject": "japan",
+    "name": "全国への禁教令発布（西暦換算）",
+    "year": 1614,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://www.mofa.go.jp/mofaj/annai/page5_000235.html",
+    "note": "慶長18年12月を1613年と表記する資料もあるが、西暦換算では1614年1月に当たる。"
+  },
+  {
+    "id": "jp-import-jp0098",
+    "subject": "japan",
+    "name": "大坂冬の陣",
+    "year": 1614,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0099",
+    "subject": "japan",
+    "name": "大坂夏の陣",
+    "year": 1615,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0100",
+    "subject": "japan",
+    "name": "一国一城令",
+    "year": 1615,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0101",
+    "subject": "japan",
+    "name": "武家諸法度制定",
+    "year": 1615,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0102",
+    "subject": "japan",
+    "name": "禁中並公家諸法度制定",
+    "year": 1615,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0103",
+    "subject": "japan",
+    "name": "スペイン船来航禁止",
+    "year": 1624,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0104",
+    "subject": "japan",
+    "name": "奉書船以外の海外渡航禁止",
+    "year": 1633,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0105",
+    "subject": "japan",
+    "name": "日本人の海外渡航・帰国を全面禁止",
+    "year": 1635,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0106",
+    "subject": "japan",
+    "name": "中国船の来航を長崎に制限",
+    "year": 1635,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "近世",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0106"
+  },
+  {
+    "id": "jp-import-jp0107",
+    "subject": "japan",
+    "name": "参勤交代の制度化",
+    "year": 1635,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0108",
+    "subject": "japan",
+    "name": "島原・天草一揆",
+    "year": 1637,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0109",
+    "subject": "japan",
+    "name": "ポルトガル船来航禁止",
+    "year": 1639,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0110",
+    "subject": "japan",
+    "name": "オランダ商館を出島に移す",
+    "year": 1641,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-02",
+    "regions": [
+      "japan",
+      "europe"
+    ],
+    "priority": 4,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W12-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0111",
+    "subject": "japan",
+    "name": "シャクシャインの戦い",
+    "year": 1669,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://gakusyu.live/2024/05/28/nihonsi-nengoichiran/"
+  },
+  {
+    "id": "jp-import-jp0112",
+    "subject": "japan",
+    "name": "長崎に唐人屋敷完成",
+    "year": 1689,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "近世",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0112"
+  },
+  {
+    "id": "jp-import-jp0113",
+    "subject": "japan",
+    "name": "赤穂事件（赤穂浪士の吉良邸討ち入り）",
+    "year": 1702,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0114",
+    "subject": "japan",
+    "name": "正徳の治開始",
+    "year": 1709,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0115",
+    "subject": "japan",
+    "name": "海舶互市新例",
+    "year": 1715,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J08-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0116",
+    "subject": "japan",
+    "name": "享保の改革開始",
+    "year": 1716,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0117",
+    "subject": "japan",
+    "name": "公事方御定書制定",
+    "year": 1742,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://hello.ac/chronology.pdf"
+  },
+  {
+    "id": "jp-import-jp0118",
+    "subject": "japan",
+    "name": "享保の改革終了",
+    "year": 1745,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 1,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0119",
+    "subject": "japan",
+    "name": "宝暦事件",
+    "year": 1758,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-06",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0120",
+    "subject": "japan",
+    "name": "田沼意次が老中に就任",
+    "year": 1772,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0121",
+    "subject": "japan",
+    "name": "天明の飢饉が始まる",
+    "year": 1782,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "note": "天明の飢饉は1782年からとする資料に従う。1783年の浅間山噴火後の大飢饉と区別。"
+  },
+  {
+    "id": "jp-import-jp0122",
+    "subject": "japan",
+    "name": "松平定信が老中首座に就任",
+    "year": 1787,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0123",
+    "subject": "japan",
+    "name": "ラクスマン来航",
+    "year": 1792,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-07",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0124",
+    "subject": "japan",
+    "name": "尊号一件落着",
+    "year": 1793,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "近世",
+    "themes": [],
+    "source": "https://kotobank.jp/word/%E5%B0%8A%E5%8F%B7%E4%B8%80%E4%BB%B6-90592"
+  },
+  {
+    "id": "jp-import-jp0125",
+    "subject": "japan",
+    "name": "レザノフ来航",
+    "year": 1804,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-07",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0126",
+    "subject": "japan",
+    "name": "フェートン号事件",
+    "year": 1808,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-07",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0127",
+    "subject": "japan",
+    "name": "ゴローニン事件解決",
+    "year": 1813,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-07",
+    "regions": [
+      "japan"
+    ],
+    "priority": 1,
+    "period": "近世",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0127"
+  },
+  {
+    "id": "jp-import-jp0128",
+    "subject": "japan",
+    "name": "異国船打払令",
+    "year": 1825,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-07",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0129",
+    "subject": "japan",
+    "name": "シーボルト事件",
+    "year": 1828,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-06",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://www.archives.go.jp/exhibition/digital/rekishitomonogatari/history01.html"
+  },
+  {
+    "id": "jp-import-jp0130",
+    "subject": "japan",
+    "name": "シーボルト国外追放",
+    "year": 1829,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-06",
+    "regions": [
+      "japan"
+    ],
+    "priority": 1,
+    "period": "近世",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0130"
+  },
+  {
+    "id": "jp-import-jp0131",
+    "subject": "japan",
+    "name": "大塩平八郎の乱",
+    "year": 1837,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0132",
+    "subject": "japan",
+    "name": "生田万の乱",
+    "year": 1837,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "近世",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0132"
+  },
+  {
+    "id": "jp-import-jp0133",
+    "subject": "japan",
+    "name": "モリソン号事件",
+    "year": 1837,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-07",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0134",
+    "subject": "japan",
+    "name": "アヘン戦争に関する報告が日本に伝わる",
+    "year": 1840,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-07",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "近世",
+    "themes": [],
+    "source": "https://www.ndl.go.jp/nichiran/s1/s1_4.html"
+  },
+  {
+    "id": "jp-import-jp0135",
+    "subject": "japan",
+    "name": "天保の改革開始",
+    "year": 1841,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0136",
+    "subject": "japan",
+    "name": "天保の薪水給与令",
+    "year": 1842,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-07",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0137",
+    "subject": "japan",
+    "name": "オランダ国王が開国を勧告する親書を送る",
+    "year": 1844,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J09-07",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "近世",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0138",
+    "subject": "japan",
+    "name": "ペリー来航",
+    "year": 1853,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-01",
+    "regions": [
+      "japan",
+      "north-america"
+    ],
+    "priority": 5,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0139",
+    "subject": "japan",
+    "name": "日米和親条約締結",
+    "year": 1854,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-01",
+    "regions": [
+      "japan",
+      "north-america"
+    ],
+    "priority": 5,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0140",
+    "subject": "japan",
+    "name": "ハリスが下田に着任",
+    "year": 1856,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0140"
+  },
+  {
+    "id": "jp-import-jp0141",
+    "subject": "japan",
+    "name": "日米修好通商条約締結",
+    "year": 1858,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-01",
+    "regions": [
+      "japan",
+      "north-america"
+    ],
+    "priority": 5,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0142",
+    "subject": "japan",
+    "name": "安政の大獄開始",
+    "year": 1858,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0143",
+    "subject": "japan",
+    "name": "横浜・長崎・箱館の貿易港としての開港",
+    "year": 1859,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0143"
+  },
+  {
+    "id": "jp-import-jp0144",
+    "subject": "japan",
+    "name": "桜田門外の変",
+    "year": 1860,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0145",
+    "subject": "japan",
+    "name": "坂下門外の変",
+    "year": 1862,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0146",
+    "subject": "japan",
+    "name": "文久の改革開始",
+    "year": 1862,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0147",
+    "subject": "japan",
+    "name": "長州藩による外国船砲撃",
+    "year": 1863,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0148",
+    "subject": "japan",
+    "name": "薩英戦争",
+    "year": 1863,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0149",
+    "subject": "japan",
+    "name": "八月十八日の政変",
+    "year": 1863,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0150",
+    "subject": "japan",
+    "name": "四国艦隊下関砲撃事件",
+    "year": 1864,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0151",
+    "subject": "japan",
+    "name": "禁門の変",
+    "year": 1864,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "note": "蛤御門の変"
+  },
+  {
+    "id": "jp-import-jp0152",
+    "subject": "japan",
+    "name": "薩長連合の密約成立",
+    "year": 1866,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "note": "坂本龍馬の活躍"
+  },
+  {
+    "id": "jp-import-jp0153",
+    "subject": "japan",
+    "name": "改税約書調印",
+    "year": 1866,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0153"
+  },
+  {
+    "id": "jp-import-jp0155",
+    "subject": "japan",
+    "name": "王政復古の大号令",
+    "year": 1867,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0157",
+    "subject": "japan",
+    "name": "五箇条の御誓文",
+    "year": 1868,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0158",
+    "subject": "japan",
+    "name": "版籍奉還",
+    "year": 1869,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0159",
+    "subject": "japan",
+    "name": "工部省設置",
+    "year": 1870,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "近代",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0159"
+  },
+  {
+    "id": "jp-import-jp0160",
+    "subject": "japan",
+    "name": "廃藩置県",
+    "year": 1871,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 5,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0161",
+    "subject": "japan",
+    "name": "日清修好条規締結",
+    "year": 1871,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-02",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0162",
+    "subject": "japan",
+    "name": "岩倉使節団出発",
+    "year": 1871,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0163",
+    "subject": "japan",
+    "name": "学制公布",
+    "year": 1872,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0164",
+    "subject": "japan",
+    "name": "新橋・横浜間の鉄道開通",
+    "year": 1872,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://hello.ac/chronology.pdf"
+  },
+  {
+    "id": "jp-import-jp0165",
+    "subject": "japan",
+    "name": "徴兵令公布",
+    "year": 1873,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0166",
+    "subject": "japan",
+    "name": "地租改正条例公布",
+    "year": 1873,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0167",
+    "subject": "japan",
+    "name": "岩倉使節団帰国",
+    "year": 1873,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "近代",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0167"
+  },
+  {
+    "id": "jp-import-jp0168",
+    "subject": "japan",
+    "name": "明治六年の政変",
+    "year": 1873,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0169",
+    "subject": "japan",
+    "name": "民撰議院設立建白書提出",
+    "year": 1874,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0170",
+    "subject": "japan",
+    "name": "立志社結成",
+    "year": 1874,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0172",
+    "subject": "japan",
+    "name": "大阪会議",
+    "year": 1875,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0173",
+    "subject": "japan",
+    "name": "愛国社結成",
+    "year": 1875,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0174",
+    "subject": "japan",
+    "name": "漸次立憲政体樹立の詔",
+    "year": 1875,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://www.archives.go.jp/ayumi/table.html"
+  },
+  {
+    "id": "jp-import-jp0175",
+    "subject": "japan",
+    "name": "樺太・千島交換条約調印",
+    "year": 1875,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-02",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0176",
+    "subject": "japan",
+    "name": "日朝修好条規締結",
+    "year": 1876,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-02",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0177",
+    "subject": "japan",
+    "name": "廃刀令",
+    "year": 1876,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0179",
+    "subject": "japan",
+    "name": "立志社建白",
+    "year": 1877,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0180",
+    "subject": "japan",
+    "name": "紀尾井坂の変（大久保利通暗殺）",
+    "year": 1878,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0180"
+  },
+  {
+    "id": "jp-import-jp0182",
+    "subject": "japan",
+    "name": "国会開設の勅諭",
+    "year": 1881,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0183",
+    "subject": "japan",
+    "name": "明治十四年の政変",
+    "year": 1881,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0184",
+    "subject": "japan",
+    "name": "自由党結成",
+    "year": 1881,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0186",
+    "subject": "japan",
+    "name": "立憲改進党結成",
+    "year": 1882,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0187",
+    "subject": "japan",
+    "name": "秩父事件",
+    "year": 1884,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0189",
+    "subject": "japan",
+    "name": "内閣制度制定",
+    "year": 1885,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-06",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0190",
+    "subject": "japan",
+    "name": "三大事件建白運動",
+    "year": 1887,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0191",
+    "subject": "japan",
+    "name": "保安条例公布",
+    "year": 1887,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0193",
+    "subject": "japan",
+    "name": "第一回帝国議会開会",
+    "year": 1890,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J10-06",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0194",
+    "subject": "japan",
+    "name": "甲午農民戦争",
+    "year": 1894,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-01",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://hello.ac/chronology.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0195",
+    "subject": "japan",
+    "name": "日英通商航海条約調印",
+    "year": 1894,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-02",
+    "regions": [
+      "japan",
+      "europe"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0197",
+    "subject": "japan",
+    "name": "下関条約締結",
+    "year": 1895,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-01",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0198",
+    "subject": "japan",
+    "name": "三国干渉",
+    "year": 1895,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-01",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0199",
+    "subject": "japan",
+    "name": "台湾総督府設置",
+    "year": 1895,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-02",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 2,
+    "period": "近代",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0199",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0200",
+    "subject": "japan",
+    "name": "閔妃殺害事件",
+    "year": 1895,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-02",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 2,
+    "period": "近代",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0200",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0204",
+    "subject": "japan",
+    "name": "桂・タフト協定",
+    "year": 1905,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-01",
+    "regions": [
+      "japan",
+      "north-america"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0205",
+    "subject": "japan",
+    "name": "ポーツマス条約締結",
+    "year": 1905,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-01",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0206",
+    "subject": "japan",
+    "name": "日比谷焼打ち事件",
+    "year": 1905,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0206"
+  },
+  {
+    "id": "jp-import-jp0207",
+    "subject": "japan",
+    "name": "第二次日韓協約",
+    "year": 1905,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-02",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0208",
+    "subject": "japan",
+    "name": "ハーグ密使事件",
+    "year": 1907,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-02",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 2,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0209",
+    "subject": "japan",
+    "name": "第三次日韓協約",
+    "year": 1907,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-02",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 2,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0210",
+    "subject": "japan",
+    "name": "伊藤博文暗殺",
+    "year": 1909,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-02",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0212",
+    "subject": "japan",
+    "name": "朝鮮総督府設置",
+    "year": 1910,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-02",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 2,
+    "period": "近代",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0212",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0213",
+    "subject": "japan",
+    "name": "大逆事件の検挙開始",
+    "year": 1910,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-03",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0214",
+    "subject": "japan",
+    "name": "日米通商航海条約改正",
+    "year": 1911,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-02",
+    "regions": [
+      "japan",
+      "north-america"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W17-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0215",
+    "subject": "japan",
+    "name": "大正政変",
+    "year": 1913,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-06",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0216",
+    "subject": "japan",
+    "name": "シーメンス事件",
+    "year": 1914,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-06",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0217",
+    "subject": "japan",
+    "name": "日本が第一次世界大戦に参戦",
+    "year": 1914,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-05",
+    "regions": [
+      "japan",
+      "europe"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W18-01"
+    ]
+  },
+  {
+    "id": "jp-import-jp0219",
+    "subject": "japan",
+    "name": "石井・ランシング協定",
+    "year": 1917,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-05",
+    "regions": [
+      "japan",
+      "north-america"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W18-05"
+    ]
+  },
+  {
+    "id": "jp-import-jp0220",
+    "subject": "japan",
+    "name": "シベリア出兵宣言",
+    "year": 1918,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-05",
+    "regions": [
+      "japan",
+      "europe"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W18-02"
+    ]
+  },
+  {
+    "id": "jp-import-jp0222",
+    "subject": "japan",
+    "name": "原敬内閣成立",
+    "year": 1918,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-06",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0224",
+    "subject": "japan",
+    "name": "ヴェルサイユ条約調印",
+    "year": 1919,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-05",
+    "regions": [
+      "japan",
+      "europe"
+    ],
+    "priority": 5,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W18-03"
+    ]
+  },
+  {
+    "id": "jp-import-jp0227",
+    "subject": "japan",
+    "name": "四カ国条約締結",
+    "year": 1921,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-05",
+    "regions": [
+      "japan",
+      "north-america"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0227",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W18-03"
+    ]
+  },
+  {
+    "id": "jp-import-jp0228",
+    "subject": "japan",
+    "name": "ワシントン海軍軍縮条約締結",
+    "year": 1922,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-05",
+    "regions": [
+      "japan",
+      "north-america"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://gakusyu.live/2024/05/28/nihonsi-nengoichiran/",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W18-03"
+    ]
+  },
+  {
+    "id": "jp-import-jp0229",
+    "subject": "japan",
+    "name": "九カ国条約締結",
+    "year": 1922,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-05",
+    "regions": [
+      "japan",
+      "north-america"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0229",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W18-03"
+    ]
+  },
+  {
+    "id": "jp-import-jp0230",
+    "subject": "japan",
+    "name": "シベリア出兵終了（北樺太を除く）",
+    "year": 1922,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-05",
+    "regions": [
+      "japan",
+      "europe"
+    ],
+    "priority": 2,
+    "period": "近代",
+    "themes": [],
+    "source": "https://kenshi-archives.pref.aomori.lg.jp/il/meta_pub/G0000004txt_Moda3-03-02-4-000",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W18-02"
+    ],
+    "note": "シベリア本土からの撤兵は1922年。北樺太からの撤兵は1925年。"
+  },
+  {
+    "id": "jp-import-jp0231",
+    "subject": "japan",
+    "name": "関東大震災",
+    "year": 1923,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-07",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0232",
+    "subject": "japan",
+    "name": "虎ノ門事件",
+    "year": 1923,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-07",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0233",
+    "subject": "japan",
+    "name": "第二次護憲運動",
+    "year": 1924,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-06",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0234",
+    "subject": "japan",
+    "name": "日ソ基本条約締結",
+    "year": 1925,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-05",
+    "regions": [
+      "japan",
+      "europe"
+    ],
+    "priority": 3,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W18-02"
+    ]
+  },
+  {
+    "id": "jp-import-jp0235",
+    "subject": "japan",
+    "name": "治安維持法制定",
+    "year": 1925,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-06",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0236",
+    "subject": "japan",
+    "name": "普通選挙法制定",
+    "year": 1925,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-06",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "近代",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0237",
+    "subject": "japan",
+    "name": "第一次山東出兵",
+    "year": 1927,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-01",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 3,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W19-03"
+    ]
+  },
+  {
+    "id": "jp-import-jp0240",
+    "subject": "japan",
+    "name": "第一回普通選挙実施",
+    "year": 1928,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J11-06",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0242",
+    "subject": "japan",
+    "name": "ロンドン海軍軍縮会議",
+    "year": 1930,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-01",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 4,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W18-03"
+    ]
+  },
+  {
+    "id": "jp-import-jp0243",
+    "subject": "japan",
+    "name": "昭和恐慌",
+    "year": 1930,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0244",
+    "subject": "japan",
+    "name": "三月事件",
+    "year": 1931,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0245",
+    "subject": "japan",
+    "name": "十月事件",
+    "year": 1931,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 2,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0245"
+  },
+  {
+    "id": "jp-import-jp0247",
+    "subject": "japan",
+    "name": "満州国建国",
+    "year": 1932,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-02",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 3,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W19-03"
+    ]
+  },
+  {
+    "id": "jp-import-jp0248",
+    "subject": "japan",
+    "name": "五・一五事件",
+    "year": 1932,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-01",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0250",
+    "subject": "japan",
+    "name": "二・二六事件",
+    "year": 1936,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-02",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0256",
+    "subject": "japan",
+    "name": "国家総動員法制定",
+    "year": 1938,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0257",
+    "subject": "japan",
+    "name": "ノモンハン事件",
+    "year": 1939,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-03",
+    "regions": [
+      "japan",
+      "europe"
+    ],
+    "priority": 3,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W19-03"
+    ]
+  },
+  {
+    "id": "jp-import-jp0258",
+    "subject": "japan",
+    "name": "アメリカが日米通商航海条約の破棄を通告",
+    "year": 1939,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-04",
+    "regions": [
+      "japan",
+      "north-america"
+    ],
+    "priority": 3,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0258",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W19-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0259",
+    "subject": "japan",
+    "name": "汪兆銘が南京に新国民政府を樹立",
+    "year": 1940,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-03",
+    "regions": [
+      "japan",
+      "china"
+    ],
+    "priority": 3,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W19-03"
+    ]
+  },
+  {
+    "id": "jp-import-jp0262",
+    "subject": "japan",
+    "name": "大政翼賛会結成",
+    "year": 1940,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-05",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0267",
+    "subject": "japan",
+    "name": "大東亜会議",
+    "year": 1943,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-04",
+    "regions": [
+      "japan",
+      "southeast-asia"
+    ],
+    "priority": 3,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W19-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0268",
+    "subject": "japan",
+    "name": "東京大空襲",
+    "year": 1945,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 3,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0269",
+    "subject": "japan",
+    "name": "沖縄戦",
+    "year": 1945,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-04",
+    "regions": [
+      "japan"
+    ],
+    "priority": 4,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+  },
+  {
+    "id": "jp-import-jp0270",
+    "subject": "japan",
+    "name": "ソ連の対日参戦",
+    "year": 1945,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-04",
+    "regions": [
+      "japan",
+      "europe"
+    ],
+    "priority": 4,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W19-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0271",
+    "subject": "japan",
+    "name": "広島への原爆投下",
+    "year": 1945,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-04",
+    "regions": [
+      "japan",
+      "north-america"
+    ],
+    "priority": 4,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W19-05"
+    ]
+  },
+  {
+    "id": "jp-import-jp0272",
+    "subject": "japan",
+    "name": "長崎への原爆投下",
+    "year": 1945,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-04",
+    "regions": [
+      "japan",
+      "north-america"
+    ],
+    "priority": 4,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W19-05"
+    ]
+  },
+  {
+    "id": "jp-import-jp0273",
+    "subject": "japan",
+    "name": "ポツダム宣言受諾",
+    "year": 1945,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-04",
+    "regions": [
+      "japan",
+      "north-america"
+    ],
+    "priority": 5,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W19-04"
+    ]
+  },
+  {
+    "id": "jp-import-jp0274",
+    "subject": "japan",
+    "name": "降伏文書調印",
+    "year": 1945,
+    "era": "CE",
+    "dateType": "single",
+    "unitId": "J12-04",
+    "regions": [
+      "japan",
+      "north-america"
+    ],
+    "priority": 3,
+    "period": "昭和戦前・戦中",
+    "themes": [],
+    "source": "japanese_history_years.csv#JP0274",
+    "subjects": [
+      "japan",
+      "world"
+    ],
+    "relatedUnitIds": [
+      "W19-04"
     ]
   }
 ]

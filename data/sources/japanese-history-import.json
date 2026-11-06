@@ -1,0 +1,4323 @@
+{
+  "sourceFile": "japanese_history_years.csv",
+  "reviewedOn": "2026-11-06",
+  "originalEventCount": 547,
+  "sourceRowCount": 274,
+  "addedCount": 236,
+  "duplicateCount": 38,
+  "references": {
+    "M": {
+      "title": "学びエイド・佐京由悠「日本史重要年代総点検」",
+      "url": "https://cdn.manabi-aid.jp/course/pdf/%E5%9C%B0%E6%AD%B4%E5%85%AC%E6%B0%91/%E4%BD%90%E4%BA%AC%E7%94%B1%E6%82%A0%E3%81%AE%E3%80%90%E7%9B%B4%E5%89%8D%E3%80%91%E5%B9%B4%E4%BB%A3%E7%B7%8F%E3%81%BE%E3%81%8F%E3%82%8A%E8%B3%AA%E5%95%8F%E9%81%93%E5%A0%B4.pdf"
+    },
+    "G": {
+      "title": "ハロー通訳アカデミー・日本歴史重要年表",
+      "url": "https://hello.ac/chronology.pdf"
+    },
+    "A": {
+      "title": "国立公文書館「歴史と物語」年表",
+      "url": "https://www.archives.go.jp/exhibition/digital/rekishitomonogatari/history01.html"
+    },
+    "H": {
+      "title": "国立公文書館「日本のあゆみ」年表",
+      "url": "https://www.archives.go.jp/ayumi/table.html"
+    },
+    "B": {
+      "title": "学びサジェスト・大学受験日本史年号一覧",
+      "url": "https://gakusyu.live/2024/05/28/nihonsi-nengoichiran/"
+    },
+    "F": {
+      "title": "静岡県立中央図書館・関連年表（858年は事実上の摂政）",
+      "url": "https://www.tosyokan.pref.shizuoka.jp/data/open/cnt/3/50/1/ssr9-1.pdf"
+    },
+    "Q": {
+      "title": "越生町・建武改元の板碑",
+      "url": "https://www.town.ogose.saitama.jp/kamei/shogaigakushu/bunkazai/kaisetsu/explanation_cultural/H26_29.html"
+    },
+    "K": {
+      "title": "旺文社・日本大百科全書等「建武の新政／建武新政」（年の扱いに差）",
+      "url": "https://kotobank.jp/word/%E5%BB%BA%E6%AD%A6%E3%81%AE%E6%96%B0%E6%94%BF-677673"
+    },
+    "T": {
+      "title": "日野市立郷土資料館・天明の大飢饉",
+      "url": "https://www.city.hino.lg.jp/museum/1022827/1023851/1029605.html"
+    },
+    "O": {
+      "title": "国立国会図書館・日本の開国と日蘭関係",
+      "url": "https://www.ndl.go.jp/nichiran/s1/s1_4.html"
+    },
+    "C": {
+      "title": "外務省・慶長遣欧使節と禁教令",
+      "url": "https://www.mofa.go.jp/mofaj/annai/page5_000235.html"
+    },
+    "S": {
+      "title": "青森県史・シベリアと北樺太からの撤兵",
+      "url": "https://kenshi-archives.pref.aomori.lg.jp/il/meta_pub/G0000004txt_Moda3-03-02-4-000"
+    },
+    "J": {
+      "title": "アジア歴史資料センター・近衛文麿関係文書",
+      "url": "https://www.jacar.go.jp/topicsfromjacar/02_persons/index02_006.html"
+    },
+    "R": {
+      "title": "旺文社日本史事典等・尊号一件",
+      "url": "https://kotobank.jp/word/%E5%B0%8A%E5%8F%B7%E4%B8%80%E4%BB%B6-90592"
+    },
+    "V": {
+      "title": "羽曳野市・仏教の伝来（538年説と552年説）",
+      "url": "https://www.city.habikino.lg.jp/soshiki/shougaigakushu/bunka-sekai/bunkazainikansurukoto/bunkazai_shokai/kaisetsu/2348.html"
+    }
+  },
+  "rows": [
+    {
+      "sourceId": "JP0001",
+      "year": 57,
+      "originalName": "奴国王が後漢から金印を授かる",
+      "status": "duplicate",
+      "eventId": "jp-057",
+      "priority": 3,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0002",
+      "year": 107,
+      "originalName": "倭国王帥升らが後漢に遣使",
+      "status": "added",
+      "eventId": "jp-import-jp0002",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0003",
+      "year": 239,
+      "originalName": "卑弥呼が魏に遣使",
+      "status": "duplicate",
+      "eventId": "jp-239",
+      "priority": 4,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-239",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0004",
+      "year": 527,
+      "originalName": "磐井の乱",
+      "status": "added",
+      "eventId": "jp-import-jp0004",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0005",
+      "year": 538,
+      "originalName": "仏教伝来",
+      "status": "added",
+      "eventId": "jp-import-jp0005",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G",
+        "V"
+      ],
+      "parentSourceId": null,
+      "reviewNote": "仏教公伝には538年説と552年説がある。ここでは元CSVの538年説で出題する。"
+    },
+    {
+      "sourceId": "JP0006",
+      "year": 540,
+      "originalName": "大伴金村失脚",
+      "status": "added",
+      "eventId": "jp-import-jp0006",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0007",
+      "year": 562,
+      "originalName": "この年までに伽耶諸国滅亡",
+      "status": "added",
+      "eventId": "jp-import-jp0007",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0008",
+      "year": 587,
+      "originalName": "蘇我馬子が物部守屋を滅ぼす",
+      "status": "added",
+      "eventId": "jp-import-jp0008",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0009",
+      "year": 593,
+      "originalName": "推古天皇の摂政に厩戸王（聖徳太子）が就く",
+      "status": "added",
+      "eventId": "jp-import-jp0009",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0010",
+      "year": 600,
+      "originalName": "『隋書』倭国伝に最初の遣使記録",
+      "status": "added",
+      "eventId": "jp-import-jp0010",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "B"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0011",
+      "year": 603,
+      "originalName": "冠位十二階制定",
+      "status": "added",
+      "eventId": "jp-import-jp0011",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0012",
+      "year": 604,
+      "originalName": "十七条の憲法制定",
+      "status": "added",
+      "eventId": "jp-import-jp0012",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0013",
+      "year": 607,
+      "originalName": "小野妹子を隋に派遣",
+      "status": "added",
+      "eventId": "jp-import-jp0013",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0014",
+      "year": 630,
+      "originalName": "第一次遣唐使派遣",
+      "status": "added",
+      "eventId": "jp-import-jp0014",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0015",
+      "year": 645,
+      "originalName": "乙巳の変",
+      "status": "added",
+      "eventId": "jp-import-jp0015",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0016",
+      "year": 646,
+      "originalName": "改新の詔",
+      "status": "added",
+      "eventId": "jp-import-jp0016",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0017",
+      "year": 663,
+      "originalName": "白村江の戦い",
+      "status": "added",
+      "eventId": "jp-import-jp0017",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0018",
+      "year": 672,
+      "originalName": "壬申の乱",
+      "status": "added",
+      "eventId": "jp-import-jp0018",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0019",
+      "year": 694,
+      "originalName": "藤原京遷都",
+      "status": "added",
+      "eventId": "jp-import-jp0019",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0020",
+      "year": 701,
+      "originalName": "大宝律令完成",
+      "status": "added",
+      "eventId": "jp-import-jp0020",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0021",
+      "year": 708,
+      "originalName": "和同開珎の鋳造",
+      "status": "added",
+      "eventId": "jp-import-jp0021",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0022",
+      "year": 710,
+      "originalName": "平城京遷都",
+      "status": "added",
+      "eventId": "jp-import-jp0022",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0023",
+      "year": 723,
+      "originalName": "三世一身法",
+      "status": "added",
+      "eventId": "jp-import-jp0023",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0024",
+      "year": 729,
+      "originalName": "長屋王の変",
+      "status": "added",
+      "eventId": "jp-import-jp0024",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0025",
+      "year": 740,
+      "originalName": "藤原広嗣の乱",
+      "status": "added",
+      "eventId": "jp-import-jp0025",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0026",
+      "year": 743,
+      "originalName": "墾田永年私財法",
+      "status": "added",
+      "eventId": "jp-import-jp0026",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0027",
+      "year": 752,
+      "originalName": "東大寺大仏開眼供養",
+      "status": "added",
+      "eventId": "jp-import-jp0027",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0028",
+      "year": 757,
+      "originalName": "橘奈良麻呂の乱",
+      "status": "added",
+      "eventId": "jp-import-jp0028",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0029",
+      "year": 764,
+      "originalName": "恵美押勝の乱",
+      "status": "added",
+      "eventId": "jp-import-jp0029",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0030",
+      "year": 769,
+      "originalName": "宇佐八幡神託事件",
+      "status": "added",
+      "eventId": "jp-import-jp0030",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0031",
+      "year": 784,
+      "originalName": "長岡京遷都",
+      "status": "added",
+      "eventId": "jp-import-jp0031",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0032",
+      "year": 794,
+      "originalName": "平安京遷都",
+      "status": "added",
+      "eventId": "jp-import-jp0032",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0033",
+      "year": 797,
+      "originalName": "勘解由使設置",
+      "status": "added",
+      "eventId": "jp-import-jp0033",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。 JP0032の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0032",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0034",
+      "year": 810,
+      "originalName": "平城太上天皇の変",
+      "status": "added",
+      "eventId": "jp-import-jp0034",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0035",
+      "year": 842,
+      "originalName": "承和の変",
+      "status": "added",
+      "eventId": "jp-import-jp0035",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0036",
+      "year": 858,
+      "originalName": "藤原良房が摂政となる",
+      "status": "added",
+      "eventId": "jp-import-jp0036",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G",
+        "F"
+      ],
+      "parentSourceId": null,
+      "reviewNote": "858年は清和天皇即位に伴う事実上の摂政。正式な摂政就任は866年として区別される。"
+    },
+    {
+      "sourceId": "JP0037",
+      "year": 866,
+      "originalName": "応天門の変",
+      "status": "added",
+      "eventId": "jp-import-jp0037",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0038",
+      "year": 887,
+      "originalName": "阿衡の紛議",
+      "status": "added",
+      "eventId": "jp-import-jp0038",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0039",
+      "year": 894,
+      "originalName": "菅原道真が遣唐使派遣の見直しを建議",
+      "status": "added",
+      "eventId": "jp-import-jp0039",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0040",
+      "year": 901,
+      "originalName": "菅原道真が大宰府に左遷される",
+      "status": "added",
+      "eventId": "jp-import-jp0040",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0041",
+      "year": 935,
+      "originalName": "平将門の乱が始まる",
+      "status": "added",
+      "eventId": "jp-import-jp0041",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0042",
+      "year": 939,
+      "originalName": "藤原純友の乱が本格化",
+      "status": "added",
+      "eventId": "jp-import-jp0042",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0043",
+      "year": 940,
+      "originalName": "平将門の乱鎮圧",
+      "status": "added",
+      "eventId": "jp-import-jp0043",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0044",
+      "year": 941,
+      "originalName": "藤原純友の乱鎮圧",
+      "status": "added",
+      "eventId": "jp-import-jp0044",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0045",
+      "year": 969,
+      "originalName": "安和の変",
+      "status": "added",
+      "eventId": "jp-import-jp0045",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0046",
+      "year": 995,
+      "originalName": "藤原道長が内覧となる",
+      "status": "added",
+      "eventId": "jp-import-jp0046",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。 JP0047の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "H"
+      ],
+      "parentSourceId": "JP0047",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0047",
+      "year": 1016,
+      "originalName": "藤原道長が摂政となる",
+      "status": "added",
+      "eventId": "jp-import-jp0047",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0048",
+      "year": 1017,
+      "originalName": "藤原頼通が摂政となる",
+      "status": "added",
+      "eventId": "jp-import-jp0048",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0049",
+      "year": 1052,
+      "originalName": "末法の初年",
+      "status": "added",
+      "eventId": "jp-import-jp0049",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0050",
+      "year": 1086,
+      "originalName": "白河上皇の院政開始",
+      "status": "added",
+      "eventId": "jp-import-jp0050",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0051",
+      "year": 1156,
+      "originalName": "保元の乱",
+      "status": "added",
+      "eventId": "jp-import-jp0051",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0052",
+      "year": 1159,
+      "originalName": "平治の乱",
+      "status": "added",
+      "eventId": "jp-import-jp0052",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0053",
+      "year": 1167,
+      "originalName": "平清盛が太政大臣となる",
+      "status": "added",
+      "eventId": "jp-import-jp0053",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0054",
+      "year": 1180,
+      "originalName": "源頼朝挙兵・治承・寿永の内乱が始まる",
+      "status": "added",
+      "eventId": "jp-import-jp0054",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0055",
+      "year": 1185,
+      "originalName": "壇ノ浦の戦い",
+      "status": "added",
+      "eventId": "jp-import-jp0055",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0056",
+      "year": 1185,
+      "originalName": "源頼朝が守護・地頭の設置を認められる",
+      "status": "added",
+      "eventId": "jp-import-jp0056",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0057",
+      "year": 1189,
+      "originalName": "源頼朝が奥州を平定",
+      "status": "added",
+      "eventId": "jp-import-jp0057",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0058",
+      "year": 1192,
+      "originalName": "源頼朝が征夷大将軍に就任",
+      "status": "added",
+      "eventId": "jp-import-jp0058",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0059",
+      "year": 1221,
+      "originalName": "承久の乱",
+      "status": "added",
+      "eventId": "jp-import-jp0059",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0060",
+      "year": 1232,
+      "originalName": "御成敗式目制定",
+      "status": "added",
+      "eventId": "jp-import-jp0060",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0061",
+      "year": 1274,
+      "originalName": "文永の役",
+      "status": "added",
+      "eventId": "jp-import-jp0061",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0062",
+      "year": 1281,
+      "originalName": "弘安の役",
+      "status": "added",
+      "eventId": "jp-import-jp0062",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0063",
+      "year": 1297,
+      "originalName": "永仁の徳政令",
+      "status": "added",
+      "eventId": "jp-import-jp0063",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0064",
+      "year": 1333,
+      "originalName": "鎌倉幕府滅亡",
+      "status": "added",
+      "eventId": "jp-import-jp0064",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0065",
+      "year": 1334,
+      "originalName": "建武の新政",
+      "status": "added",
+      "eventId": "jp-import-jp0065",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G",
+        "Q",
+        "K"
+      ],
+      "parentSourceId": null,
+      "reviewNote": "後醍醐天皇の新政開始を1333年とする説明もある。1334年は建武への改元の年として出題する。"
+    },
+    {
+      "sourceId": "JP0066",
+      "year": 1336,
+      "originalName": "南北朝の分裂",
+      "status": "added",
+      "eventId": "jp-import-jp0066",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "G",
+        "A"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0067",
+      "year": 1338,
+      "originalName": "足利尊氏が征夷大将軍に就任",
+      "status": "added",
+      "eventId": "jp-import-jp0067",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0068",
+      "year": 1392,
+      "originalName": "南北朝合一",
+      "status": "added",
+      "eventId": "jp-import-jp0068",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0069",
+      "year": 1404,
+      "originalName": "勘合貿易開始",
+      "status": "added",
+      "eventId": "jp-import-jp0069",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0070",
+      "year": 1428,
+      "originalName": "正長の土一揆",
+      "status": "added",
+      "eventId": "jp-import-jp0070",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0071",
+      "year": 1441,
+      "originalName": "嘉吉の乱",
+      "status": "added",
+      "eventId": "jp-import-jp0071",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。 JP0070の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "G"
+      ],
+      "parentSourceId": "JP0070",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0072",
+      "year": 1467,
+      "originalName": "応仁の乱",
+      "status": "added",
+      "eventId": "jp-import-jp0072",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0073",
+      "year": 1485,
+      "originalName": "山城国一揆",
+      "status": "added",
+      "eventId": "jp-import-jp0073",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0074",
+      "year": 1488,
+      "originalName": "加賀の一向一揆",
+      "status": "added",
+      "eventId": "jp-import-jp0074",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0075",
+      "year": 1510,
+      "originalName": "三浦の乱",
+      "status": "added",
+      "eventId": "jp-import-jp0075",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0076",
+      "year": 1523,
+      "originalName": "寧波の乱",
+      "status": "added",
+      "eventId": "jp-import-jp0076",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0077",
+      "year": 1543,
+      "originalName": "ポルトガル人が種子島に漂着",
+      "status": "added",
+      "eventId": "jp-import-jp0077",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0078",
+      "year": 1549,
+      "originalName": "フランシスコ・ザビエルが鹿児島に上陸しキリスト教を伝える",
+      "status": "added",
+      "eventId": "jp-import-jp0078",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0079",
+      "year": 1560,
+      "originalName": "桶狭間の戦い",
+      "status": "added",
+      "eventId": "jp-import-jp0079",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0080",
+      "year": 1573,
+      "originalName": "室町幕府滅亡",
+      "status": "added",
+      "eventId": "jp-import-jp0080",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0081",
+      "year": 1575,
+      "originalName": "長篠の戦い",
+      "status": "added",
+      "eventId": "jp-import-jp0081",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0082",
+      "year": 1582,
+      "originalName": "本能寺の変",
+      "status": "added",
+      "eventId": "jp-import-jp0082",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0083",
+      "year": 1587,
+      "originalName": "バテレン追放令",
+      "status": "added",
+      "eventId": "jp-import-jp0083",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0084",
+      "year": 1588,
+      "originalName": "刀狩令",
+      "status": "added",
+      "eventId": "jp-import-jp0084",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0085",
+      "year": 1590,
+      "originalName": "豊臣秀吉が全国統一",
+      "status": "added",
+      "eventId": "jp-import-jp0085",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0086",
+      "year": 1592,
+      "originalName": "文禄の役",
+      "status": "duplicate",
+      "eventId": "wh-211ff69a85b8",
+      "priority": 5,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "wh-211ff69a85b8",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0087",
+      "year": 1596,
+      "originalName": "サン＝フェリペ号事件",
+      "status": "added",
+      "eventId": "jp-import-jp0087",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0088",
+      "year": 1597,
+      "originalName": "慶長の役",
+      "status": "duplicate",
+      "eventId": "wh-eb4442a21756",
+      "priority": 5,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "wh-eb4442a21756",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0089",
+      "year": 1598,
+      "originalName": "豊臣秀吉死去",
+      "status": "added",
+      "eventId": "jp-import-jp0089",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "A"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0090",
+      "year": 1600,
+      "originalName": "関ヶ原の戦い",
+      "status": "added",
+      "eventId": "jp-import-jp0090",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0091",
+      "year": 1603,
+      "originalName": "江戸幕府成立",
+      "status": "added",
+      "eventId": "jp-import-jp0091",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0092",
+      "year": 1609,
+      "originalName": "島津氏が琉球王国に侵攻",
+      "status": "added",
+      "eventId": "jp-import-jp0092",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0093",
+      "year": 1609,
+      "originalName": "対馬の宗氏が朝鮮と己酉約条を締結",
+      "status": "added",
+      "eventId": "jp-import-jp0093",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。 JP0092の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0092",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0094",
+      "year": 1609,
+      "originalName": "オランダとの貿易開始",
+      "status": "added",
+      "eventId": "jp-import-jp0094",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。 JP0110の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0110",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0095",
+      "year": 1612,
+      "originalName": "幕領に禁教令",
+      "status": "added",
+      "eventId": "jp-import-jp0095",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0096",
+      "year": 1613,
+      "originalName": "慶長遣欧使節派遣",
+      "status": "added",
+      "eventId": "jp-import-jp0096",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "C"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0097",
+      "year": 1614,
+      "originalName": "全国への禁教令発布",
+      "status": "added",
+      "eventId": "jp-import-jp0097",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "C"
+      ],
+      "parentSourceId": null,
+      "reviewNote": "慶長18年12月を1613年と表記する資料もあるが、西暦換算では1614年1月に当たる。"
+    },
+    {
+      "sourceId": "JP0098",
+      "year": 1614,
+      "originalName": "大坂冬の陣",
+      "status": "added",
+      "eventId": "jp-import-jp0098",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0099",
+      "year": 1615,
+      "originalName": "大坂夏の陣",
+      "status": "added",
+      "eventId": "jp-import-jp0099",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0100",
+      "year": 1615,
+      "originalName": "一国一城令",
+      "status": "added",
+      "eventId": "jp-import-jp0100",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0101",
+      "year": 1615,
+      "originalName": "武家諸法度制定",
+      "status": "added",
+      "eventId": "jp-import-jp0101",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0102",
+      "year": 1615,
+      "originalName": "禁中並公家諸法度制定",
+      "status": "added",
+      "eventId": "jp-import-jp0102",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0103",
+      "year": 1624,
+      "originalName": "スペイン船来航禁止",
+      "status": "added",
+      "eventId": "jp-import-jp0103",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0104",
+      "year": 1633,
+      "originalName": "奉書船以外の海外渡航禁止",
+      "status": "added",
+      "eventId": "jp-import-jp0104",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0105",
+      "year": 1635,
+      "originalName": "日本人の海外渡航・帰国を全面禁止",
+      "status": "added",
+      "eventId": "jp-import-jp0105",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0106",
+      "year": 1635,
+      "originalName": "中国船の来航を長崎に制限",
+      "status": "added",
+      "eventId": "jp-import-jp0106",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。 JP0105の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0105",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0107",
+      "year": 1635,
+      "originalName": "参勤交代の制度化",
+      "status": "added",
+      "eventId": "jp-import-jp0107",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0108",
+      "year": 1637,
+      "originalName": "島原・天草一揆",
+      "status": "added",
+      "eventId": "jp-import-jp0108",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0109",
+      "year": 1639,
+      "originalName": "ポルトガル船来航禁止",
+      "status": "added",
+      "eventId": "jp-import-jp0109",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0110",
+      "year": 1641,
+      "originalName": "オランダ商館を出島に移す",
+      "status": "added",
+      "eventId": "jp-import-jp0110",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0111",
+      "year": 1669,
+      "originalName": "シャクシャインの戦い",
+      "status": "added",
+      "eventId": "jp-import-jp0111",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "B"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0112",
+      "year": 1689,
+      "originalName": "長崎に唐人屋敷完成",
+      "status": "added",
+      "eventId": "jp-import-jp0112",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。 JP0110の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0110",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0113",
+      "year": 1702,
+      "originalName": "赤穂事件",
+      "status": "added",
+      "eventId": "jp-import-jp0113",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0114",
+      "year": 1709,
+      "originalName": "正徳の治開始",
+      "status": "added",
+      "eventId": "jp-import-jp0114",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0115",
+      "year": 1715,
+      "originalName": "海舶互市新例",
+      "status": "added",
+      "eventId": "jp-import-jp0115",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0116",
+      "year": 1716,
+      "originalName": "享保の改革開始",
+      "status": "added",
+      "eventId": "jp-import-jp0116",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0117",
+      "year": 1742,
+      "originalName": "公事方御定書制定",
+      "status": "added",
+      "eventId": "jp-import-jp0117",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0118",
+      "year": 1745,
+      "originalName": "享保の改革終了",
+      "status": "added",
+      "eventId": "jp-import-jp0118",
+      "priority": 1,
+      "priorityReason": "事件解決・追放・改革終了等の細目。開始・本体の年号を優先。",
+      "calibrationEventId": "wh-3204533f2f61",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0119",
+      "year": 1758,
+      "originalName": "宝暦事件",
+      "status": "added",
+      "eventId": "jp-import-jp0119",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0120",
+      "year": 1772,
+      "originalName": "田沼意次が老中に就任",
+      "status": "added",
+      "eventId": "jp-import-jp0120",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0121",
+      "year": 1782,
+      "originalName": "天明の飢饉が始まる",
+      "status": "added",
+      "eventId": "jp-import-jp0121",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "T"
+      ],
+      "parentSourceId": null,
+      "reviewNote": "天明の飢饉は1782年からとする資料に従う。1783年の浅間山噴火後の大飢饉と区別。"
+    },
+    {
+      "sourceId": "JP0122",
+      "year": 1787,
+      "originalName": "松平定信が老中首座に就任",
+      "status": "added",
+      "eventId": "jp-import-jp0122",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0123",
+      "year": 1792,
+      "originalName": "ラクスマン来航",
+      "status": "added",
+      "eventId": "jp-import-jp0123",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0124",
+      "year": 1793,
+      "originalName": "尊号一件落着",
+      "status": "added",
+      "eventId": "jp-import-jp0124",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "R"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0125",
+      "year": 1804,
+      "originalName": "レザノフ来航",
+      "status": "added",
+      "eventId": "jp-import-jp0125",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0126",
+      "year": 1808,
+      "originalName": "フェートン号事件",
+      "status": "added",
+      "eventId": "jp-import-jp0126",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0127",
+      "year": 1813,
+      "originalName": "ゴローニン事件解決",
+      "status": "added",
+      "eventId": "jp-import-jp0127",
+      "priority": 1,
+      "priorityReason": "事件解決・追放・改革終了等の細目。開始・本体の年号を優先。 JP0125の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "wh-3204533f2f61",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0125",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0128",
+      "year": 1825,
+      "originalName": "異国船打払令",
+      "status": "added",
+      "eventId": "jp-import-jp0128",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0129",
+      "year": 1828,
+      "originalName": "シーボルト事件",
+      "status": "added",
+      "eventId": "jp-import-jp0129",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "A"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0130",
+      "year": 1829,
+      "originalName": "シーボルト国外追放",
+      "status": "added",
+      "eventId": "jp-import-jp0130",
+      "priority": 1,
+      "priorityReason": "事件解決・追放・改革終了等の細目。開始・本体の年号を優先。 JP0129の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "wh-3204533f2f61",
+      "referenceIds": [
+        "H"
+      ],
+      "parentSourceId": "JP0129",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0131",
+      "year": 1837,
+      "originalName": "大塩平八郎の乱",
+      "status": "added",
+      "eventId": "jp-import-jp0131",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0132",
+      "year": 1837,
+      "originalName": "生田万の乱",
+      "status": "added",
+      "eventId": "jp-import-jp0132",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。 JP0131の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0131",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0133",
+      "year": 1837,
+      "originalName": "モリソン号事件",
+      "status": "added",
+      "eventId": "jp-import-jp0133",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0134",
+      "year": 1840,
+      "originalName": "アヘン戦争に関する報告が日本に伝わる",
+      "status": "added",
+      "eventId": "jp-import-jp0134",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "O"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0135",
+      "year": 1841,
+      "originalName": "天保の改革開始",
+      "status": "added",
+      "eventId": "jp-import-jp0135",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0136",
+      "year": 1842,
+      "originalName": "天保の薪水給与令",
+      "status": "added",
+      "eventId": "jp-import-jp0136",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0137",
+      "year": 1844,
+      "originalName": "オランダ国王が開国を勧告する親書を送る",
+      "status": "added",
+      "eventId": "jp-import-jp0137",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0138",
+      "year": 1853,
+      "originalName": "ペリー来航",
+      "status": "added",
+      "eventId": "jp-import-jp0138",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0139",
+      "year": 1854,
+      "originalName": "日米和親条約締結",
+      "status": "added",
+      "eventId": "jp-import-jp0139",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0140",
+      "year": 1856,
+      "originalName": "ハリスが下田に着任",
+      "status": "added",
+      "eventId": "jp-import-jp0140",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。 JP0141の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0141",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0141",
+      "year": 1858,
+      "originalName": "日米修好通商条約締結",
+      "status": "added",
+      "eventId": "jp-import-jp0141",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0142",
+      "year": 1858,
+      "originalName": "安政の大獄開始",
+      "status": "added",
+      "eventId": "jp-import-jp0142",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0143",
+      "year": 1859,
+      "originalName": "横浜・長崎・箱館の開港",
+      "status": "added",
+      "eventId": "jp-import-jp0143",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。 JP0141の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0141",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0144",
+      "year": 1860,
+      "originalName": "桜田門外の変",
+      "status": "added",
+      "eventId": "jp-import-jp0144",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0145",
+      "year": 1862,
+      "originalName": "坂下門外の変",
+      "status": "added",
+      "eventId": "jp-import-jp0145",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0146",
+      "year": 1862,
+      "originalName": "文久の改革開始",
+      "status": "added",
+      "eventId": "jp-import-jp0146",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0147",
+      "year": 1863,
+      "originalName": "長州藩による外国船砲撃",
+      "status": "added",
+      "eventId": "jp-import-jp0147",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0148",
+      "year": 1863,
+      "originalName": "薩英戦争",
+      "status": "added",
+      "eventId": "jp-import-jp0148",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0149",
+      "year": 1863,
+      "originalName": "八月十八日の政変",
+      "status": "added",
+      "eventId": "jp-import-jp0149",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0150",
+      "year": 1864,
+      "originalName": "四国艦隊下関砲撃事件",
+      "status": "added",
+      "eventId": "jp-import-jp0150",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0151",
+      "year": 1864,
+      "originalName": "禁門の変",
+      "status": "added",
+      "eventId": "jp-import-jp0151",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0152",
+      "year": 1866,
+      "originalName": "薩長連合の密約成立",
+      "status": "added",
+      "eventId": "jp-import-jp0152",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0153",
+      "year": 1866,
+      "originalName": "改税約書調印",
+      "status": "added",
+      "eventId": "jp-import-jp0153",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。 JP0141の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0141",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0154",
+      "year": 1867,
+      "originalName": "大政奉還",
+      "status": "duplicate",
+      "eventId": "jp-3eac30780251",
+      "priority": 5,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-3eac30780251",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0155",
+      "year": 1867,
+      "originalName": "王政復古の大号令",
+      "status": "added",
+      "eventId": "jp-import-jp0155",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0156",
+      "year": 1868,
+      "originalName": "鳥羽・伏見の戦い（戊辰戦争開始）",
+      "status": "duplicate",
+      "eventId": "jp-38555584fe53",
+      "priority": 5,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-38555584fe53",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0157",
+      "year": 1868,
+      "originalName": "五箇条の御誓文",
+      "status": "added",
+      "eventId": "jp-import-jp0157",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0158",
+      "year": 1869,
+      "originalName": "版籍奉還",
+      "status": "added",
+      "eventId": "jp-import-jp0158",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0159",
+      "year": 1870,
+      "originalName": "工部省設置",
+      "status": "added",
+      "eventId": "jp-import-jp0159",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。 JP0160の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0160",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0160",
+      "year": 1871,
+      "originalName": "廃藩置県",
+      "status": "added",
+      "eventId": "jp-import-jp0160",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0161",
+      "year": 1871,
+      "originalName": "日清修好条規締結",
+      "status": "added",
+      "eventId": "jp-import-jp0161",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0162",
+      "year": 1871,
+      "originalName": "岩倉使節団出発",
+      "status": "added",
+      "eventId": "jp-import-jp0162",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0163",
+      "year": 1872,
+      "originalName": "学制公布",
+      "status": "added",
+      "eventId": "jp-import-jp0163",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0164",
+      "year": 1872,
+      "originalName": "新橋・横浜間の鉄道開通",
+      "status": "added",
+      "eventId": "jp-import-jp0164",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "G",
+        "H"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0165",
+      "year": 1873,
+      "originalName": "徴兵令公布",
+      "status": "added",
+      "eventId": "jp-import-jp0165",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0166",
+      "year": 1873,
+      "originalName": "地租改正条例公布",
+      "status": "added",
+      "eventId": "jp-import-jp0166",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0167",
+      "year": 1873,
+      "originalName": "岩倉使節団帰国",
+      "status": "added",
+      "eventId": "jp-import-jp0167",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。 JP0162の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0162",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0168",
+      "year": 1873,
+      "originalName": "明治六年の政変",
+      "status": "added",
+      "eventId": "jp-import-jp0168",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0169",
+      "year": 1874,
+      "originalName": "民撰議院設立建白書提出",
+      "status": "added",
+      "eventId": "jp-import-jp0169",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0170",
+      "year": 1874,
+      "originalName": "立志社結成",
+      "status": "added",
+      "eventId": "jp-import-jp0170",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0171",
+      "year": 1874,
+      "originalName": "台湾出兵",
+      "status": "duplicate",
+      "eventId": "jp-4a37f72fd72d",
+      "priority": 4,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-4a37f72fd72d",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0172",
+      "year": 1875,
+      "originalName": "大阪会議",
+      "status": "added",
+      "eventId": "jp-import-jp0172",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0173",
+      "year": 1875,
+      "originalName": "愛国社結成",
+      "status": "added",
+      "eventId": "jp-import-jp0173",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0174",
+      "year": 1875,
+      "originalName": "漸次立憲政体樹立の詔",
+      "status": "added",
+      "eventId": "jp-import-jp0174",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "H"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0175",
+      "year": 1875,
+      "originalName": "樺太・千島交換条約調印",
+      "status": "added",
+      "eventId": "jp-import-jp0175",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0176",
+      "year": 1876,
+      "originalName": "日朝修好条規締結",
+      "status": "added",
+      "eventId": "jp-import-jp0176",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0177",
+      "year": 1876,
+      "originalName": "廃刀令",
+      "status": "added",
+      "eventId": "jp-import-jp0177",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0178",
+      "year": 1877,
+      "originalName": "西南戦争",
+      "status": "duplicate",
+      "eventId": "jp-9f8d2794fa69",
+      "priority": 4,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0179",
+      "year": 1877,
+      "originalName": "立志社建白",
+      "status": "added",
+      "eventId": "jp-import-jp0179",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0180",
+      "year": 1878,
+      "originalName": "紀尾井坂の変（大久保利通暗殺）",
+      "status": "added",
+      "eventId": "jp-import-jp0180",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。 JP0168の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0168",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0181",
+      "year": 1879,
+      "originalName": "琉球処分",
+      "status": "duplicate",
+      "eventId": "jp-d2d347a216ea",
+      "priority": 4,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-d2d347a216ea",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0182",
+      "year": 1881,
+      "originalName": "国会開設の勅諭",
+      "status": "added",
+      "eventId": "jp-import-jp0182",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0183",
+      "year": 1881,
+      "originalName": "明治十四年の政変",
+      "status": "added",
+      "eventId": "jp-import-jp0183",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0184",
+      "year": 1881,
+      "originalName": "自由党結成",
+      "status": "added",
+      "eventId": "jp-import-jp0184",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0185",
+      "year": 1882,
+      "originalName": "壬午軍乱",
+      "status": "duplicate",
+      "eventId": "wh-313a8a769579",
+      "priority": 3,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "wh-313a8a769579",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0186",
+      "year": 1882,
+      "originalName": "立憲改進党結成",
+      "status": "added",
+      "eventId": "jp-import-jp0186",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0187",
+      "year": 1884,
+      "originalName": "秩父事件",
+      "status": "added",
+      "eventId": "jp-import-jp0187",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0188",
+      "year": 1884,
+      "originalName": "甲申政変",
+      "status": "duplicate",
+      "eventId": "wh-f3bc65fa4a9e",
+      "priority": 3,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "wh-f3bc65fa4a9e",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0189",
+      "year": 1885,
+      "originalName": "内閣制度制定",
+      "status": "added",
+      "eventId": "jp-import-jp0189",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0190",
+      "year": 1887,
+      "originalName": "三大事件建白運動",
+      "status": "added",
+      "eventId": "jp-import-jp0190",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0191",
+      "year": 1887,
+      "originalName": "保安条例公布",
+      "status": "added",
+      "eventId": "jp-import-jp0191",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0192",
+      "year": 1889,
+      "originalName": "大日本帝国憲法公布",
+      "status": "duplicate",
+      "eventId": "jp-1889",
+      "priority": 5,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0193",
+      "year": 1890,
+      "originalName": "第一回帝国議会開会",
+      "status": "added",
+      "eventId": "jp-import-jp0193",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0194",
+      "year": 1894,
+      "originalName": "甲午農民戦争",
+      "status": "added",
+      "eventId": "jp-import-jp0194",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "G",
+        "B"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0195",
+      "year": 1894,
+      "originalName": "日英通商航海条約調印",
+      "status": "added",
+      "eventId": "jp-import-jp0195",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0196",
+      "year": 1894,
+      "originalName": "日清戦争の宣戦布告",
+      "status": "duplicate",
+      "eventId": "jp-c18f8b29cf6c",
+      "priority": 5,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-c18f8b29cf6c",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0197",
+      "year": 1895,
+      "originalName": "下関条約締結",
+      "status": "added",
+      "eventId": "jp-import-jp0197",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0198",
+      "year": 1895,
+      "originalName": "三国干渉",
+      "status": "added",
+      "eventId": "jp-import-jp0198",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0199",
+      "year": 1895,
+      "originalName": "台湾総督府設置",
+      "status": "added",
+      "eventId": "jp-import-jp0199",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。 JP0197の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0197",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0200",
+      "year": 1895,
+      "originalName": "閔妃殺害事件",
+      "status": "added",
+      "eventId": "jp-import-jp0200",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。 JP0211の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0211",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0201",
+      "year": 1900,
+      "originalName": "義和団事件（北清事変）",
+      "status": "duplicate",
+      "eventId": "wh-b0b777d0f412",
+      "priority": 4,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "wh-b0b777d0f412",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0202",
+      "year": 1902,
+      "originalName": "第一次日英同盟協約締結",
+      "status": "duplicate",
+      "eventId": "wh-2b11e95892a2",
+      "priority": 5,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "wh-2b11e95892a2",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0203",
+      "year": 1904,
+      "originalName": "日露戦争開始",
+      "status": "duplicate",
+      "eventId": "jp-f13982b2a019",
+      "priority": 5,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-f13982b2a019",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0204",
+      "year": 1905,
+      "originalName": "桂・タフト協定",
+      "status": "added",
+      "eventId": "jp-import-jp0204",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0205",
+      "year": 1905,
+      "originalName": "ポーツマス条約締結",
+      "status": "added",
+      "eventId": "jp-import-jp0205",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0206",
+      "year": 1905,
+      "originalName": "日比谷焼打ち事件",
+      "status": "added",
+      "eventId": "jp-import-jp0206",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。 JP0205の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0205",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0207",
+      "year": 1905,
+      "originalName": "第二次日韓協約",
+      "status": "added",
+      "eventId": "jp-import-jp0207",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0208",
+      "year": 1907,
+      "originalName": "ハーグ密使事件",
+      "status": "added",
+      "eventId": "jp-import-jp0208",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0209",
+      "year": 1907,
+      "originalName": "第三次日韓協約",
+      "status": "added",
+      "eventId": "jp-import-jp0209",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0210",
+      "year": 1909,
+      "originalName": "伊藤博文暗殺",
+      "status": "added",
+      "eventId": "jp-import-jp0210",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0211",
+      "year": 1910,
+      "originalName": "韓国併合",
+      "status": "duplicate",
+      "eventId": "jp-7d32ebea27b0",
+      "priority": 5,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-7d32ebea27b0",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0212",
+      "year": 1910,
+      "originalName": "朝鮮総督府設置",
+      "status": "added",
+      "eventId": "jp-import-jp0212",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。 JP0211の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0211",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0213",
+      "year": 1910,
+      "originalName": "大逆事件の検挙開始",
+      "status": "added",
+      "eventId": "jp-import-jp0213",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0214",
+      "year": 1911,
+      "originalName": "日米通商航海条約改正",
+      "status": "added",
+      "eventId": "jp-import-jp0214",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0215",
+      "year": 1913,
+      "originalName": "大正政変",
+      "status": "added",
+      "eventId": "jp-import-jp0215",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0216",
+      "year": 1914,
+      "originalName": "シーメンス事件",
+      "status": "added",
+      "eventId": "jp-import-jp0216",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0217",
+      "year": 1914,
+      "originalName": "第一次世界大戦参戦",
+      "status": "added",
+      "eventId": "jp-import-jp0217",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0218",
+      "year": 1915,
+      "originalName": "対華二十一か条の要求",
+      "status": "duplicate",
+      "eventId": "jp-1915",
+      "priority": 4,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-1915",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0219",
+      "year": 1917,
+      "originalName": "石井・ランシング協定",
+      "status": "added",
+      "eventId": "jp-import-jp0219",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0220",
+      "year": 1918,
+      "originalName": "シベリア出兵宣言",
+      "status": "added",
+      "eventId": "jp-import-jp0220",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0221",
+      "year": 1918,
+      "originalName": "米騒動",
+      "status": "duplicate",
+      "eventId": "jp-4b68e67ea0d3",
+      "priority": 4,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-4b68e67ea0d3",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0222",
+      "year": 1918,
+      "originalName": "原敬内閣成立",
+      "status": "added",
+      "eventId": "jp-import-jp0222",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0223",
+      "year": 1919,
+      "originalName": "三・一独立運動の弾圧",
+      "status": "duplicate",
+      "eventId": "wh-bd8852ee03d5",
+      "priority": 4,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "wh-bd8852ee03d5",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0224",
+      "year": 1919,
+      "originalName": "ヴェルサイユ条約調印",
+      "status": "added",
+      "eventId": "jp-import-jp0224",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0225",
+      "year": 1920,
+      "originalName": "国際連盟発足・日本加盟",
+      "status": "duplicate",
+      "eventId": "wh-657b296da951",
+      "priority": 5,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "wh-657b296da951",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0226",
+      "year": 1921,
+      "originalName": "ワシントン会議開催",
+      "status": "duplicate",
+      "eventId": "wh-fc336d17b3b8",
+      "priority": 4,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "wh-fc336d17b3b8",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0227",
+      "year": 1921,
+      "originalName": "四カ国条約締結",
+      "status": "added",
+      "eventId": "jp-import-jp0227",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。 JP0226の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "G"
+      ],
+      "parentSourceId": "JP0226",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0228",
+      "year": 1922,
+      "originalName": "ワシントン海軍軍縮条約締結",
+      "status": "added",
+      "eventId": "jp-import-jp0228",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "B"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0229",
+      "year": 1922,
+      "originalName": "九カ国条約締結",
+      "status": "added",
+      "eventId": "jp-import-jp0229",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。 JP0226の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0226",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0230",
+      "year": 1922,
+      "originalName": "シベリア出兵終了",
+      "status": "added",
+      "eventId": "jp-import-jp0230",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "S"
+      ],
+      "parentSourceId": null,
+      "reviewNote": "シベリア本土からの撤兵は1922年。北樺太からの撤兵は1925年。"
+    },
+    {
+      "sourceId": "JP0231",
+      "year": 1923,
+      "originalName": "関東大震災",
+      "status": "added",
+      "eventId": "jp-import-jp0231",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0232",
+      "year": 1923,
+      "originalName": "虎ノ門事件",
+      "status": "added",
+      "eventId": "jp-import-jp0232",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0233",
+      "year": 1924,
+      "originalName": "第二次護憲運動",
+      "status": "added",
+      "eventId": "jp-import-jp0233",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0234",
+      "year": 1925,
+      "originalName": "日ソ基本条約締結",
+      "status": "added",
+      "eventId": "jp-import-jp0234",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0235",
+      "year": 1925,
+      "originalName": "治安維持法制定",
+      "status": "added",
+      "eventId": "jp-import-jp0235",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0236",
+      "year": 1925,
+      "originalName": "普通選挙法制定",
+      "status": "added",
+      "eventId": "jp-import-jp0236",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0237",
+      "year": 1927,
+      "originalName": "第一次山東出兵",
+      "status": "added",
+      "eventId": "jp-import-jp0237",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0238",
+      "year": 1927,
+      "originalName": "昭和金融恐慌",
+      "status": "duplicate",
+      "eventId": "jp-394f47e47bfb",
+      "priority": 4,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-394f47e47bfb",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0239",
+      "year": 1928,
+      "originalName": "張作霖爆殺事件",
+      "status": "duplicate",
+      "eventId": "wh-2405cc1a0394",
+      "priority": 4,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。 JP0246の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "wh-2405cc1a0394",
+      "referenceIds": [
+        "G"
+      ],
+      "parentSourceId": "JP0246",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0240",
+      "year": 1928,
+      "originalName": "第一回普通選挙実施",
+      "status": "added",
+      "eventId": "jp-import-jp0240",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0241",
+      "year": 1929,
+      "originalName": "世界恐慌が始まる",
+      "status": "duplicate",
+      "eventId": "wh-199cdcf2d231",
+      "priority": 5,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "wh-199cdcf2d231",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0242",
+      "year": 1930,
+      "originalName": "ロンドン海軍軍縮会議",
+      "status": "added",
+      "eventId": "jp-import-jp0242",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0243",
+      "year": 1930,
+      "originalName": "昭和恐慌",
+      "status": "added",
+      "eventId": "jp-import-jp0243",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0244",
+      "year": 1931,
+      "originalName": "三月事件",
+      "status": "added",
+      "eventId": "jp-import-jp0244",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0245",
+      "year": 1931,
+      "originalName": "十月事件",
+      "status": "added",
+      "eventId": "jp-import-jp0245",
+      "priority": 2,
+      "priorityReason": "主事件より細かい人事・事件・制度の段階。関連する主要年号より一段低く評価。 JP0244の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0244",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0246",
+      "year": 1931,
+      "originalName": "柳条湖事件（満州事変勃発）",
+      "status": "duplicate",
+      "eventId": "jp-6bb4294d007b",
+      "priority": 5,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-6bb4294d007b",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0247",
+      "year": 1932,
+      "originalName": "満州国建国",
+      "status": "added",
+      "eventId": "jp-import-jp0247",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0248",
+      "year": 1932,
+      "originalName": "五・一五事件",
+      "status": "added",
+      "eventId": "jp-import-jp0248",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0249",
+      "year": 1933,
+      "originalName": "国際連盟脱退",
+      "status": "duplicate",
+      "eventId": "jp-5f9088ae92d6",
+      "priority": 4,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-5f9088ae92d6",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0250",
+      "year": 1936,
+      "originalName": "二・二六事件",
+      "status": "added",
+      "eventId": "jp-import-jp0250",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0251",
+      "year": 1937,
+      "originalName": "盧溝橋事件",
+      "status": "duplicate",
+      "eventId": "wh-32faa8267d68",
+      "priority": 5,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "wh-32faa8267d68",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0252",
+      "year": 1937,
+      "originalName": "日独伊防共協定成立",
+      "status": "duplicate",
+      "eventId": "wh-f5f2fab492cc",
+      "priority": 3,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "wh-f5f2fab492cc",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0253",
+      "year": 1938,
+      "originalName": "第一次近衛声明",
+      "status": "duplicate",
+      "eventId": "jp-6f4b22c5988f",
+      "priority": 2,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "J"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0254",
+      "year": 1938,
+      "originalName": "第二次近衛声明",
+      "status": "duplicate",
+      "eventId": "jp-6f4b22c5988f",
+      "priority": 2,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "J"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0255",
+      "year": 1938,
+      "originalName": "第三次近衛声明",
+      "status": "duplicate",
+      "eventId": "jp-6f4b22c5988f",
+      "priority": 2,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-6f4b22c5988f",
+      "referenceIds": [
+        "J"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0256",
+      "year": 1938,
+      "originalName": "国家総動員法制定",
+      "status": "added",
+      "eventId": "jp-import-jp0256",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0257",
+      "year": 1939,
+      "originalName": "ノモンハン事件",
+      "status": "added",
+      "eventId": "jp-import-jp0257",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0258",
+      "year": 1939,
+      "originalName": "アメリカが日米通商航海条約の破棄を通告",
+      "status": "added",
+      "eventId": "jp-import-jp0258",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。 JP0265の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0265",
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0259",
+      "year": 1940,
+      "originalName": "汪兆銘が南京に新国民政府を樹立",
+      "status": "added",
+      "eventId": "jp-import-jp0259",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0260",
+      "year": 1940,
+      "originalName": "日独伊三国同盟締結",
+      "status": "duplicate",
+      "eventId": "jp-52770fbda8a7",
+      "priority": 4,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-52770fbda8a7",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0261",
+      "year": 1940,
+      "originalName": "北部仏印進駐",
+      "status": "duplicate",
+      "eventId": "jp-f105750b7267",
+      "priority": 3,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-f105750b7267",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0262",
+      "year": 1940,
+      "originalName": "大政翼賛会結成",
+      "status": "added",
+      "eventId": "jp-import-jp0262",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0263",
+      "year": 1941,
+      "originalName": "日ソ中立条約締結",
+      "status": "duplicate",
+      "eventId": "jp-2f3c7b44aef1",
+      "priority": 4,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-2f3c7b44aef1",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0264",
+      "year": 1941,
+      "originalName": "南部仏印進駐",
+      "status": "duplicate",
+      "eventId": "jp-fa766d1abb32",
+      "priority": 3,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-fa766d1abb32",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0265",
+      "year": 1941,
+      "originalName": "真珠湾攻撃",
+      "status": "duplicate",
+      "eventId": "jp-726fedc0a357",
+      "priority": 5,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-726fedc0a357",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0266",
+      "year": 1942,
+      "originalName": "ミッドウェー海戦",
+      "status": "duplicate",
+      "eventId": "jp-aa7eb006ba0b",
+      "priority": 4,
+      "priorityReason": "既存の同一出来事の評価を維持（new-stars.md）。",
+      "calibrationEventId": "jp-aa7eb006ba0b",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0267",
+      "year": 1943,
+      "originalName": "大東亜会議",
+      "status": "added",
+      "eventId": "jp-import-jp0267",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0268",
+      "year": 1945,
+      "originalName": "東京大空襲",
+      "status": "added",
+      "eventId": "jp-import-jp0268",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0269",
+      "year": 1945,
+      "originalName": "沖縄戦",
+      "status": "added",
+      "eventId": "jp-import-jp0269",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0270",
+      "year": 1945,
+      "originalName": "ソ連の対日参戦",
+      "status": "added",
+      "eventId": "jp-import-jp0270",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0271",
+      "year": 1945,
+      "originalName": "広島への原爆投下",
+      "status": "added",
+      "eventId": "jp-import-jp0271",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0272",
+      "year": 1945,
+      "originalName": "長崎への原爆投下",
+      "status": "added",
+      "eventId": "jp-import-jp0272",
+      "priority": 4,
+      "priorityReason": "基本年表で重視される主要な政策・戦争・条約等。既存の重要項目に合わせる。",
+      "calibrationEventId": "jp-9f8d2794fa69",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0273",
+      "year": 1945,
+      "originalName": "ポツダム宣言受諾",
+      "status": "added",
+      "eventId": "jp-import-jp0273",
+      "priority": 5,
+      "priorityReason": "政治体制・時代の画期となる基準年。学習年表と既存の最重要項目に合わせる。",
+      "calibrationEventId": "jp-1889",
+      "referenceIds": [
+        "M",
+        "G"
+      ],
+      "parentSourceId": null,
+      "reviewNote": ""
+    },
+    {
+      "sourceId": "JP0274",
+      "year": 1945,
+      "originalName": "降伏文書調印",
+      "status": "added",
+      "eventId": "jp-import-jp0274",
+      "priority": 3,
+      "priorityReason": "大学受験の標準的な年代整理、または主要事項の関連項目。 JP0273の主要事項との関係で評価。参照資料は主事件の根拠であり、この細目の掲載を意味しない。",
+      "calibrationEventId": "jp-057",
+      "referenceIds": [
+        "M"
+      ],
+      "parentSourceId": "JP0273",
+      "reviewNote": ""
+    }
+  ]
+}

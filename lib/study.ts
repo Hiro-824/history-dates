@@ -1,4 +1,5 @@
 import { regionById, regionsForSubject } from "../data/regions";
+import { matchesSubject } from "./events";
 import { unitById } from "../data/units";
 import type { Attempt, Era, EventHistory, History, HistoryEvent, Mode, Score, Settings, Store } from "./types";
 
@@ -82,9 +83,10 @@ export function filterEvents(events: HistoryEvent[], settings: Settings, history
   return events.filter((event) => {
     if (seen.has(event.id) || event.dateType !== "single") return false;
     seen.add(event.id);
-    if (settings.subject !== "both" && event.subject !== settings.subject) return false;
-    if (settings.scopeMethod === "units" && ![event.unitId, ...(event.relatedUnitIds ?? [])].some((id) => settings.unitIds.includes(id))) return false;
-    if (range && (event.subject !== range.region.subject || !event.regions.includes(range.region.id) || chronologicalYear(event) < range.from || chronologicalYear(event) > range.to)) return false;
+    if (!matchesSubject(event, settings.subject)) return false;
+    if (settings.scopeMethod === "units" && ![event.unitId, ...(event.relatedUnitIds ?? [])].some((id) => settings.unitIds.includes(id)
+      && (settings.subject === "both" || unitById.get(id)?.subject === settings.subject))) return false;
+    if (range && (!matchesSubject(event, range.region.subject) || !event.regions.includes(range.region.id) || chronologicalYear(event) < range.from || chronologicalYear(event) > range.to)) return false;
     if (settings.priorities.length && !settings.priorities.includes(event.priority)) return false;
     const score = history[event.id];
     return !settings.statuses.length || settings.statuses.some((status) => {

@@ -1,7 +1,7 @@
 "use client";
 
 import { useNavigation } from "./navigation";
-import { events } from "@/lib/events";
+import { events, matchesSubject } from "@/lib/events";
 import { unitById } from "@/data/units";
 import { priorityStars } from "@/data/priorities";
 import { DEFAULT_SETTINGS, filterEvents, rangeError } from "@/lib/study";
@@ -27,7 +27,7 @@ export default function HistoryApp() {
     return unit && (settings.subject === "both" || unit.subject === settings.subject) ? [unit] : [];
   });
   const sessionCount = settings.count === "all" ? filtered.length : Math.min(settings.count, filtered.length);
-  const review = events.filter((e) => (settings.subject === "both" || e.subject === settings.subject) && store.history[e.id]?.review);
+  const review = events.filter((e) => matchesSubject(e, settings.subject) && store.history[e.id]?.review);
   const begin = () => navigate(() => {
     const session = startStudy(settings);
     return session ? `/study/${session.id}` : null;
@@ -35,7 +35,7 @@ export default function HistoryApp() {
   const beginReview = () => navigate(() => {
     const session = startStudy({
       ...DEFAULT_SETTINGS, subject: settings.subject, mode: settings.mode, count: settings.count,
-      scopeMethod: "units", unitIds: [...new Set(review.map((e) => e.unitId))], order: "weak",
+      scopeMethod: "units", unitIds: [...new Set(review.flatMap((e) => [e.unitId, ...(e.relatedUnitIds ?? [])]))], order: "weak",
     }, review.map((e) => e.id), true);
     return session ? `/study/${session.id}` : null;
   });

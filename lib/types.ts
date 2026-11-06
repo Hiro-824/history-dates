@@ -7,6 +7,9 @@ export type ScopeMethod = "units" | "region" | "random";
 export interface HistoryEvent {
   id: string;
   subject: Subject;
+  // Primary subject stays stable for existing records and balanced selection.
+  // Shared events use one ID and one history across both subjects.
+  subjects?: Subject[];
   name: string;
   year: number;
   era: Era;

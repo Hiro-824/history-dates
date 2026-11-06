@@ -9,7 +9,7 @@ const base=process.env.HISTORY_BASE_URL||'http://127.0.0.1:3105';
 const chromeBin=process.env.CHROME_BIN||'/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const delay=ms=>new Promise(r=>setTimeout(r,ms));
 const events=require('../data/events.json');
-const byLine=line=>events.find(e=>e.draftLines.includes(line));
+const byLine=line=>events.find(e=>e.draftLines?.includes(line));
 (async()=>{
  // Verify every route on the server under test, including a long-running dev server.
  for(const route of ['/','/library','/records','/development-log','/settings']){
@@ -42,6 +42,40 @@ const byLine=line=>events.find(e=>e.draftLines.includes(line));
   const history=()=>call('Page.getNavigationHistory');
   const traverse=async delta=>{const h=await history();await call('Page.navigateToHistoryEntry',{entryId:h.entries[h.currentIndex+delta].id});};
   await call('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
+  if(process.env.HISTORY_SHARED_SUBJECT_ONLY==='1'){
+   const shared=events.find(e=>e.id==='wh-211ff69a85b8');
+   await navigate('/library');
+   await until(`!!document.querySelector('input[aria-label="出来事名・年号で検索"]')`,'library ready');
+   await input('input[aria-label="出来事名・年号で検索"]','文禄');
+   for(const subject of ['japan','world','both']){
+    await select('select[aria-label="科目で絞り込み"]',subject);
+    await until(`document.querySelectorAll('.event-row').length===1&&document.querySelector('.event-row').textContent.includes('文禄')`,'shared question in '+subject);
+    const row=await evaluate(`document.querySelector('.event-row').textContent`);
+    assert.ok(row.includes('日本史')&&row.includes('世界史'),'shared subject label');
+   }
+   await click('.event-name-button');
+   await until(`!!document.querySelector('dialog[open]')`,'shared detail');
+   const detail=await evaluate(`document.querySelector('dialog[open]').textContent`);
+   assert.ok(detail.includes('戦国・織豊期の対外関係')&&detail.includes('東アジアの交易と国際関係'),'both units shown');
+   await navigate('/');
+   await until(`!!document.querySelector('.start-button:not(:disabled)')`,'home ready');
+   await labelClick('日本史');
+   await until(`!!localStorage.getItem('history-dates:v2')`,'settings saved before history fixture');
+   await evaluate(`(()=>{const s=JSON.parse(localStorage.getItem('history-dates:v2'));s.settings.subject='japan';s.settings.scopeMethod='random';s.settings.priorities=[];s.history[${JSON.stringify(shared.id)}]={attempts:1,correct:0,incorrect:1,streak:0,lastAt:'2026-11-06T00:00:00Z',lastCorrect:false,review:true,recent:[{eventId:${JSON.stringify(shared.id)},mode:'exact',correct:false,input:'',era:'CE',at:'2026-11-06T00:00:00Z'}]};localStorage.setItem('history-dates:v2',JSON.stringify(s));})()`);
+   await call('Page.reload');
+   await until(`!!document.querySelector('.review-panel button:not(:disabled)')`,'Japanese review includes existing world ID');
+   await click('.review-panel button');
+   await until(`location.pathname.startsWith('/study/')&&document.body.textContent.includes('文禄')`,'start Japanese review of shared question');
+   const session=await evaluate(`JSON.parse(localStorage.getItem('history-dates:v2')).sessions.at(-1)`);
+   assert.deepEqual(session.eventIds,[shared.id]);
+   assert.equal(session.settings.subject,'japan');
+   await navigate('/records');
+   await until(`document.querySelectorAll('.subject-stats>div').length===2`,'subject stats ready');
+   const stats=await evaluate(`[...document.querySelectorAll('.subject-stats>div')].map(e=>e.textContent)`);
+   assert.ok(stats.every(text=>text.includes('1 /')),'one shared history counted in each subject');
+   console.log('Shared subjects passed: one library row in each scope, both unit labels, Japanese review with existing world ID, and shared records. No screenshots.');
+   return;
+  }
   if(process.env.HISTORY_DEVELOPMENT_LOG_ONLY==='1'){
    await navigate('/');
    await until(`!!document.querySelector('.start-button:not(:disabled)')`,'updates home ready');

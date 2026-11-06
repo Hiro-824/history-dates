@@ -7,7 +7,7 @@ require.extensions['.ts'] = (module, filename) => module._compile(ts.transpileMo
 const study = require('../lib/study.ts');
 const { DEFAULT_SETTINGS, answerParts, expectedAnswer, checkAnswer, filterEvents, makeQueue, recordAttempt, weakness, rangeError, regionRange, selectRegion, selectSubject, submitSession, advanceSession, shuffled } = study;
 const { decodeStore, restoreSettings } = require('../lib/storage.ts');
-const { events, validateEvents } = require('../lib/events.ts');
+const { events, validateEvents, matchesSubject } = require('../lib/events.ts');
 const { unitGroups, units } = require('../data/units.ts');
 const { regions } = require('../data/regions.ts');
 const sample = { ...events.find(e => e.id === 'jp-1889'), year: 645 }, bce = events.find(e => e.id === 'wh-b221');
@@ -77,7 +77,7 @@ test('subject and region changes keep region ranges valid', () => {
 });
 test('three methods are exclusive and priorities work with each method', () => {
   const lingering=settings({scopeMethod:'random',subject:'world',unitIds:['J02-02'],regionId:'japan',startPeriodId:'bad',endPeriodId:'bad',priorities:[5]});
-  const all=filterEvents(events,lingering,{});assert.ok(all.length>0);assert.ok(all.every(e=>e.subject==='world'&&e.priority===5));
+  const all=filterEvents(events,lingering,{});assert.ok(all.length>0);assert.ok(all.every(e=>matchesSubject(e,'world')&&e.priority===5));
   for(const s of [settings({scopeMethod:'units',unitIds:units.map(u=>u.id),priorities:[3,5]}), settings({scopeMethod:'region',regionId:'europe',startPeriodId:'europe-01',endPeriodId:'europe-10',priorities:[3,5]})]) assert.ok(filterEvents(events,s,{}).every(e=>[3,5].includes(e.priority)));
 });
 test('full-range shuffle is uniform and ignores saved order, balancing and priority weights', () => {
@@ -250,7 +250,7 @@ test('settings, sessions, input, era, results and presets survive JSON round tri
   assert.equal(decodeStore(JSON.stringify({...baseStore(),sessions:[session({index:99})]})).sessions.length,0);
 });
 test('draft data uses valid independent unit, region, priority and date attributes', () => {
-  assert.equal(events.length,547);assert.equal(new Set(events.map(e=>e.id)).size,events.length);
+  assert.equal(events.filter(e=>e.draftLines).length,547);assert.equal(new Set(events.map(e=>e.id)).size,events.length);
   for(const id of ['jp-1889','wh-1648','wh-1492']) assert.ok(events.find(e=>e.id===id).priority>=4);
   assert.throws(()=>validateEvents([{...sample,priority:6}]));assert.throws(()=>validateEvents([{...sample,unitId:'W04-02'}]));
   assert.equal(filterEvents([{...sample,dateType:'range'},{...bce,dateType:'approximate'}],settings(),{}).length,0);
@@ -260,7 +260,7 @@ test('draft data uses valid independent unit, region, priority and date attribut
 test('every supplied draft entry retains its year, era and right-hand notes', () => {
   const lines=fs.readFileSync(require('node:path').join(__dirname,'../data/sources/events-draft.txt'),'utf8').split('\n');
   const covered=new Set();
-  for(const event of events){
+  for(const event of events.filter(e=>e.draftLines)){
     assert.equal(event.source,'draft');
     for(const lineNumber of event.draftLines){
       assert.ok(!covered.has(lineNumber),`duplicate draft line ${lineNumber}`);covered.add(lineNumber);
@@ -280,7 +280,7 @@ test('every supplied draft entry retains its year, era and right-hand notes', ()
     }
   }
   assert.equal(covered.size,lines.filter(line=>line.trim()).length);
-  assert.equal(events.filter(e=>e.note).length,21);
+  assert.equal(events.filter(e=>e.draftLines&&e.note).length,23);
   assert.ok(!events.some(e=>e.id==='jp-645'||e.id==='wh-1517'));
   assert.ok(events.find(e=>e.name.includes('独立宣言')&&e.year===1776).name.includes('アメリカ'));
   assert.ok(events.find(e=>e.year===1417).name.includes('終了'));
