@@ -27,12 +27,12 @@ test('community input validates dates, required duplicate review, classification
   assert.equal(communityEvent('../bad', data), null);
   assert.deepEqual(restoreCommunityEvent(event), event);
 });
-test('unverified questions default off across every scope; confirmed questions keep their IDs and history', () => {
+test('unverified questions default on and can be excluded across every scope; confirmed IDs stay stable', () => {
   const unverified = communityEvent(id, { ...data, unitId: 'J06-01' });
   const verified = communityEvent(id, { ...data, unitId: 'J06-01', reviewStatus: 'verified' });
   const base = { ...DEFAULT_SETTINGS, unitIds: ['J06-01'], regionId: 'japan', startPeriodId: 'japan-01', endPeriodId: 'japan-20' };
   for (const scopeMethod of ['units', 'region', 'random']) {
-    assert.equal(filterEvents([unverified], { ...base, scopeMethod }, {}).length, 0);
+    assert.equal(filterEvents([unverified], { ...base, scopeMethod, includeUnverified: false }, {}).length, 0);
     assert.equal(filterEvents([unverified], { ...base, scopeMethod, includeUnverified: true }, {}).length, 1);
     assert.equal(filterEvents([verified], { ...base, scopeMethod }, {}).length, 1);
   }
@@ -40,9 +40,10 @@ test('unverified questions default off across every scope; confirmed questions k
   assert.equal(filterEvents([unclassified], { ...base, scopeMethod: 'units', includeUnverified: true }, {}).length, 0);
   assert.equal(filterEvents([unclassified], { ...base, scopeMethod: 'random', includeUnverified: true }, {}).length, 1);
   assert.equal(unverified.id, verified.id);
-  assert.equal(restoreSettings({}).includeUnverified, false);
+  assert.equal(restoreSettings({}).includeUnverified, true);
   assert.equal(restoreSettings({ includeUnverified: true }).includeUnverified, true);
-  assert.equal(restoreSettings({ includeUnverified: 'yes' }).includeUnverified, false);
+  assert.equal(restoreSettings({ includeUnverified: false }).includeUnverified, false);
+  assert.equal(restoreSettings({ includeUnverified: 'yes' }).includeUnverified, true);
 });
 test('optional submission priority defaults to three and preserves every valid choice through study filters', () => {
   assert.equal(validateSubmission(input).priority, 3);
@@ -70,7 +71,7 @@ test('posted questions persist in sessions without a network and restricted revi
   global.localStorage = { getItem: (key) => memory.get(key) ?? null, setItem: (key, value) => memory.set(key, value) };
   const event = communityEvent(id, data);
   updateStore(() => ({ version: 2, settings: { ...DEFAULT_SETTINGS }, history: {}, recent: [], presets: [], sessions: [] }));
-  assert.equal(startStudy(DEFAULT_SETTINGS, [event.id], false, [event]), null);
+  assert.equal(startStudy({ ...DEFAULT_SETTINGS, includeUnverified: false }, [event.id], false, [event]), null);
   const session = startStudy({ ...DEFAULT_SETTINGS, includeUnverified: true }, [event.id], false, [event]);
   assert.deepEqual(session.eventSnapshots, [event]);
   const restored = decodeStore(memory.get('history-dates:v2'));
