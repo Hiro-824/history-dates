@@ -23,7 +23,7 @@ export function CommunitySettings({ settings, change }: { settings: Settings; ch
   const { configured } = useEventCatalog();
   return <section className="community-settings">
     <label className="check-field"><input type="checkbox" checked={!settings.includeUnverified} disabled={!configured} onChange={(event) => change({ ...settings, includeUnverified: !event.target.checked })}/>投稿後未確認の問題は出題しない</label>
-    <p className="help">未確認の投稿は、年号や内容が正確でない場合があります。投稿問題の優先度は確認まで仮の評価です。</p>
+    <p className="help">未確認の問題は、投稿後のダブルチェックを経ていないものです。</p>
     <Link href="/submit" className="text-button"><Plus size={17} aria-hidden="true"/>年号を投稿</Link>
     <CommunityStatus/>
   </section>;
@@ -75,7 +75,7 @@ export function SubmissionPage() {
     finally { busy.current = false; setPending(false); }
   };
   return <AppShell><div className="submission-page"><div className="page-heading"><h1>年号を投稿</h1></div>
-    <p>学習に役立つ年号を教えてください。同じ年号の既存データを確認してから投稿できます。投稿内容は「未確認」として公開され、希望する利用者の学習に出題されます。</p>
+    <p>学習に役立つ年号を教えてください。同じ年号の既存データを確認してから投稿できます。投稿内容は、投稿後のダブルチェックを経るまでは「未確認」として公開されます。</p>
     <p className="help">個人情報は入力しないでください。出来事を簡潔に記載してください。</p>
     {!configured && <p className="inline-error" role="status">投稿の受付は現在準備中です。</p>}
     {success && <section className="submission-success" role="status"><strong>投稿を受け付けました。</strong></section>}
