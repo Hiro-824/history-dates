@@ -280,7 +280,7 @@ test('every supplied draft entry retains its year, era and right-hand notes', ()
     }
   }
   assert.equal(covered.size,lines.filter(line=>line.trim()).length);
-  assert.equal(events.filter(e=>e.note).length,20);
+  assert.equal(events.filter(e=>e.note).length,21);
   assert.ok(!events.some(e=>e.id==='jp-645'||e.id==='wh-1517'));
   assert.ok(events.find(e=>e.name.includes('独立宣言')&&e.year===1776).name.includes('アメリカ'));
   assert.ok(events.find(e=>e.year===1417).name.includes('終了'));
