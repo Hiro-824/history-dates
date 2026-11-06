@@ -4,13 +4,15 @@ import { useEffect, useLayoutEffect, useRef, type ReactNode } from "react";
 import { useStudyStore } from "@/lib/storage";
 import { releaseStudyKeyboard } from "@/lib/study-keyboard";
 import { useUnreadDevelopmentLog } from "@/lib/development-log";
+import { useEventCatalog } from "./community-provider";
 import { Icon } from "./ui";
 
 const activeStudies = new Set<symbol>();
 
 export function AppShell({ children, active = "home", studying = false }: { children: ReactNode; active?: "home" | "library" | "records" | "development-log"; studying?: boolean }) {
   const { store } = useStudyStore();
-  const unreadLog = useUnreadDevelopmentLog();
+  const { developmentLogEntries } = useEventCatalog();
+  const unreadLog = useUnreadDevelopmentLog(developmentLogEntries);
   const shellRef = useRef<HTMLDivElement>(null);
   useLayoutEffect(() => {
     if (!studying) return;

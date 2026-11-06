@@ -6,10 +6,13 @@ import { mergeEvents } from "@/lib/community";
 import { firebaseConfigured } from "@/lib/firebase";
 import { communityError, fetchCommunityEvents } from "@/lib/community-client";
 import type { HistoryEvent } from "@/lib/types";
+import { developmentLog, type DevelopmentLogEntry } from "@/data/development-log";
+import { mergeDevelopmentLogs } from "@/lib/submission-updates";
 
-const CatalogContext = createContext({ events: builtins, loading: false, error: "", capped: false, configured: firebaseConfigured, refresh: async () => {} });
+const CatalogContext = createContext({ events: builtins, developmentLogEntries: developmentLog, loading: false, error: "", capped: false, configured: firebaseConfigured, refresh: async () => {} });
 export function CommunityProvider({ children }: { children: ReactNode }) {
   const [community, setCommunity] = useState<HistoryEvent[]>([]);
+  const [updates, setUpdates] = useState<DevelopmentLogEntry[]>([]);
   const [loading, setLoading] = useState(firebaseConfigured);
   const [error, setError] = useState("");
   const [capped, setCapped] = useState(false);
@@ -23,9 +26,9 @@ export function CommunityProvider({ children }: { children: ReactNode }) {
         fetchCommunityEvents(),
         new Promise<never>((_, reject) => { timer = setTimeout(() => reject(new Error("投稿問題を読み込めませんでした。既存の問題で学習できます。")), 12_000); }),
       ]);
-      if (current === request.current) { setCommunity(result.events); setCapped(result.capped); setError(""); }
+      if (current === request.current) { setCommunity(result.events); setUpdates(result.updates); setCapped(result.capped); setError(""); }
     } catch (cause) {
-      if (current === request.current) { setCommunity([]); setError(communityError(cause)); }
+      if (current === request.current) { setCommunity([]); setUpdates([]); setError(communityError(cause)); }
     } finally { clearTimeout(timer); if (current === request.current) setLoading(false); }
   }, []);
   const refresh = useCallback(() => { setLoading(firebaseConfigured); setError(""); return load(); }, [load]);
@@ -35,7 +38,7 @@ export function CommunityProvider({ children }: { children: ReactNode }) {
     queueMicrotask(() => { if (active) void load(); });
     return () => { active = false; sequence.current++; };
   }, [load]);
-  const value = useMemo(() => ({ events: mergeEvents(builtins, community), loading, error, capped, configured: firebaseConfigured, refresh }), [community, loading, error, capped, refresh]);
+  const value = useMemo(() => ({ events: mergeEvents(builtins, community), developmentLogEntries: mergeDevelopmentLogs(developmentLog, updates), loading, error, capped, configured: firebaseConfigured, refresh }), [community, updates, loading, error, capped, refresh]);
   return <CatalogContext value={value}>{children}</CatalogContext>;
 }
 export const useEventCatalog = () => useContext(CatalogContext);

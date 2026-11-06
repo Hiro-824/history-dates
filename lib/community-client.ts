@@ -1,14 +1,25 @@
 "use client";
 
-import { collection, doc, getDocsFromServer, limit, query, runTransaction, serverTimestamp, where } from "firebase/firestore";
+import { collection, doc, getDocsFromServer, limit, query, runTransaction, serverTimestamp, Timestamp, where } from "firebase/firestore";
 import { COMMUNITY_LIMIT, communityEvent, validateSubmission, type SubmissionInput } from "./community";
 import { firebaseServices, submissionUser } from "./firebase";
 import type { Era, HistoryEvent } from "./types";
+import type { DevelopmentLogEntry } from "../data/development-log";
+import { submissionUpdates } from "./submission-updates";
 
-export async function fetchCommunityEvents(): Promise<{ events: HistoryEvent[]; capped: boolean }> {
+export async function fetchCommunityEvents(): Promise<{ events: HistoryEvent[]; capped: boolean; updates: DevelopmentLogEntry[] }> {
   const { db } = firebaseServices();
   const snapshot = await getDocsFromServer(query(collection(db, "submissions"), where("reviewStatus", "in", ["unverified", "verified"]), limit(COMMUNITY_LIMIT)));
-  return { events: snapshot.docs.map((item) => communityEvent(item.id, item.data())).filter((item): item is HistoryEvent => !!item), capped: snapshot.size === COMMUNITY_LIMIT };
+  const events: HistoryEvent[] = [];
+  const posts: { event: HistoryEvent; createdAt: string }[] = [];
+  for (const item of snapshot.docs) {
+    const event = communityEvent(item.id, item.data());
+    if (!event) continue;
+    events.push(event);
+    const createdAt = item.get("createdAt");
+    if (createdAt instanceof Timestamp) posts.push({ event, createdAt: createdAt.toDate().toISOString() });
+  }
+  return { events, updates: submissionUpdates(posts), capped: snapshot.size === COMMUNITY_LIMIT };
 }
 export async function fetchSameYearCommunityEvents(year: number, era: Era): Promise<{ events: HistoryEvent[]; capped: boolean }> {
   const { db } = firebaseServices();

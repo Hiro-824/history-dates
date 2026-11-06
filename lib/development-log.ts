@@ -1,7 +1,7 @@
 "use client";
 
 import { useSyncExternalStore } from "react";
-import { developmentLog } from "../data/development-log";
+import { developmentLog, type DevelopmentLogEntry } from "../data/development-log";
 
 export const DEVELOPMENT_LOG_STORAGE_KEY = "history-dates:development-log:read";
 const changeEvent = "history-dates:development-log-read";
@@ -35,19 +35,19 @@ function subscribe(listener: () => void) {
   };
 }
 
-export function hasUnreadLog(value: string | null): boolean {
+export function hasUnreadLog(value: string | null, entries: DevelopmentLogEntry[] = developmentLog): boolean {
   const read = new Set(readLogIds(value));
-  return developmentLog.some((entry) => !read.has(entry.id));
+  return entries.some((entry) => !read.has(entry.id));
 }
 
-export function useUnreadDevelopmentLog(): boolean {
+export function useUnreadDevelopmentLog(entries: DevelopmentLogEntry[] = developmentLog): boolean {
   const value = useSyncExternalStore(subscribe, getSnapshot, () => null);
-  return value !== null && hasUnreadLog(value);
+  return value !== null && hasUnreadLog(value, entries);
 }
 
-export function markDevelopmentLogRead(): void {
+export function markDevelopmentLogRead(entries: DevelopmentLogEntry[] = developmentLog): void {
   const read = new Set(readLogIds(getSnapshot()));
-  for (const entry of developmentLog) read.add(entry.id);
+  for (const entry of entries) read.add(entry.id);
   const value = JSON.stringify([...read]);
   try {
     window.localStorage.setItem(DEVELOPMENT_LOG_STORAGE_KEY, value);
