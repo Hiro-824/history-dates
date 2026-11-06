@@ -514,13 +514,6 @@ body.study-active, body:has(dialog:modal) { overflow: hidden; overscroll-behavio
 .community-settings .help { margin: 8px 0; }
 .community-status { margin: 12px 0; }
 .community-library-tools { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin: -10px 0 16px; }
-.review-badge { display: inline-block; width: max-content; padding: 2px 7px; border: 1px solid #d9bc79; border-radius: 4px; background: #fff6df; color: #765418; font-size: 11px; line-height: 1.5; font-weight: 600; vertical-align: middle; white-space: nowrap; }
-.review-badge.verified { color: var(--accent); background: var(--accent-soft); border-color: #c5d6c1; }
-.quiz-toolbar>.review-badge { margin-left: auto; }
-.quiz-toolbar>.review-badge + .progress-text { margin-left: 4px; }
-.question-hint .review-badge { margin-right: 6px; }
-.feedback-top .review-badge { margin-right: 8px; }
-.event-name-button strong .review-badge { display: inline-block; }
 .submission-page { max-width: 720px; margin: auto; }
 .submission-page>p { margin-bottom: 14px; line-height: 1.8; }
 .submission-form { margin-top: 24px; }

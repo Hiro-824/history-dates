@@ -15,15 +15,10 @@ import { CommunityStatus, useEventCatalog } from "./community-provider";
 import { NavigationLink as Link } from "./navigation";
 import { Modal } from "./ui";
 
-export function ReviewBadge({ event }: { event: HistoryEvent }) {
-  if (!event.reviewStatus) return null;
-  return <span className={`review-badge ${event.reviewStatus}`}>{event.reviewStatus === "unverified" ? "未確認" : "確認済み"}</span>;
-}
 export function CommunitySettings({ settings, change }: { settings: Settings; change: (settings: Settings) => void }) {
   const { configured } = useEventCatalog();
   return <section className="community-settings">
     <label className="check-field"><input type="checkbox" checked={!settings.includeUnverified} disabled={!configured} onChange={(event) => change({ ...settings, includeUnverified: !event.target.checked })}/>投稿後未確認の問題は出題しない</label>
-    <p className="help">未確認の問題は、投稿後のダブルチェックを経ていないものです。</p>
     <Link href="/submit" className="text-button"><Plus size={17} aria-hidden="true"/>年号を投稿</Link>
     <CommunityStatus/>
   </section>;
@@ -75,7 +70,7 @@ export function SubmissionPage() {
     finally { busy.current = false; setPending(false); }
   };
   return <AppShell><div className="submission-page"><div className="page-heading"><h1>年号を投稿</h1></div>
-    <p>学習に役立つ年号を教えてください。同じ年号の既存データを確認してから投稿できます。投稿内容は、投稿後のダブルチェックを経るまでは「未確認」として公開されます。</p>
+    <p>学習に役立つ年号を教えてください。同じ年号の既存データを確認してから投稿できます。投稿内容は公開されます。</p>
     <p className="help">個人情報は入力しないでください。出来事を簡潔に記載してください。</p>
     {!configured && <p className="inline-error" role="status">投稿の受付は現在準備中です。</p>}
     {success && <section className="submission-success" role="status"><strong>投稿を受け付けました。</strong></section>}
@@ -88,17 +83,17 @@ export function SubmissionPage() {
       <label className="field"><span>優先度（任意）</span><select name="priority" value={input.priority ?? ""} onChange={(event) => patch({ priority: event.target.value === "" ? undefined : Number(event.target.value) as Priority })}><option value="">指定しない（★★★・標準）</option>{priorities.map((priority) => <option key={priority.value} value={priority.value}>{priorityStars(priority.value)}・{priority.label}</option>)}</select></label>
       <label className="field"><span>語呂合わせ・備考（任意）</span><textarea name="note" rows={4} maxLength={1000} value={input.note} onChange={(event) => patch({ note: event.target.value })}/></label>
       <section className="same-year-check" aria-labelledby="same-year-heading"><h2 id="same-year-heading">投稿前の重複確認</h2>
-        <p className="help">同じ年でも別の出来事なら投稿できます。日本史・世界史と未確認の投稿を含めて、同じ出来事が登録されていないか確認してください。</p>
+        <p className="help">同じ年でも別の出来事なら投稿できます。日本史・世界史と投稿された問題を含めて、同じ出来事が登録されていないか確認してください。</p>
         <button type="button" className="secondary check-existing-button" disabled={!validYear || checking || !configured} onClick={() => void checkExisting()}>{checking ? "確認中…" : "同じ年号の既存データを確認"}</button>
         {checking && <p className="help" role="status">既存データを取得しています…</p>}
         {checkError && <p className="inline-error" role="alert">{checkError}</p>}
         {currentReview && <div className="same-year-results" aria-live="polite"><h3>{formatYear({ year: numericYear, era: input.era })}の既存データ（{currentReview.events.length}件）</h3>
-          {currentReview.events.length ? <ul>{currentReview.events.map((event) => <li key={event.id}><strong>{event.name}</strong> <ReviewBadge event={event}/><small>{eventSubjectLabel(event)}</small>{event.note && <p>{event.note}</p>}</li>)}</ul> : <p>同じ年号のデータは登録されていません。</p>}
+          {currentReview.events.length ? <ul>{currentReview.events.map((event) => <li key={event.id}><strong>{event.name}</strong><small>{eventSubjectLabel(event)}</small>{event.note && <p>{event.note}</p>}</li>)}</ul> : <p>同じ年号のデータは登録されていません。</p>}
           {currentReview.capped ? <p className="inline-error">同じ年号の投稿が多く、すべてを確認できません。現在この年号の投稿は受け付けできません。</p> : <label className="check-field duplicate-confirmation"><input name="duplicateChecked" type="checkbox" required checked={input.duplicateChecked} onChange={(event) => setInput((previous) => ({ ...previous, duplicateChecked: event.target.checked }))}/>既存データを確認し、同じ出来事が登録されていないことを確認しました</label>}
         </div>}
       </section>
       <p className="help">投稿後の編集・削除は管理者が行います。誤りに気づいた場合は問題詳細の「内容を報告」からお知らせください。</p>
-      <button type="submit" className="primary" disabled={pending || !configured || !canSubmit}>{pending ? "送信中…" : "未確認の問題として投稿する"}</button>
+      <button type="submit" className="primary" disabled={pending || !configured || !canSubmit}>{pending ? "送信中…" : "投稿する"}</button>
     </fieldset>{error && <p className="inline-error" role="alert">{error}</p>}</form>
     <Link href="/" className="text-button home-return">学習ホームに戻る</Link>
   </div></AppShell>;
