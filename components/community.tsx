@@ -8,7 +8,6 @@ import { sameYearEvents, mergeEvents, validateSubmission, type SubmissionInput }
 import { communityError, fetchSameYearCommunityEvents, reportCommunityEvent, submitCommunityEvent } from "@/lib/community-client";
 import { events as builtins, eventSubjectLabel } from "@/lib/events";
 import { formatYear } from "@/lib/study";
-import { useStudyStore, updateStore } from "@/lib/storage";
 import type { HistoryEvent, Settings } from "@/lib/types";
 import { AppShell } from "./app-shell";
 import { CommunityStatus, useEventCatalog } from "./community-provider";
@@ -31,7 +30,6 @@ export function CommunitySettings({ settings, change }: { settings: Settings; ch
 const initial: SubmissionInput = { name: "", year: 1, era: "CE", subject: "japan", unitId: "", regionId: "japan", note: "", duplicateChecked: false };
 export function SubmissionPage() {
   const { configured, refresh } = useEventCatalog();
-  const { store } = useStudyStore();
   const [input, setInput] = useState(initial);
   const [year, setYear] = useState("");
   const [pending, setPending] = useState(false);
@@ -79,7 +77,7 @@ export function SubmissionPage() {
     <p>学習に役立つ年号を教えてください。同じ年号の既存データを確認してから投稿できます。投稿内容は「未確認」として公開され、希望する利用者の学習に出題されます。</p>
     <p className="help">個人情報は入力しないでください。出来事を簡潔に記載してください。</p>
     {!configured && <p className="inline-error" role="status">投稿の受付は現在準備中です。</p>}
-    {success && <section className="submission-success" role="status"><strong>投稿を受け付けました。</strong><p>「未確認の投稿も出題する」をオンにすると、未確認の問題も学習対象になります。選択した範囲・優先度によっては出題されません。</p><button className="secondary" onClick={() => updateStore((previous) => ({ ...previous, settings: { ...previous.settings, includeUnverified: true } }))} disabled={store.settings.includeUnverified}>{store.settings.includeUnverified ? "未確認の投稿を出題する設定です" : "未確認の投稿を出題する設定にする"}</button><Link href="/library" className="text-button">問題一覧を見る →</Link></section>}
+    {success && <section className="submission-success" role="status"><strong>投稿を受け付けました。</strong></section>}
     <form className="submission-form" onSubmit={submit}><fieldset disabled={pending || checking || !configured}>
       <label className="field"><span>出来事（必須）</span><input name="name" required maxLength={160} value={input.name} onChange={(event) => patch({ name: event.target.value })}/></label>
       <div className="two-fields"><label className="field"><span>紀元</span><select aria-label="投稿する年号の紀元" value={input.era} onChange={(event) => patch({ era: event.target.value as SubmissionInput["era"] })}><option value="CE">紀元後</option><option value="BCE">紀元前</option></select></label><label className="field"><span>年号（必須）</span><input name="year" required type="number" inputMode="numeric" min={1} max={9999} step={1} value={year} onChange={(event) => { patch({}); setYear(event.target.value); }}/></label></div>
