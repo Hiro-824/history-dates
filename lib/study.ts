@@ -16,7 +16,7 @@ export const ORDERS = { random: "ランダム", oldest: "古い年代から", ne
 export const STATUSES = { new: "未学習", wrong: "過去に間違えた問題", recent: "最近間違えた問題", weak: "苦手な問題", review: "復習対象" };
 export const DEFAULT_SETTINGS: Settings = {
   subject: "both", scopeMethod: "random", unitIds: [], regionId: "japan", startPeriodId: "japan-01", endPeriodId: "japan-20",
-  priorities: [], mode: "exact", balanced: false, prioritizeUnseen: false, prioritizeWeak: false, count: 10, order: "random", statuses: [],
+  priorities: [], mode: "exact", balanced: false, prioritizeUnseen: false, prioritizeWeak: false, includeUnverified: false, count: 10, order: "random", statuses: [],
 };
 export function chronologicalYear(event: Pick<HistoryEvent, "year" | "era">) { return event.era === "BCE" ? -event.year : event.year; }
 export function formatYear(event: Pick<HistoryEvent, "year" | "era">) { return `${event.era === "BCE" ? "紀元前" : ""}${event.year}年`; }
@@ -83,6 +83,7 @@ export function filterEvents(events: HistoryEvent[], settings: Settings, history
   return events.filter((event) => {
     if (seen.has(event.id) || event.dateType !== "single") return false;
     seen.add(event.id);
+    if (event.reviewStatus === "unverified" && !settings.includeUnverified) return false;
     if (!matchesSubject(event, settings.subject)) return false;
     if (settings.scopeMethod === "units" && ![event.unitId, ...(event.relatedUnitIds ?? [])].some((id) => settings.unitIds.includes(id)
       && (settings.subject === "both" || unitById.get(id)?.subject === settings.subject))) return false;

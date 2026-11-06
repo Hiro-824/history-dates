@@ -26,6 +26,7 @@ export interface HistoryEvent {
   answerPrecision?: "decade" | "hundred";
   draftLines?: number[];
   source: string;
+  reviewStatus?: "unverified" | "verified";
 }
 export interface Unit { id: string; name: string }
 export interface UnitGroup { id: string; name: string; subject: Subject; units: Unit[] }
@@ -45,6 +46,7 @@ export interface Settings {
   balanced: boolean;
   prioritizeUnseen: boolean;
   prioritizeWeak: boolean;
+  includeUnverified: boolean;
   count: 10 | 20 | 50 | "all";
   order: Order;
   statuses: StudyStatus[];
@@ -84,6 +86,7 @@ export interface Session {
   createdAt: string;
   completedAt: string | null;
   restrictedIds?: string[];
+  eventSnapshots?: HistoryEvent[];
 }
 export interface Store {
   version: 2;

@@ -1,0 +1,61 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function publicStatus(status) { return status in ['unverified', 'verified']; }
+    function validId(id) { return id.matches('[A-Za-z0-9]{20}'); }
+    function validClassification(d) {
+      return (d.subject == 'japan' && d.regionId in ["japan"] && (d.unitId == '' || d.unitId in ["J01-01", "J01-02", "J01-03", "J01-04", "J02-01", "J02-02", "J02-03", "J02-04", "J03-01", "J03-02", "J03-03", "J03-04", "J03-05", "J04-01", "J04-02", "J04-03", "J04-04", "J04-05", "J05-01", "J05-02", "J05-03", "J05-04", "J05-05", "J06-01", "J06-02", "J06-03", "J06-04", "J06-05", "J06-06", "J07-01", "J07-02", "J07-03", "J07-04", "J07-05", "J08-01", "J08-02", "J08-03", "J08-04", "J08-05", "J08-06", "J09-01", "J09-02", "J09-03", "J09-04", "J09-05", "J09-06", "J09-07", "J10-01", "J10-02", "J10-03", "J10-04", "J10-05", "J10-06", "J11-01", "J11-02", "J11-03", "J11-04", "J11-05", "J11-06", "J11-07", "J12-01", "J12-02", "J12-03", "J12-04", "J12-05", "J13-01", "J13-02", "J13-03", "J13-04", "J13-05", "J13-06", "J13-07"]))
+        || (d.subject == 'world' && d.regionId in ["china", "europe", "west-asia", "central-asia", "south-asia", "southeast-asia", "africa", "north-america", "latin-america", "oceania"] && (d.unitId == '' || d.unitId in ["W01-01", "W01-02", "W01-03", "W01-04", "W02-01", "W02-02", "W02-03", "W02-04", "W02-05", "W02-06", "W03-01", "W03-02", "W03-03", "W04-01", "W04-02", "W04-03", "W04-04", "W04-05", "W05-01", "W05-02", "W05-03", "W06-01", "W06-02", "W06-03", "W06-04", "W07-01", "W07-02", "W07-03", "W07-04", "W07-05", "W08-01", "W08-02", "W08-03", "W08-04", "W08-05", "W08-06", "W09-01", "W09-02", "W09-03", "W09-04", "W10-01", "W10-02", "W10-03", "W10-04", "W10-05", "W10-06", "W11-01", "W11-02", "W11-03", "W11-04", "W11-05", "W12-01", "W12-02", "W12-03", "W12-04", "W13-01", "W13-02", "W13-03", "W13-04", "W13-05", "W13-06", "W13-07", "W14-01", "W14-02", "W14-03", "W14-04", "W14-05", "W15-01", "W15-02", "W15-03", "W15-04", "W15-05", "W15-06", "W15-07", "W16-01", "W16-02", "W16-03", "W16-04", "W16-05", "W16-06", "W17-01", "W17-02", "W17-03", "W17-04", "W17-05", "W17-06", "W18-01", "W18-02", "W18-03", "W18-04", "W18-05", "W19-01", "W19-02", "W19-03", "W19-04", "W19-05", "W20-01", "W20-02", "W20-03", "W20-04", "W20-05", "W20-06", "W20-07", "W21-01", "W21-02", "W21-03", "W21-04", "W21-05", "W21-06"]));
+    }
+    function validSubmission(d) {
+      return d.keys().hasAll(['name', 'year', 'era', 'subject', 'unitId', 'regionId', 'duplicateChecked', 'note', 'priority', 'reviewStatus', 'createdAt'])
+        && d.keys().hasOnly(['name', 'year', 'era', 'subject', 'unitId', 'regionId', 'duplicateChecked', 'note', 'priority', 'reviewStatus', 'createdAt'])
+        && d.name is string && d.name.size() > 0 && d.name.size() <= 160 && d.name.matches('.*[^ ].*')
+        && d.year is int && d.year >= 1 && d.year <= 9999
+        && d.era in ['CE', 'BCE'] && validClassification(d)
+        && d.duplicateChecked == true
+        && d.note is string && d.note.size() <= 1000
+        && d.priority == 3 && d.reviewStatus == 'unverified' && d.createdAt == request.time;
+    }
+    match /submissions/{id} {
+      allow get: if publicStatus(resource.data.reviewStatus);
+      allow list: if request.query.limit <= 500 && publicStatus(resource.data.reviewStatus);
+      allow create: if signedIn() && validId(id) && validSubmission(request.resource.data)
+        && getAfter(/databases/$(database)/documents/submissionLimits/$(request.auth.uid)).data.lastAt == request.time
+        && getAfter(/databases/$(database)/documents/submissionLimits/$(request.auth.uid)).data.submissionId == id;
+      // Confirmation, corrections and hiding are performed through the Firebase Console (IAM).
+      allow update, delete: if false;
+    }
+    match /submissionLimits/{uid} {
+      allow get: if signedIn() && request.auth.uid == uid;
+      allow create, update: if signedIn() && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['lastAt', 'submissionId'])
+        && validId(request.resource.data.submissionId) && request.resource.data.lastAt == request.time
+        && (!exists(/databases/$(database)/documents/submissionLimits/$(uid)) || request.time >= resource.data.lastAt + duration.value(60, 's'))
+        && getAfter(/databases/$(database)/documents/submissions/$(request.resource.data.submissionId)).data.createdAt == request.time;
+    }
+    match /reports/{id} {
+      allow create: if signedIn() && validId(id)
+        && request.resource.data.keys().hasAll(['eventId', 'reason', 'detail', 'createdAt'])
+        && request.resource.data.keys().hasOnly(['eventId', 'reason', 'detail', 'createdAt'])
+        && validId(request.resource.data.eventId)
+        && request.resource.data.reason in ['incorrect', 'duplicate', 'inappropriate']
+        && request.resource.data.detail is string && request.resource.data.detail.size() <= 500
+        && request.resource.data.createdAt == request.time
+        && publicStatus(get(/databases/$(database)/documents/submissions/$(request.resource.data.eventId)).data.reviewStatus)
+        && getAfter(/databases/$(database)/documents/reportLimits/$(request.auth.uid)).data.lastAt == request.time
+        && getAfter(/databases/$(database)/documents/reportLimits/$(request.auth.uid)).data.reportId == id;
+      allow read, update, delete: if false;
+    }
+    match /reportLimits/{uid} {
+      allow get: if signedIn() && request.auth.uid == uid;
+      allow create, update: if signedIn() && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['lastAt', 'reportId'])
+        && validId(request.resource.data.reportId) && request.resource.data.lastAt == request.time
+        && (!exists(/databases/$(database)/documents/reportLimits/$(uid)) || request.time >= resource.data.lastAt + duration.value(60, 's'))
+        && getAfter(/databases/$(database)/documents/reports/$(request.resource.data.reportId)).data.createdAt == request.time;
+    }
+    match /{document=**} { allow read, write: if false; }
+  }
+}

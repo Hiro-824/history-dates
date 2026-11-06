@@ -1,22 +1,25 @@
 "use client";
 
 import { useNavigation } from "./navigation";
-import { events, matchesSubject } from "@/lib/events";
+import { matchesSubject } from "@/lib/events";
 import { unitById } from "@/data/units";
 import { priorityStars } from "@/data/priorities";
 import { DEFAULT_SETTINGS, filterEvents, rangeError } from "@/lib/study";
 import { startStudy, updateStore, useStudyStore } from "@/lib/storage";
 import { useSettingsModal } from "@/lib/settings-modal";
 import type { Settings } from "@/lib/types";
+import { CommunitySettings } from "./community";
+import { useEventCatalog } from "./community-provider";
 import { AppShell } from "./app-shell";
 import { CountControl, ModeControl, PriorityFilter, scopeSummary, SettingsModal, SubjectControl, StudyPreferences } from "./settings";
 import { Icon } from "./ui";
 import { PageLoading } from "./page-loading";
 
-const priorityExample = events.find((event) => event.id === "wh-b70e7396412d");
 
 export default function HistoryApp() {
   const { store, ready } = useStudyStore();
+  const { events } = useEventCatalog();
+  const priorityExample = events.find((event) => event.id === "wh-b70e7396412d");
   const settings = store.settings;
   const { navigate, pending } = useNavigation();
   const settingsModal = useSettingsModal();
@@ -27,16 +30,16 @@ export default function HistoryApp() {
     return unit && (settings.subject === "both" || unit.subject === settings.subject) ? [unit] : [];
   });
   const sessionCount = settings.count === "all" ? filtered.length : Math.min(settings.count, filtered.length);
-  const review = events.filter((e) => matchesSubject(e, settings.subject) && store.history[e.id]?.review);
+  const review = events.filter((e) => matchesSubject(e, settings.subject) && (e.reviewStatus !== "unverified" || settings.includeUnverified) && store.history[e.id]?.review);
   const begin = () => navigate(() => {
-    const session = startStudy(settings);
+    const session = startStudy(settings, undefined, false, events);
     return session ? `/study/${session.id}` : null;
   });
   const beginReview = () => navigate(() => {
     const session = startStudy({
-      ...DEFAULT_SETTINGS, subject: settings.subject, mode: settings.mode, count: settings.count,
+      ...DEFAULT_SETTINGS, subject: settings.subject, mode: settings.mode, count: settings.count, includeUnverified: settings.includeUnverified,
       scopeMethod: "units", unitIds: [...new Set(review.flatMap((e) => [e.unitId, ...(e.relatedUnitIds ?? [])]))], order: "weak",
-    }, review.map((e) => e.id), true);
+    }, review.map((e) => e.id), true, events);
     return session ? `/study/${session.id}` : null;
   });
 
@@ -55,6 +58,7 @@ export default function HistoryApp() {
         <PriorityFilter settings={settings} change={change}/>
         <p className="help priority-note">あくまで、年号全桁を覚えるか、という基準での選定です。{priorityExample && <>例えば、「ブワイフ朝が大アミール号を獲得（946年）」は{priorityStars(priorityExample.priority)}ですが、10世紀であることは共通テストレベルでも覚えておくべきでしょう。このように、</>}★が少なくても世紀を覚えておくべき出来事はあります。世紀モードでは、「すべて」を対象にすることをおすすめします。</p>
         <StudyPreferences settings={settings} onChange={change}/>
+        <CommunitySettings settings={settings} change={change}/>
       </div>
       {ready && !filtered.length && <p className="home-empty error-text">{rangeError(settings) || "条件に一致する問題がありません。星や出題範囲を変更してください。"}</p>}
     </section>

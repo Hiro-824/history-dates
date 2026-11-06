@@ -5,9 +5,10 @@ import legacyUnits from "../data/legacy-units.json";
 import { regionById, regionsForSubject } from "../data/regions";
 import { unitById } from "../data/units";
 import { events } from "./events";
+import { restoreCommunityEvent } from "./community";
 import { prepareStudyKeyboard } from "./study-keyboard";
 import { DEFAULT_SETTINGS, filterEvents, makeQueue, MODES, ORDERS, selectRegion, selectSubject, weakness } from "./study";
-import type { Attempt, History, Mode, Score, Session, Settings, Store } from "./types";
+import type { Attempt, History, HistoryEvent, Mode, Score, Session, Settings, Store } from "./types";
 
 export const STORAGE_KEY = "history-dates:v2";
 export const LEGACY_STORAGE_KEY = "history-dates:v1";
@@ -34,6 +35,7 @@ export function restoreSettings(value: unknown): Settings {
   }
   if (typeof value.prioritizeUnseen === "boolean") result.prioritizeUnseen = value.prioritizeUnseen;
   if (typeof value.prioritizeWeak === "boolean") result.prioritizeWeak = value.prioritizeWeak;
+  if (typeof value.includeUnverified === "boolean") result.includeUnverified = value.includeUnverified;
   if (value.scopeMethod === "units" || value.scopeMethod === "region" || value.scopeMethod === "random") result.scopeMethod = value.scopeMethod;
   if (strings(value.unitIds)) result.unitIds = [...new Set(value.unitIds.filter((id) => unitById.has(id)))];
   if (Array.isArray(value.priorities)) result.priorities = [...new Set(value.priorities.filter((p): p is 1 | 2 | 3 | 4 | 5 => Number.isInteger(p) && p >= 1 && p <= 5))];
@@ -93,6 +95,7 @@ function restoreSession(value: unknown): Session | null {
   return { id: value.id, eventIds: ids, settings: restoreSettings(value.settings), index: Number(value.index), answers: value.answers, input: value.input, era: value.era as Session["era"], stage: value.stage, createdAt: value.createdAt,
     completedAt: typeof value.completedAt === "string" && Number.isFinite(Date.parse(value.completedAt)) ? value.completedAt : null,
     ...(strings(value.restrictedIds) ? { restrictedIds: value.restrictedIds } : {}),
+    ...(Array.isArray(value.eventSnapshots) ? { eventSnapshots: value.eventSnapshots.map(restoreCommunityEvent).filter((event): event is HistoryEvent => !!event && ids.includes(event.id)) } : {}),
   };
 }
 export function decodeStore(raw: string): Store {
@@ -129,12 +132,14 @@ export function updateStore(update: (previous: Store) => Store): Store {
   snapshot = next; listeners.forEach((notify) => notify());
   return next;
 }
-export function startStudy(settings: Settings, restrictedIds?: string[], preserveSettings = false): Session | null {
+export function startStudy(settings: Settings, restrictedIds?: string[], preserveSettings = false, availableEvents: HistoryEvent[] = events): Session | null {
   const store = getSnapshot();
-  const pool = restrictedIds ? events.filter((e) => restrictedIds.includes(e.id) && e.dateType === "single") : filterEvents(events, settings, store.history);
+  const pool = restrictedIds ? availableEvents.filter((e) => restrictedIds.includes(e.id) && e.dateType === "single" && (e.reviewStatus !== "unverified" || settings.includeUnverified)) : filterEvents(availableEvents, settings, store.history);
   const queue = makeQueue(pool, settings, store.history);
   if (!queue.length) return null;
   const session: Session = { id: crypto.randomUUID(), eventIds: queue.map((e) => e.id), settings: structuredClone(settings), index: 0, answers: [], input: "", era: "CE", stage: "active", createdAt: new Date().toISOString(), completedAt: null, ...(restrictedIds ? { restrictedIds } : {}) };
+  const external = queue.filter((event) => event.reviewStatus);
+  if (external.length) session.eventSnapshots = external;
   updateStore((s) => ({ ...s, settings: preserveSettings ? s.settings : settings, sessions: [...s.sessions, session].slice(-20) }));
   prepareStudyKeyboard();
   return session;

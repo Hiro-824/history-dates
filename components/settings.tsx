@@ -4,7 +4,7 @@ import { useId, useState } from "react";
 import { priorities, priorityStars } from "@/data/priorities";
 import { regionsForSubject } from "@/data/regions";
 import { unitById, unitGroups } from "@/data/units";
-import { events } from "@/lib/events";
+import { useEventCatalog } from "./community-provider";
 import { answerParts, DEFAULT_SETTINGS, filterEvents, formatSignedYear, MODES, ORDERS, rangeError, regionRange, SCOPE_METHODS, selectRegion, selectSubject, SUBJECTS } from "@/lib/study";
 import { updateStore, useStudyStore } from "@/lib/storage";
 import type { Mode, Priority, Settings } from "@/lib/types";
@@ -48,6 +48,7 @@ export function scopeSummary(settings: Settings) {
   return SCOPE_METHODS.random;
 }
 function UnitTree({ settings, change }: { settings: Settings; change: (s: Settings) => void }) {
+  const { events } = useEventCatalog();
   const [query, setQuery] = useState("");
   const q = query.trim().toLocaleLowerCase("ja-JP");
   const groups = unitGroups.filter((g) => settings.subject === "both" || g.subject === settings.subject).filter((g) => !q || `${g.id} ${g.name} ${g.units.map((u) => u.name).join(" ")}`.toLocaleLowerCase("ja-JP").includes(q));
@@ -58,7 +59,7 @@ function UnitTree({ settings, change }: { settings: Settings; change: (s: Settin
       const ids = g.units.map((u) => u.id), selected = ids.filter((id) => settings.unitIds.includes(id)).length;
       const visible = q && !`${g.id} ${g.name}`.toLocaleLowerCase("ja-JP").includes(q) ? g.units.filter((u) => u.name.toLocaleLowerCase("ja-JP").includes(q)) : g.units;
       return <details className="unit-group" key={g.id} open={q ? true : undefined} data-group-id={g.id}><summary><label className="group-checkbox" onClick={(e) => e.stopPropagation()}><input type="checkbox" aria-label={`${g.name}を一括選択`} checked={selected === ids.length} ref={(el) => { if (el) el.indeterminate = selected > 0 && selected < ids.length; }} onChange={(e) => toggle(ids, e.target.checked)}/></label><span>{g.name}</span><small>{selected}/{ids.length}</small></summary><div className="unit-children">{visible.map((u) => {
-        const count = events.filter((e) => e.unitId === u.id || e.relatedUnitIds?.includes(u.id)).length;
+        const count = events.filter((e) => (e.reviewStatus !== "unverified" || settings.includeUnverified) && (e.unitId === u.id || e.relatedUnitIds?.includes(u.id))).length;
         return <label key={u.id}><input type="checkbox" checked={settings.unitIds.includes(u.id)} onChange={(e) => toggle([u.id], e.target.checked)}/><span>{u.name}</span><small>{count}問</small></label>;
       })}</div></details>;
     })}{!groups.length && <p className="empty-state">一致する単元がありません。</p>}
@@ -84,6 +85,7 @@ export function PriorityFilter({ settings, change }: { settings: Settings; chang
   </fieldset>;
 }
 export function SettingsModal({ onClose }: { onClose: () => void }) {
+  const { events } = useEventCatalog();
   const { store, ready } = useStudyStore(); const settings = store.settings;
   const methodGroup = useId();
   const [presetName, setPresetName] = useState(""); const [presetError, setPresetError] = useState("");

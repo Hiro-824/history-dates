@@ -508,6 +508,40 @@ body.study-active, body:has(dialog:modal) { overflow: hidden; overscroll-behavio
 .quiz-page .progress-track { margin: 0; }
 .question-region { --question-font: 29; display: flex; align-items: center; justify-content: center; min-height: 0; padding: 4px 0; overflow: hidden; }
 .question-region .question-title { width: 100%; margin: 0; font-size: 29px; line-height: 1.45; }
+
+/* Community submissions */
+.community-settings { border-top: 1px solid var(--line); padding-top: 18px; }
+.community-settings .help { margin: 8px 0; }
+.community-status { margin: 12px 0; }
+.community-library-tools { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin: -10px 0 16px; }
+.review-badge { display: inline-block; width: max-content; padding: 2px 7px; border: 1px solid #d9bc79; border-radius: 4px; background: #fff6df; color: #765418; font-size: 11px; line-height: 1.5; font-weight: 600; vertical-align: middle; white-space: nowrap; }
+.review-badge.verified { color: var(--accent); background: var(--accent-soft); border-color: #c5d6c1; }
+.quiz-toolbar>.review-badge { margin-left: auto; }
+.quiz-toolbar>.review-badge + .progress-text { margin-left: 4px; }
+.question-hint .review-badge { margin-right: 6px; }
+.feedback-top .review-badge { margin-right: 8px; }
+.event-name-button strong .review-badge { display: inline-block; }
+.submission-page { max-width: 720px; margin: auto; }
+.submission-page>p { margin-bottom: 14px; line-height: 1.8; }
+.submission-form { margin-top: 24px; }
+.submission-form fieldset { padding: 0; border: 0; min-width: 0; }
+.submission-form .field { margin: 18px 0; }
+.submission-form .two-fields { gap: 16px; }
+.submission-form textarea { width: 100%; resize: vertical; padding: 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); font: inherit; }
+.submission-form .help { margin: 10px 0 18px; }
+.submission-success { display: grid; gap: 14px; padding: 20px; background: var(--accent-soft); border: 1px solid var(--line); border-radius: 8px; }
+.report-button { margin: 10px 0; }
+.same-year-check { margin: 24px 0; padding: 18px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+.same-year-check h2 { font-size: 16px; }
+.same-year-results { margin-top: 18px; }
+.same-year-results h3 { font-size: 14px; margin-bottom: 12px; }
+.same-year-results ul { list-style: none; margin: 0; padding: 0; }
+.same-year-results li { padding: 12px 0; border-bottom: 1px solid var(--line); overflow-wrap: anywhere; }
+.same-year-results li small { display: block; margin-top: 4px; color: var(--muted); }
+.same-year-results li p { font-size: 13px; margin-top: 6px; white-space: pre-wrap; }
+.duplicate-confirmation { margin-top: 18px; align-items: flex-start; line-height: 1.7; }
+.duplicate-confirmation input { flex: 0 0 auto; margin-top: 5px; }
+.community-refresh { min-width: 44px; min-height: 44px; }
 .quiz-page .answer-form { display: grid; grid-template-rows: 64px 20px minmax(0, 1fr) 50px 18px; gap: 8px; width: 100%; max-width: 480px; height: 100%; min-height: 0; margin: 0 auto; }
 .quiz-page .answer-composer { min-height: 0; height: 100%; padding: 8px 14px; }
 .quiz-page .era-toggle>label { min-height: 34px; width: 30px; }
