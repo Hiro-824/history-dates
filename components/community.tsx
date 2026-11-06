@@ -92,7 +92,6 @@ export function SubmissionPage() {
           {currentReview.capped ? <p className="inline-error">同じ年号の投稿が多く、すべてを確認できません。現在この年号の投稿は受け付けできません。</p> : <label className="check-field duplicate-confirmation"><input name="duplicateChecked" type="checkbox" required checked={input.duplicateChecked} onChange={(event) => setInput((previous) => ({ ...previous, duplicateChecked: event.target.checked }))}/>既存データを確認し、同じ出来事が登録されていないことを確認しました</label>}
         </div>}
       </section>
-      <p className="help">投稿後の編集・削除は管理者が行います。誤りに気づいた場合は問題詳細の「内容を報告」からお知らせください。</p>
       <button type="submit" className="primary" disabled={pending || !configured || !canSubmit}>{pending ? "送信中…" : "投稿する"}</button>
     </fieldset>{error && <p className="inline-error" role="alert">{error}</p>}</form>
     <Link href="/" className="text-button home-return">学習ホームに戻る</Link>
